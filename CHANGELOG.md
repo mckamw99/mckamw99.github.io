@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.0 (2026-11-09)
+- Contact page (`contact.html`): site-styled form that posts to the linked Google Form; client-side required-field and email checks, honeypot spam filter, thank-you state, email and LinkedIn fallback. Nav and footer "Contact" links now point to it. One end-to-end test response sent and confirmed in the form.
+- Removed committed `__pycache__` and added `.gitignore`.
+
 ## 0.8.0 (2026-11-09)
 - Site build: static HTML/CSS in `docs/`, generated from the markdown sources by `site-build/build_site.py`; PDFs printed from the same pages by `site-build/make_pdfs.py`. Pages: Start here, Case studies index, four case studies and their templates, Library index and four library items, synthetic data generator pages, About.
 - Pre-publish checks run: every page carries the footer disclaimer, every image has alt text, no broken internal links, no employer or pen-name terms. LIB-41 rewritten with Matt's wording; its AI principle is held back until the attorney clears LIB-28.

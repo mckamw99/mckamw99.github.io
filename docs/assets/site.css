@@ -93,6 +93,29 @@ article pre{background:#f4f3ef;padding:12px 16px;border-radius:8px;overflow-x:au
 .about figcaption{font-size:14px;line-height:22px;color:var(--muted);margin-top:8px}
 .about .text{flex:999 1 520px;min-width:0;max-width:720px;display:flex;flex-direction:column;gap:20px}
 .about .text p{margin:0}.about h2{font:600 28px/36px var(--serif);margin:8px 0 0}
+/* contact form */
+.contact{max-width:720px;padding-top:48px}
+.contact form{display:grid;gap:24px;margin-top:32px}
+.contact .field{display:grid;gap:6px}
+.contact label,.contact legend{font-weight:600}
+.contact .req{color:var(--muted);font-weight:400;font-size:14px}
+.contact input[type=text],.contact input[type=email],.contact textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:1px solid #8a8a84;border-radius:4px;padding:10px 12px;min-height:44px}
+.contact textarea{min-height:160px;resize:vertical}
+.contact input:focus-visible,.contact textarea:focus-visible,.contact input[type=radio]:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.contact fieldset{border:0;margin:0;padding:0;display:grid;gap:4px}
+.contact legend{padding:0;margin-bottom:6px}
+.contact .choice{display:flex;align-items:center;gap:10px;min-height:36px}
+.contact .choice input{width:18px;height:18px;margin:0;accent-color:var(--navy-deep);flex:none}
+.contact .choice label{font-weight:400}
+.contact [aria-invalid=true]{border-color:#9b1c22!important;box-shadow:0 0 0 1px #9b1c22}
+.contact .error{color:#9b1c22;font-size:15px;margin:0}.contact .error:empty{display:none}
+.contact .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.contact button{justify-self:start;font:inherit;font-weight:700;color:#fff;background:var(--navy-deep);border:0;border-radius:4px;min-height:44px;padding:0 24px;cursor:pointer}
+.contact button:hover{background:var(--navy)}.contact button[disabled]{opacity:.7;cursor:progress}
+.contact .status{margin:0}.contact .status:empty{display:none}.contact .status.problem{color:#9b1c22}
+.contact .thanks{display:none}.contact.sent .thanks{display:block}.contact.sent form{display:none}
+.contact .thanks h2{font:600 28px/36px var(--serif);margin:32px 0 8px}
+.contact .alt{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted)}
 @media print{.band,.site-header nav,.toc,.crumbs,.skip{display:none!important}
  .site-footer{margin-top:24px}.site-footer .inner{background:none;color:var(--ink)}.site-footer a{color:var(--ink)}
  .site-footer ul{display:none}.layout{display:block}article{max-width:none}

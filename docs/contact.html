@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Contact Matthew McKay, Ph.D.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="index.html">Start here</a></li><li><a href="case-studies/index.html">Case studies</a></li><li><a href="library/index.html">Library</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap"><div class="contact" id="contact-box">
+<p class="label navy">Contact</p>
+<h1>Get in touch</h1>
+<p class="lead">Thanks for reaching out. I read every message and reply within a few business days. Your details are used only to respond to you and are never shared.</p>
+<form id="contact-form" novalidate>
+<div class="field"><label for="f-name">Name <span class="req">(required)</span></label>
+<input id="f-name" name="entry.1449993396" type="text" autocomplete="name" required aria-describedby="e-name">
+<p class="error" id="e-name" aria-live="polite"></p></div>
+<div class="field"><label for="f-email">Email <span class="req">(required)</span></label>
+<input id="f-email" name="entry.1425422437" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+<p class="error" id="e-email" aria-live="polite"></p></div>
+<div class="field"><label for="f-org">Organization</label>
+<input id="f-org" name="entry.368952213" type="text" autocomplete="organization"></div>
+<fieldset class="field" id="f-topic" aria-describedby="e-topic"><legend>What's this about? <span class="req">(required)</span></legend>
+<div class="choice"><input type="radio" id="t1" name="entry.132714467" value="A role I&#x27;m hiring for" required><label for="t1">A role I&#x27;m hiring for</label></div><div class="choice"><input type="radio" id="t2" name="entry.132714467" value="Consulting or a project"><label for="t2">Consulting or a project</label></div><div class="choice"><input type="radio" id="t3" name="entry.132714467" value="Speaking or teaching"><label for="t3">Speaking or teaching</label></div><div class="choice"><input type="radio" id="t4" name="entry.132714467" value="Networking"><label for="t4">Networking</label></div><div class="choice"><input type="radio" id="t5" name="entry.132714467" value="Something else"><label for="t5">Something else</label></div>
+<p class="error" id="e-topic" aria-live="polite"></p></fieldset>
+<div class="field"><label for="f-msg">Message <span class="req">(required)</span></label>
+<textarea id="f-msg" name="entry.841677939" required aria-describedby="e-msg"></textarea>
+<p class="error" id="e-msg" aria-live="polite"></p></div>
+<div class="field"><label for="f-found">How did you find my site?</label>
+<input id="f-found" name="entry.832696249" type="text"></div>
+<div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label>
+<input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<button type="submit">Send message</button>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+</form>
+<div class="thanks" id="thanks" tabindex="-1"><h2>Message sent</h2>
+<p>Thanks, your message is on its way. I'll reply within a few business days.</p></div>
+<p class="alt">You can also email <a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a> or find me on <a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a>.</p>
+</div></div>
+<script>
+(function () {
+  // Posts to the linked Google Form (responses go to the "Portfolio contact responses" sheet).
+  // If a question changes in Google Forms, update the entry.* names above. AI-assisted (Claude).
+  var ENDPOINT = "https://docs.google.com/forms/d/e/1FAIpQLSdWEOOpEXaSxFF4d2jzU4EBzSVUPu4OoU6WDJj8VIQwHMgECA/formResponse";
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var form = document.getElementById("contact-form"), statusEl = document.getElementById("status"), button = form.querySelector("button");
+  function setError(input, id, msg) { document.getElementById(id).textContent = msg || ""; input.setAttribute("aria-invalid", msg ? "true" : "false"); return !msg; }
+  function validate() {
+    var ok = true, first = null, name = document.getElementById("f-name"), email = document.getElementById("f-email"),
+        msg = document.getElementById("f-msg"), topic = document.getElementById("f-topic"),
+        picked = form.querySelector('input[name="entry.132714467"]:checked'), ev = email.value.trim();
+    if (!setError(name, "e-name", name.value.trim() ? "" : "Please enter your name.")) { ok = false; first = first || name; }
+    if (!setError(email, "e-email", !ev ? "Please enter your email address." : (EMAIL_RE.test(ev) ? "" : "Please enter a valid email address, like name@example.com."))) { ok = false; first = first || email; }
+    if (!setError(topic, "e-topic", picked ? "" : "Please choose what this is about.")) { ok = false; first = first || form.querySelector('input[name="entry.132714467"]'); }
+    if (!setError(msg, "e-msg", msg.value.trim() ? "" : "Please enter a message.")) { ok = false; first = first || msg; }
+    if (first) first.focus();
+    return ok;
+  }
+  function showThanks() { document.getElementById("contact-box").classList.add("sent"); document.getElementById("thanks").focus(); }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); statusEl.textContent = ""; statusEl.className = "status";
+    if (!validate()) return;
+    if (document.getElementById("f-website").value) { showThanks(); return; }
+    var data = new URLSearchParams();
+    form.querySelectorAll("input, textarea").forEach(function (el) {
+      if (!el.name || el.name.indexOf("entry.") !== 0) return;
+      if (el.type === "radio" && !el.checked) return;
+      data.append(el.name, el.value.trim());
+    });
+    button.disabled = true; statusEl.textContent = "Sending…";
+    fetch(ENDPOINT, { method: "POST", mode: "no-cors", body: data }).then(showThanks).catch(function () {
+      button.disabled = false; statusEl.className = "status problem";
+      statusEl.textContent = "Your message couldn't be sent. Check your connection and try again, or email me at the address below.";
+    });
+  });
+})();
+</script>
+</main>
+<footer class="site-footer">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="contact.html">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

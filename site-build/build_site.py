@@ -12,7 +12,8 @@ GH = "https://github.com/mckamw99/mckamw99.github.io"
 SITE_NAME = "Matthew McKay, Ph.D."
 EMAIL = "mckamw99@aequitasnetwork.com"
 LINKEDIN = "https://www.linkedin.com/in/matthewmckayphd"
-FORM = "#contact"  # TODO: Google Form link from Matt
+FORM = "contact.html"  # site-relative; resolved per page with rel()
+GFORM = "https://docs.google.com/forms/d/e/1FAIpQLSdWEOOpEXaSxFF4d2jzU4EBzSVUPu4OoU6WDJj8VIQwHMgECA/formResponse"
 DISCLAIMER = ("Personal project. All data is synthetic or public, and the company is fictional. "
               "Views are my own and not affiliated with or endorsed by any current or former employer.")
 
@@ -140,6 +141,29 @@ article pre{background:#f4f3ef;padding:12px 16px;border-radius:8px;overflow-x:au
 .about figcaption{font-size:14px;line-height:22px;color:var(--muted);margin-top:8px}
 .about .text{flex:999 1 520px;min-width:0;max-width:720px;display:flex;flex-direction:column;gap:20px}
 .about .text p{margin:0}.about h2{font:600 28px/36px var(--serif);margin:8px 0 0}
+/* contact form */
+.contact{max-width:720px;padding-top:48px}
+.contact form{display:grid;gap:24px;margin-top:32px}
+.contact .field{display:grid;gap:6px}
+.contact label,.contact legend{font-weight:600}
+.contact .req{color:var(--muted);font-weight:400;font-size:14px}
+.contact input[type=text],.contact input[type=email],.contact textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:1px solid #8a8a84;border-radius:4px;padding:10px 12px;min-height:44px}
+.contact textarea{min-height:160px;resize:vertical}
+.contact input:focus-visible,.contact textarea:focus-visible,.contact input[type=radio]:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.contact fieldset{border:0;margin:0;padding:0;display:grid;gap:4px}
+.contact legend{padding:0;margin-bottom:6px}
+.contact .choice{display:flex;align-items:center;gap:10px;min-height:36px}
+.contact .choice input{width:18px;height:18px;margin:0;accent-color:var(--navy-deep);flex:none}
+.contact .choice label{font-weight:400}
+.contact [aria-invalid=true]{border-color:#9b1c22!important;box-shadow:0 0 0 1px #9b1c22}
+.contact .error{color:#9b1c22;font-size:15px;margin:0}.contact .error:empty{display:none}
+.contact .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.contact button{justify-self:start;font:inherit;font-weight:700;color:#fff;background:var(--navy-deep);border:0;border-radius:4px;min-height:44px;padding:0 24px;cursor:pointer}
+.contact button:hover{background:var(--navy)}.contact button[disabled]{opacity:.7;cursor:progress}
+.contact .status{margin:0}.contact .status:empty{display:none}.contact .status.problem{color:#9b1c22}
+.contact .thanks{display:none}.contact.sent .thanks{display:block}.contact.sent form{display:none}
+.contact .thanks h2{font:600 28px/36px var(--serif);margin:32px 0 8px}
+.contact .alt{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted)}
 @media print{.band,.site-header nav,.toc,.crumbs,.skip{display:none!important}
  .site-footer{margin-top:24px}.site-footer .inner{background:none;color:var(--ink)}.site-footer a{color:var(--ink)}
  .site-footer ul{display:none}.layout{display:block}article{max-width:none}
@@ -152,7 +176,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">')
 
 NAV = [("Start here", "index.html"), ("Case studies", "case-studies/index.html"),
-       ("Library", "library/index.html"), ("About", "about.html")]
+       ("Library", "library/index.html"), ("About", "about.html"), ("Contact", "contact.html")]
 
 
 def rel(frm, to):
@@ -164,7 +188,6 @@ def rel(frm, to):
 def shell(out_path, title, body, section, description):
     navhtml = "".join(
         f'<li><a href="{rel(out_path, h)}"{" aria-current=\"page\"" if n == section else ""}>{n}</a></li>' for n, h in NAV)
-    navhtml += f'<li><a href="#contact">Contact</a></li>'
     full_title = title if title == SITE_NAME else f"{title} · {SITE_NAME}"
     return f"""<!doctype html>
 <html lang="en">
@@ -186,14 +209,14 @@ def shell(out_path, title, body, section, description):
 <main id="main">
 {body}
 </main>
-<footer class="site-footer" id="contact">
+<footer class="site-footer">
 <div class="band" aria-hidden="true"></div>
 <div class="inner"><div class="wrap">
 <div><p class="fname">{SITE_NAME}</p><p>{DISCLAIMER}</p></div>
 <ul>
 <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
 <li><a href="{LINKEDIN}">LinkedIn</a></li>
-<li><a href="{FORM}">Contact form</a></li>
+<li><a href="{rel(out_path, FORM)}">Contact form</a></li>
 <li><a href="{GH}">Code and data on GitHub</a></li>
 </ul>
 </div></div>
@@ -463,6 +486,83 @@ def about():
     return out, "About", body, "About", "About Matthew McKay, Ph.D., a learning and data leader."
 
 
+def contact():
+    out = "contact.html"
+    topics = ["A role I'm hiring for", "Consulting or a project", "Speaking or teaching", "Networking", "Something else"]
+    radios = "".join(
+        f'<div class="choice"><input type="radio" id="t{i}" name="entry.132714467" value="{html.escape(t)}"{" required" if i == 1 else ""}>'
+        f'<label for="t{i}">{html.escape(t)}</label></div>' for i, t in enumerate(topics, 1))
+    body = f"""<div class="wrap"><div class="contact" id="contact-box">
+<p class="label navy">Contact</p>
+<h1>Get in touch</h1>
+<p class="lead">Thanks for reaching out. I read every message and reply within a few business days. Your details are used only to respond to you and are never shared.</p>
+<form id="contact-form" novalidate>
+<div class="field"><label for="f-name">Name <span class="req">(required)</span></label>
+<input id="f-name" name="entry.1449993396" type="text" autocomplete="name" required aria-describedby="e-name">
+<p class="error" id="e-name" aria-live="polite"></p></div>
+<div class="field"><label for="f-email">Email <span class="req">(required)</span></label>
+<input id="f-email" name="entry.1425422437" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+<p class="error" id="e-email" aria-live="polite"></p></div>
+<div class="field"><label for="f-org">Organization</label>
+<input id="f-org" name="entry.368952213" type="text" autocomplete="organization"></div>
+<fieldset class="field" id="f-topic" aria-describedby="e-topic"><legend>What's this about? <span class="req">(required)</span></legend>
+{radios}
+<p class="error" id="e-topic" aria-live="polite"></p></fieldset>
+<div class="field"><label for="f-msg">Message <span class="req">(required)</span></label>
+<textarea id="f-msg" name="entry.841677939" required aria-describedby="e-msg"></textarea>
+<p class="error" id="e-msg" aria-live="polite"></p></div>
+<div class="field"><label for="f-found">How did you find my site?</label>
+<input id="f-found" name="entry.832696249" type="text"></div>
+<div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label>
+<input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<button type="submit">Send message</button>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+</form>
+<div class="thanks" id="thanks" tabindex="-1"><h2>Message sent</h2>
+<p>Thanks, your message is on its way. I'll reply within a few business days.</p></div>
+<p class="alt">You can also email <a href="mailto:{EMAIL}">{EMAIL}</a> or find me on <a href="{LINKEDIN}">LinkedIn</a>.</p>
+</div></div>
+<script>
+(function () {{
+  // Posts to the linked Google Form (responses go to the "Portfolio contact responses" sheet).
+  // If a question changes in Google Forms, update the entry.* names above. AI-assisted (Claude).
+  var ENDPOINT = "{GFORM}";
+  var EMAIL_RE = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+  var form = document.getElementById("contact-form"), statusEl = document.getElementById("status"), button = form.querySelector("button");
+  function setError(input, id, msg) {{ document.getElementById(id).textContent = msg || ""; input.setAttribute("aria-invalid", msg ? "true" : "false"); return !msg; }}
+  function validate() {{
+    var ok = true, first = null, name = document.getElementById("f-name"), email = document.getElementById("f-email"),
+        msg = document.getElementById("f-msg"), topic = document.getElementById("f-topic"),
+        picked = form.querySelector('input[name="entry.132714467"]:checked'), ev = email.value.trim();
+    if (!setError(name, "e-name", name.value.trim() ? "" : "Please enter your name.")) {{ ok = false; first = first || name; }}
+    if (!setError(email, "e-email", !ev ? "Please enter your email address." : (EMAIL_RE.test(ev) ? "" : "Please enter a valid email address, like name@example.com."))) {{ ok = false; first = first || email; }}
+    if (!setError(topic, "e-topic", picked ? "" : "Please choose what this is about.")) {{ ok = false; first = first || form.querySelector('input[name="entry.132714467"]'); }}
+    if (!setError(msg, "e-msg", msg.value.trim() ? "" : "Please enter a message.")) {{ ok = false; first = first || msg; }}
+    if (first) first.focus();
+    return ok;
+  }}
+  function showThanks() {{ document.getElementById("contact-box").classList.add("sent"); document.getElementById("thanks").focus(); }}
+  form.addEventListener("submit", function (e) {{
+    e.preventDefault(); statusEl.textContent = ""; statusEl.className = "status";
+    if (!validate()) return;
+    if (document.getElementById("f-website").value) {{ showThanks(); return; }}
+    var data = new URLSearchParams();
+    form.querySelectorAll("input, textarea").forEach(function (el) {{
+      if (!el.name || el.name.indexOf("entry.") !== 0) return;
+      if (el.type === "radio" && !el.checked) return;
+      data.append(el.name, el.value.trim());
+    }});
+    button.disabled = true; statusEl.textContent = "Sending…";
+    fetch(ENDPOINT, {{ method: "POST", mode: "no-cors", body: data }}).then(showThanks).catch(function () {{
+      button.disabled = false; statusEl.className = "status problem";
+      statusEl.textContent = "Your message couldn't be sent. Check your connection and try again, or email me at the address below.";
+    }});
+  }});
+}})();
+</script>"""
+    return out, "Contact", body, "Contact", "Contact Matthew McKay, Ph.D."
+
+
 def write(out_path, title, body, section, desc):
     p = os.path.join(OUT, out_path)
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -476,7 +576,7 @@ def main():
     open(os.path.join(OUT, "assets/site.css"), "w").write(CSS)
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     shutil.copy(os.path.join(os.path.dirname(__file__), "headshot.jpg"), os.path.join(OUT, "assets/headshot.jpg"))
-    for fn in (home, cases_index, library_index, about):
+    for fn in (home, cases_index, library_index, about, contact):
         write(*fn())
     for src in PAGES:
         t = open(os.path.join(ROOT, src), encoding="utf-8").read()
@@ -492,7 +592,7 @@ def main():
         d = os.path.join(OUT, img)
         os.makedirs(os.path.dirname(d), exist_ok=True)
         shutil.copy(os.path.join(ROOT, img), d)
-    print(f"{len(PAGES) + 4} pages, {len(IMAGES)} images, {len(COPIED)} copied")
+    print(f"{len(PAGES) + 5} pages, {len(IMAGES)} images, {len(COPIED)} copied")
 
 
 if __name__ == "__main__":
