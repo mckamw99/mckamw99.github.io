@@ -42,7 +42,7 @@ I'm done when the process works without me in the room.
 
 ## How I think learning works
 
-Training changes behavior when it's built around a decision someone has to make on the job, practiced close to how they'll actually make it, and reinforced by their manager afterward. That's why I've built meeting-in-a-box kits that managers run with their own teams after the training. If nobody downstream asks "are you doing it differently now?", the course was content, not training. I design backward: first the behavior, then the measure that would show it changed, and only then the smallest thing that gets there. When I can, I take a baseline first, such as a skills assessment before the program starts, so there's something to compare against later.
+Training changes behavior when it's built around a decision someone has to make on the job, practiced close to how they'll actually make it, and reinforced by their manager afterward. That's why I've built meeting-in-a-box kits for managers to use with their teams. If nobody downstream asks "are you doing it differently now?", the course was content, not training. I design backward: first the behavior, then the measure that would show it changed, and only then the smallest thing that gets there. When I can, I take a baseline first, such as a skills assessment before the program starts, so there's something to compare against later.
 
 The practice I'd cut first is the long one-size-fits-all module with a recall quiz at the end. People click through it, pass, and change nothing. I'd rather build role-based practice that puts each group in the situations it actually faces.
 
