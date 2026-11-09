@@ -9,7 +9,9 @@ Source for my portfolio site: case studies and library items set at **Tessaly He
 | `case-studies/d-governed-reporting/` | Case study D: lineage, reconciliation and access control for an executive report |
 | `case-studies/b-training-and-outcomes/` | Case study B: linking training timing and attendance to retention, with caveats |
 | `case-studies/c-agency-vs-staff/` | Case study C: agency vs. staff nurse cost model with sensitivity, plus a calculator |
-| `library/` | Library pages: LIB-17, 44 (+48), 45, 14 (draft, attorney review), 41 (draft), 34 (template) |
+| `library/` | Library pages: LIB-17, 44 (+48), 45, 41 |
+| `site-build/` | Scripts that build the website and PDFs from the markdown |
+| `docs/` | The built website and PDFs (served by GitHub Pages) |
 
 ```
 pip install -r requirements.txt
