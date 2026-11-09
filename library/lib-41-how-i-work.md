@@ -1,60 +1,56 @@
-> **DRAFT for Matt to rewrite in his own words.** Every principle below is drawn from how the work on this site was done, with a link to where it shows. Section 6 (how learning works, LIB-37) needs Matt's own beliefs and is left as questions. Marked items: [CONFIRM] = check it's true for you; [YOUR WORDS] = replace with your own.
-
 # How I work (LIB-41)
 
 **Purpose:** one page for a hiring manager or new team on how I scope, govern, build and hand off work, so they know what working with me looks like before the first meeting.
 
 ---
 
-## 1. I start with the decision, not the data
+## 1. Start with the decision
 
-Before I build anything, I ask who will act on the answer and what they'll do differently. Then I write down the question and the definitions, and only then the query. Most "the numbers are wrong" problems are two teams answering different questions with the same word.
+Before I build a report or a course, I ask what decision it's for and who makes it.
 
-*Where it shows:* case study A writes the compliance definition before computing it ([metric definitions](../case-studies/a-what-complete-means/metric_definitions.md)).
+*Where it shows:* every case study opens with the question leaders asked, before any data ([case study A](../case-studies/a-what-complete-means/README.md)).
 
-## 2. I define, then govern
+## 2. Define it, then govern it
 
-Every metric that leaves my team has a written definition, an owner, a version number and an as-of date. Definitions change through a stated process, and when they change I show the old number next to the new one for a cycle, with the reason. Data-quality problems get flagged and routed to whoever can fix the source; I don't quietly drop rows to make a number look clean.
+A metric means the same thing everywhere, or it shouldn't be on a dashboard.
 
-*Where it shows:* the data-quality checklist ([LIB-04](../case-studies/a-what-complete-means/dq_checklist.md)) and the disputed-KPI process ([LIB-50](../case-studies/a-what-complete-means/disputed_kpi.md)).
+*Where it shows:* the [metric definitions](../case-studies/a-what-complete-means/metric_definitions.md) and the [disputed-KPI process](../case-studies/a-what-complete-means/disputed_kpi.md).
 
-## 3. I check results, not effort
+## 3. I measure whether it worked, not whether it shipped
 
-A report isn't done when the query runs. It's done when I've reproduced the number another way and know why it differs from the last one: reconciling to source, rebuilding it independently, reading records back, tracing a few people end to end. When I test whether something works, I say up front how big an effect the data could detect, so "no difference" doesn't get mistaken for "no effect."
+The count of completions isn't the outcome. Most of them can't tell you anything until someone decides which ones matter.
 
-*Where it shows:* the validation section of every case study; the control backtest in [case study D](../case-studies/d-governed-reporting/README.md).
+*Where it shows:* the [learning measurement plan](lib-17-measurement-plan.md) and [case study B](../case-studies/b-training-and-outcomes/README.md).
 
-## 4. I build with AI and say so
+## 4. I write it down
 
-I write SQL and Python with an AI assistant, and the code on this site is labeled that way. My part is the design, the definitions and the checks. I treat AI output the way I'd treat a new analyst's first draft: useful, fast, and not trusted until it reproduces a known answer.
+Decisions, definitions, runbooks and handoffs end up in a document someone else can follow, not only in a meeting.
 
-[CONFIRM] Link to the "How I build with AI" page once it clears review (LIB-28).
+*Where it shows:* each case study's README and Files section.
 
-## 5. I hand off so it runs without me
+## 5. Hand it off so it runs without me
 
-Work isn't finished until someone else can run it: a README, a reproducible script, a named owner, a schedule, and a list of what to check when it breaks. I'd rather retire a report than maintain one nobody reads.
+I'm done when the process works without me in the room.
 
-*Where it shows:* each case study's Files section; the report rationalization worksheet ([LIB-51](../case-studies/d-governed-reporting/report_rationalization.md)).
+*Where it shows:* the [report rationalization worksheet](../case-studies/d-governed-reporting/report_rationalization.md) and the [synthetic data generator](../../generator/README.md), which anyone can rerun.
 
 ## How I communicate
 
-- **Plainly, with the tradeoff.** I'd rather give a direct answer with its limits than a hedged one.
-- **Bad news early and in person.** If a number is about to drop because the definition changed, the owner hears it from me first.
-- **Fewer priorities, finished.** Three things done beat ten started.
+- **Plainly, with the tradeoff.**
+- **Bad news early and directly.**
+- **Fewer priorities, finished.**
 
-[CONFIRM] These match how you'd describe yourself; add anything colleagues regularly say about working with you. [YOUR WORDS]
+## How I think learning works
 
-## 6. How I think learning works (LIB-37)
+Training changes behavior when it's built around a decision someone has to make on the job, practiced close to how they'll actually make it, and reinforced by their manager afterward. If nobody downstream asks "are you doing it differently now?", the course was content, not training. I design backward: first the behavior, then the measure that would show it changed, and only then the smallest thing that gets there. When I can, I take a baseline first, such as a skills assessment before the program starts, so there's something to compare against later.
 
-[YOUR WORDS] Two or three short paragraphs. Questions to answer:
+The practice I'd cut first is the long one-size-fits-all module with a recall quiz at the end. People click through it, pass, and change nothing. I'd rather build role-based practice that puts each group in the situations it actually faces.
 
-1. What do you believe makes workplace training actually change what people do?
-2. What's one common L&D practice you think wastes people's time, and what do you do instead?
-3. How does your teaching (adult learners, a community college classroom) shape how you design workplace learning? Keep it general: no course names, materials or students.
+Teaching data and business systems at a community college keeps me honest. My students are working adults fitting class around jobs and families. They have no patience for material that doesn't connect to something they'll use, and neither does a workforce. If I can't show why something matters in the first five minutes, I've lost them. I hold workplace learning to the same standard.
 
 ## Why it's built this way
 
-[YOUR WORDS] Optional: 3–5 sentences on why you'd put this page in front of a hiring manager.
+Most resumes say what someone did. This page says how I'll do it once I'm on your team: how I make decisions, how I'll tell you bad news, and what I'll leave behind when I move on. If that matches how your team works, we should talk. If it doesn't, it saves us both an interview.
 
 *Format: web page.*
 

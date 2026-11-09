@@ -19,46 +19,39 @@
 <div class="wrap">
 <p class="crumbs"><a href="../index.html">Start here</a> / <a href="index.html">Library</a></p>
 <div class="layout">
-<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-i-start-with-the-decision-not-the-data">1. I start with the decision, not the data</a></li><li><a href="#2-i-define-then-govern">2. I define, then govern</a></li><li><a href="#3-i-check-results-not-effort">3. I check results, not effort</a></li><li><a href="#4-i-build-with-ai-and-say-so">4. I build with AI and say so</a></li><li><a href="#5-i-hand-off-so-it-runs-without-me">5. I hand off so it runs without me</a></li><li><a href="#how-i-communicate">How I communicate</a></li><li><a href="#6-how-i-think-learning-works-lib-37">6. How I think learning works (LIB-37)</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-start-with-the-decision">1. Start with the decision</a></li><li><a href="#2-define-it-then-govern-it">2. Define it, then govern it</a></li><li><a href="#3-i-measure-whether-it-worked-not-whether-it-shipped">3. I measure whether it worked, not whether it shipped</a></li><li><a href="#4-i-write-it-down">4. I write it down</a></li><li><a href="#5-hand-it-off-so-it-runs-without-me">5. Hand it off so it runs without me</a></li><li><a href="#how-i-communicate">How I communicate</a></li><li><a href="#how-i-think-learning-works">How I think learning works</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
 <a class="pdf" href="../pdf/library_lib-41-how-i-work.pdf">Download PDF</a></nav>
 <article>
-<blockquote>
-<p><strong>DRAFT for Matt to rewrite in his own words.</strong> Every principle below is drawn from how the work on this site was done, with a link to where it shows. Section 6 (how learning works, LIB-37) needs Matt&rsquo;s own beliefs and is left as questions. Marked items: [CONFIRM] = check it&rsquo;s true for you; [YOUR WORDS] = replace with your own.</p>
-</blockquote>
 <h1 id="how-i-work-lib-41">How I work (LIB-41)</h1>
 <p><strong>Purpose:</strong> one page for a hiring manager or new team on how I scope, govern, build and hand off work, so they know what working with me looks like before the first meeting.</p>
 <hr />
-<h2 id="1-i-start-with-the-decision-not-the-data">1. I start with the decision, not the data</h2>
-<p>Before I build anything, I ask who will act on the answer and what they&rsquo;ll do differently. Then I write down the question and the definitions, and only then the query. Most &ldquo;the numbers are wrong&rdquo; problems are two teams answering different questions with the same word.</p>
-<p><em>Where it shows:</em> case study A writes the compliance definition before computing it (<a href="../case-studies/a-what-complete-means/metric_definitions.html">metric definitions</a>).</p>
-<h2 id="2-i-define-then-govern">2. I define, then govern</h2>
-<p>Every metric that leaves my team has a written definition, an owner, a version number and an as-of date. Definitions change through a stated process, and when they change I show the old number next to the new one for a cycle, with the reason. Data-quality problems get flagged and routed to whoever can fix the source; I don&rsquo;t quietly drop rows to make a number look clean.</p>
-<p><em>Where it shows:</em> the data-quality checklist (<a href="../case-studies/a-what-complete-means/dq_checklist.html">LIB-04</a>) and the disputed-KPI process (<a href="../case-studies/a-what-complete-means/disputed_kpi.html">LIB-50</a>).</p>
-<h2 id="3-i-check-results-not-effort">3. I check results, not effort</h2>
-<p>A report isn&rsquo;t done when the query runs. It&rsquo;s done when I&rsquo;ve reproduced the number another way and know why it differs from the last one: reconciling to source, rebuilding it independently, reading records back, tracing a few people end to end. When I test whether something works, I say up front how big an effect the data could detect, so &ldquo;no difference&rdquo; doesn&rsquo;t get mistaken for &ldquo;no effect.&rdquo;</p>
-<p><em>Where it shows:</em> the validation section of every case study; the control backtest in <a href="../case-studies/d-governed-reporting/index.html">case study D</a>.</p>
-<h2 id="4-i-build-with-ai-and-say-so">4. I build with AI and say so</h2>
-<p>I write SQL and Python with an AI assistant, and the code on this site is labeled that way. My part is the design, the definitions and the checks. I treat AI output the way I&rsquo;d treat a new analyst&rsquo;s first draft: useful, fast, and not trusted until it reproduces a known answer.</p>
-<p>[CONFIRM] Link to the &ldquo;How I build with AI&rdquo; page once it clears review (LIB-28).</p>
-<h2 id="5-i-hand-off-so-it-runs-without-me">5. I hand off so it runs without me</h2>
-<p>Work isn&rsquo;t finished until someone else can run it: a README, a reproducible script, a named owner, a schedule, and a list of what to check when it breaks. I&rsquo;d rather retire a report than maintain one nobody reads.</p>
-<p><em>Where it shows:</em> each case study&rsquo;s Files section; the report rationalization worksheet (<a href="../case-studies/d-governed-reporting/report_rationalization.html">LIB-51</a>).</p>
+<h2 id="1-start-with-the-decision">1. Start with the decision</h2>
+<p>Before I build a report or a course, I ask what decision it&rsquo;s for and who makes it.</p>
+<p><em>Where it shows:</em> every case study opens with the question leaders asked, before any data (<a href="../case-studies/a-what-complete-means/index.html">case study A</a>).</p>
+<h2 id="2-define-it-then-govern-it">2. Define it, then govern it</h2>
+<p>A metric means the same thing everywhere, or it shouldn&rsquo;t be on a dashboard.</p>
+<p><em>Where it shows:</em> the <a href="../case-studies/a-what-complete-means/metric_definitions.html">metric definitions</a> and the <a href="../case-studies/a-what-complete-means/disputed_kpi.html">disputed-KPI process</a>.</p>
+<h2 id="3-i-measure-whether-it-worked-not-whether-it-shipped">3. I measure whether it worked, not whether it shipped</h2>
+<p>The count of completions isn&rsquo;t the outcome. Most of them can&rsquo;t tell you anything until someone decides which ones matter.</p>
+<p><em>Where it shows:</em> the <a href="lib-17-measurement-plan.html">learning measurement plan</a> and <a href="../case-studies/b-training-and-outcomes/index.html">case study B</a>.</p>
+<h2 id="4-i-write-it-down">4. I write it down</h2>
+<p>Decisions, definitions, runbooks and handoffs end up in a document someone else can follow, not only in a meeting.</p>
+<p><em>Where it shows:</em> each case study&rsquo;s README and Files section.</p>
+<h2 id="5-hand-it-off-so-it-runs-without-me">5. Hand it off so it runs without me</h2>
+<p>I&rsquo;m done when the process works without me in the room.</p>
+<p><em>Where it shows:</em> the <a href="../case-studies/d-governed-reporting/report_rationalization.html">report rationalization worksheet</a> and the <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/../generator/README.md">synthetic data generator</a>, which anyone can rerun.</p>
 <h2 id="how-i-communicate">How I communicate</h2>
 <ul>
-<li><strong>Plainly, with the tradeoff.</strong> I&rsquo;d rather give a direct answer with its limits than a hedged one.</li>
-<li><strong>Bad news early and in person.</strong> If a number is about to drop because the definition changed, the owner hears it from me first.</li>
-<li><strong>Fewer priorities, finished.</strong> Three things done beat ten started.</li>
+<li><strong>Plainly, with the tradeoff.</strong></li>
+<li><strong>Bad news early and directly.</strong></li>
+<li><strong>Fewer priorities, finished.</strong></li>
 </ul>
-<p>[CONFIRM] These match how you&rsquo;d describe yourself; add anything colleagues regularly say about working with you. [YOUR WORDS]</p>
-<h2 id="6-how-i-think-learning-works-lib-37">6. How I think learning works (LIB-37)</h2>
-<p>[YOUR WORDS] Two or three short paragraphs. Questions to answer:</p>
-<ol>
-<li>What do you believe makes workplace training actually change what people do?</li>
-<li>What&rsquo;s one common L&amp;D practice you think wastes people&rsquo;s time, and what do you do instead?</li>
-<li>How does your teaching (adult learners, a community college classroom) shape how you design workplace learning? Keep it general: no course names, materials or students.</li>
-</ol>
+<h2 id="how-i-think-learning-works">How I think learning works</h2>
+<p>Training changes behavior when it&rsquo;s built around a decision someone has to make on the job, practiced close to how they&rsquo;ll actually make it, and reinforced by their manager afterward. If nobody downstream asks &ldquo;are you doing it differently now?&rdquo;, the course was content, not training. I design backward: first the behavior, then the measure that would show it changed, and only then the smallest thing that gets there. When I can, I take a baseline first, such as a skills assessment before the program starts, so there&rsquo;s something to compare against later.</p>
+<p>The practice I&rsquo;d cut first is the long one-size-fits-all module with a recall quiz at the end. People click through it, pass, and change nothing. I&rsquo;d rather build role-based practice that puts each group in the situations it actually faces.</p>
+<p>Teaching data and business systems at a community college keeps me honest. My students are working adults fitting class around jobs and families. They have no patience for material that doesn&rsquo;t connect to something they&rsquo;ll use, and neither does a workforce. If I can&rsquo;t show why something matters in the first five minutes, I&rsquo;ve lost them. I hold workplace learning to the same standard.</p>
 <h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
-<p>[YOUR WORDS] Optional: 3–5 sentences on why you&rsquo;d put this page in front of a hiring manager.</p>
+<p>Most resumes say what someone did. This page says how I&rsquo;ll do it once I&rsquo;m on your team: how I make decisions, how I&rsquo;ll tell you bad news, and what I&rsquo;ll leave behind when I move on. If that matches how your team works, we should talk. If it doesn&rsquo;t, it saves us both an interview.</p>
 <p><em>Format: web page.</em></p>
 </article>
 </div></div>
