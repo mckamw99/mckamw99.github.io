@@ -32,7 +32,7 @@ Decisions, definitions, runbooks and handoffs end up in a document someone else 
 
 I'm done when the process works without me in the room.
 
-*Where it shows:* the [report rationalization worksheet](../case-studies/d-governed-reporting/report_rationalization.md) and the [synthetic data generator](../../generator/README.md), which anyone can rerun.
+*Where it shows:* the [report rationalization worksheet](../case-studies/d-governed-reporting/report_rationalization.md) and the [synthetic data generator](../generator/README.md), which anyone can rerun.
 
 ## How I communicate
 
