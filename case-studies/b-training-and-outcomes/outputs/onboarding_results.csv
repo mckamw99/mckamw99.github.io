@@ -1,0 +1,7 @@
+analysis,outcome,n,n_on_time,n_late,rate_on_time_pct,rate_late_pct,chi2,p_value,phi,crude_rr,crude_rr_ci,mh_rr,homogeneity_p,adjusted_rr,adjusted_rr_ci,adjusted_or
+main,left_vol,1656,1168,488,18.4,24.8,8.68,0.0032,0.072,0.74,0.61-0.90,0.75,,0.77,0.64-0.94,0.71
+landmark day 45,left_vol,1643,1164,479,18.1,23.4,5.93,0.015,0.06,0.78,0.63-0.95,0.78,,0.8,0.65-1.00,0.75
+excluding rehires,left_vol,1596,1130,466,18.4,24.7,8.04,0.0046,0.071,0.75,0.61-0.91,0.76,,0.77,0.65-0.97,0.72
+RNs only,left_vol,503,356,147,14.0,24.5,8.01,0.0047,0.126,0.57,0.39-0.84,0.62,0.62,0.62,0.42-0.92,0.55
+any exit (voluntary or not),left_any,1656,1168,488,19.9,26.8,9.8,0.0017,0.077,0.74,0.61-0.89,0.76,0.45,0.77,0.64-0.93,0.71
+negative control: involuntary exit,left_invol,1656,1168,488,1.5,2.0,0.76,0.38,0.021,0.71,0.33-1.54,0.84,,0.79,0.40-2.13,0.79

@@ -1,0 +1,6 @@
+The synthetic data files in data/ and ground_truth/ are dedicated to the public
+domain under Creative Commons CC0 1.0 Universal.
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+The public benchmark figures in config.py and ASSUMPTIONS.md belong to their
+cited sources (BLS, NSI Nursing Solutions, SIA/NATHO) and are not covered by CC0.

@@ -1,0 +1,42 @@
+unit_id,unit,tier,position,utilization,mean_3yr,p10,p90,prob_positive,recommend
+U001,Intensive Care (Flagship Hospital),medium,1,0.816,-44550,-91885,-604,0.1,keep on agency
+U001,Intensive Care (Flagship Hospital),medium,2,0.702,-84498,-125359,-45838,0.005,keep on agency
+U001,Intensive Care (Flagship Hospital),medium,3,0.56,-136682,-180312,-95208,0.0,keep on agency
+U002,Step-Down (Flagship Hospital),high,1,1.0,11759,-44222,70481,0.608,pilot
+U002,Step-Down (Flagship Hospital),high,2,0.996,9961,-46691,61937,0.625,pilot
+U002,Step-Down (Flagship Hospital),high,3,0.983,6760,-50402,62759,0.602,pilot
+U002,Step-Down (Flagship Hospital),high,4,0.898,-18673,-71103,28229,0.335,keep on agency
+U002,Step-Down (Flagship Hospital),high,5,0.83,-39185,-87648,7214,0.142,keep on agency
+U002,Step-Down (Flagship Hospital),high,6,0.616,-112440,-152597,-71335,0.002,keep on agency
+U003,Medical-Surgical 1 (Flagship Hospital),high,1,0.989,16221,-34252,66224,0.67,pilot
+U003,Medical-Surgical 1 (Flagship Hospital),high,2,0.89,-16363,-64780,28489,0.322,keep on agency
+U003,Medical-Surgical 1 (Flagship Hospital),high,3,0.851,-28648,-74383,15780,0.218,keep on agency
+U003,Medical-Surgical 1 (Flagship Hospital),high,4,0.691,-85904,-130586,-42508,0.018,keep on agency
+U003,Medical-Surgical 1 (Flagship Hospital),high,5,0.556,-135141,-176435,-85039,0.0,keep on agency
+U004,Medical-Surgical 2 (Flagship Hospital),high,1,0.971,8651,-44947,58656,0.598,keep on agency
+U004,Medical-Surgical 2 (Flagship Hospital),high,2,0.933,-8741,-59321,36911,0.41,keep on agency
+U004,Medical-Surgical 2 (Flagship Hospital),high,3,0.763,-70017,-108800,-25992,0.018,keep on agency
+U004,Medical-Surgical 2 (Flagship Hospital),high,4,0.537,-150101,-193399,-103844,0.0,keep on agency
+U005,Medical-Surgical 3 (Flagship Hospital),medium,1,0.935,-743,-45746,42676,0.5,keep on agency
+U005,Medical-Surgical 3 (Flagship Hospital),medium,2,0.76,-59464,-101356,-15995,0.04,keep on agency
+U006,Emergency Department (Flagship Hospital),high,1,0.97,2158,-50380,53122,0.538,keep on agency
+U006,Emergency Department (Flagship Hospital),high,2,0.954,-2407,-53836,48936,0.518,keep on agency
+U006,Emergency Department (Flagship Hospital),high,3,0.926,-11044,-58141,38419,0.368,keep on agency
+U006,Emergency Department (Flagship Hospital),high,4,0.827,-48208,-95069,-444,0.092,keep on agency
+U006,Emergency Department (Flagship Hospital),high,5,0.66,-106246,-151203,-65666,0.0,keep on agency
+U009,Behavioral Health (Flagship Hospital),high,1,0.954,4718,-46818,57827,0.548,keep on agency
+U009,Behavioral Health (Flagship Hospital),high,2,0.714,-81261,-123093,-38534,0.008,keep on agency
+U010,Float Pool (Flagship Hospital),medium,1,0.803,-43949,-84348,1370,0.105,keep on agency
+U011,Medical-Surgical (Community North),high,1,0.988,16194,-38095,73934,0.642,pilot
+U011,Medical-Surgical (Community North),high,2,0.972,12847,-39668,65277,0.635,pilot
+U011,Medical-Surgical (Community North),high,3,0.921,-8317,-58664,39595,0.418,keep on agency
+U011,Medical-Surgical (Community North),high,4,0.624,-113871,-154602,-73190,0.0,keep on agency
+U012,Intensive Care (Community North),medium,1,0.862,-27789,-73676,19890,0.245,keep on agency
+U013,Emergency Department (Community North),high,1,0.825,-44844,-93380,6957,0.145,keep on agency
+U013,Emergency Department (Community North),high,2,0.525,-148310,-193275,-100797,0.0,keep on agency
+U015,Medical-Surgical (Community South),high,1,0.972,12953,-41443,63495,0.622,pilot
+U015,Medical-Surgical (Community South),high,2,0.909,-10490,-55294,39450,0.41,keep on agency
+U015,Medical-Surgical (Community South),high,3,0.671,-87573,-127842,-44986,0.002,keep on agency
+U017,Emergency Department (Community South),high,1,0.984,9108,-49251,59057,0.62,pilot
+U017,Emergency Department (Community South),high,2,0.942,-5139,-54150,43696,0.478,keep on agency
+U017,Emergency Department (Community South),high,3,0.66,-97193,-139061,-52466,0.0,keep on agency

@@ -1,0 +1,4 @@
+tier,first_year_exit,later_annual_exit,days_to_proficiency_specialty,days_to_proficiency_other,fill_days,agency_assignment_days_avg,agency_days_to_proficiency
+high,0.253,0.188,86.0,69.0,95,116.1,13.0
+low,0.061,0.155,86.0,69.0,75,116.1,13.0
+medium,0.208,0.17,86.0,69.0,75,116.1,13.0

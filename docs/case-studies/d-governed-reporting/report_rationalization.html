@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report rationalization worksheet (LIB-51) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a worksheet for a reporting or learning operations lead to cut reporting sprawl, with stated criteria so each keep, merge or retire decision can be defended to the report&#x27;">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study D</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#criteria-applied-in-order-the-first-that-fits-decides">Criteria, applied in order (the first that fits decides)</a></li><li><a href="#worksheet-synthetic">Worksheet (synthetic)</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_d-governed-reporting_report_rationalization.pdf">Download PDF</a></nav>
+<article>
+<h1 id="report-rationalization-worksheet-lib-51">Report rationalization worksheet (LIB-51)</h1>
+<p><strong>Purpose:</strong> a worksheet for a reporting or learning operations lead to cut reporting sprawl, with stated criteria so each keep, merge or retire decision can be defended to the report&rsquo;s owner.</p>
+<p><em>Worked example at Tessaly Health, a fictional health system, on an invented report catalog.</em></p>
+<hr />
+<h2 id="criteria-applied-in-order-the-first-that-fits-decides">Criteria, applied in order (the first that fits decides)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Criterion</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The catalog already marks it a duplicate</td>
+<td><strong>Retire</strong>; send users to the surviving report</td>
+</tr>
+<tr>
+<td>2</td>
+<td>No views in 90 days</td>
+<td><strong>Retire</strong> in 30 days unless the owner names a decision it supports</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Same metric from the same source as another active report</td>
+<td><strong>Merge</strong> into the most-used one, with a view for each audience</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Row-level extract</td>
+<td><strong>Keep, restrict</strong> to the analyst role; replace with a governed dataset</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Fewer views than scheduled runs</td>
+<td><strong>Review</strong> with the owner; retire next quarter if unused</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Otherwise</td>
+<td><strong>Keep</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Any surviving report on compliance, or read by executives, must use the governed metric definition and pass the pre-publication checks.</p>
+<h2 id="worksheet-synthetic">Worksheet (synthetic)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Report</th>
+<th style="text-align: right;">Views (90 days)</th>
+<th>Decision</th>
+<th>Reason</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RPT-001</td>
+<td>Executive Compliance Scorecard</td>
+<td style="text-align: right;">41</td>
+<td>Keep</td>
+<td>Used, unique</td>
+<td>Governed definition and checks</td>
+</tr>
+<tr>
+<td>RPT-002</td>
+<td>Compliance Scorecard (Legacy)</td>
+<td style="text-align: right;">3</td>
+<td>Retire</td>
+<td>Duplicate</td>
+<td>Users to RPT-001</td>
+</tr>
+<tr>
+<td>RPT-003</td>
+<td>Overdue Training by Unit</td>
+<td style="text-align: right;">212</td>
+<td>Keep, absorbs RPT-004</td>
+<td>Same metric and source</td>
+<td>Manager view added</td>
+</tr>
+<tr>
+<td>RPT-004</td>
+<td>Overdue Training by Manager</td>
+<td style="text-align: right;">64</td>
+<td>Merge</td>
+<td>Same metric and source</td>
+<td>Becomes a view of RPT-003</td>
+</tr>
+<tr>
+<td>RPT-005</td>
+<td>Certification Expiry 60-Day Outlook</td>
+<td style="text-align: right;">180</td>
+<td>Keep, absorbs RPT-006</td>
+<td>Same metric and source</td>
+<td>Lapses view added</td>
+</tr>
+<tr>
+<td>RPT-006</td>
+<td>Certification Lapses</td>
+<td style="text-align: right;">22</td>
+<td>Merge</td>
+<td>Same metric and source</td>
+<td>Becomes a view of RPT-005</td>
+</tr>
+<tr>
+<td>RPT-007</td>
+<td>New Hire Onboarding Status</td>
+<td style="text-align: right;">95</td>
+<td>Keep, absorbs RPT-008</td>
+<td>Same metric and source</td>
+<td>HR view added</td>
+</tr>
+<tr>
+<td>RPT-008</td>
+<td>Onboarding Completion Rates</td>
+<td style="text-align: right;">8</td>
+<td>Merge</td>
+<td>Same metric and source</td>
+<td>Becomes a view of RPT-007</td>
+</tr>
+<tr>
+<td>RPT-009</td>
+<td>Residency Attendance</td>
+<td style="text-align: right;">30</td>
+<td>Keep</td>
+<td>Used, unique</td>
+<td></td>
+</tr>
+<tr>
+<td>RPT-010</td>
+<td>Agency Utilization by Unit</td>
+<td style="text-align: right;">27</td>
+<td>Keep, absorbs RPT-011</td>
+<td>Same metric and source</td>
+<td>Executive spend view added; governed definition and checks</td>
+</tr>
+<tr>
+<td>RPT-011</td>
+<td>Agency Spend Summary</td>
+<td style="text-align: right;">12</td>
+<td>Merge</td>
+<td>Same metric and source</td>
+<td>Becomes a view of RPT-010</td>
+</tr>
+<tr>
+<td>RPT-012</td>
+<td>Agency Hours (Old Format)</td>
+<td style="text-align: right;">1</td>
+<td>Retire</td>
+<td>Duplicate</td>
+<td>Users to RPT-010</td>
+</tr>
+<tr>
+<td>RPT-013</td>
+<td>Annual Compliance Raw Extract</td>
+<td style="text-align: right;">15</td>
+<td>Keep, restrict</td>
+<td>Row-level extract</td>
+<td>Analyst role only; governed dataset</td>
+</tr>
+<tr>
+<td>RPT-014</td>
+<td>Course Catalog Inventory</td>
+<td style="text-align: right;">4</td>
+<td>Keep</td>
+<td>Used, unique</td>
+<td></td>
+</tr>
+<tr>
+<td>RPT-015</td>
+<td>Elective Course Usage</td>
+<td style="text-align: right;">0</td>
+<td>Retire</td>
+<td>No views</td>
+<td>Owner has 30 days to object</td>
+</tr>
+<tr>
+<td>RPT-016</td>
+<td>Turnover by Unit</td>
+<td style="text-align: right;">19</td>
+<td>Keep, absorbs RPT-017</td>
+<td>Same metric and source</td>
+<td>First-year view added</td>
+</tr>
+<tr>
+<td>RPT-017</td>
+<td>First-Year Turnover</td>
+<td style="text-align: right;">9</td>
+<td>Merge</td>
+<td>Same metric and source</td>
+<td>Becomes a view of RPT-016</td>
+</tr>
+<tr>
+<td>RPT-018</td>
+<td>Time to Proficiency</td>
+<td style="text-align: right;">6</td>
+<td>Keep</td>
+<td>Used, unique</td>
+<td></td>
+</tr>
+<tr>
+<td>RPT-019</td>
+<td>Training Hours per FTE</td>
+<td style="text-align: right;">0</td>
+<td>Retire</td>
+<td>No views</td>
+<td>Owner has 30 days to object</td>
+</tr>
+<tr>
+<td>RPT-020</td>
+<td>LMS Login Activity</td>
+<td style="text-align: right;">2</td>
+<td>Review</td>
+<td>2 views over 3 monthly runs</td>
+<td>Owner confirms use or it retires</td>
+</tr>
+<tr>
+<td>RPT-021</td>
+<td>Compliance by Job Role</td>
+<td style="text-align: right;">11</td>
+<td>Keep</td>
+<td>Used, unique</td>
+<td>Governed definition and checks</td>
+</tr>
+<tr>
+<td>RPT-022</td>
+<td>Compliance by Job Role v2</td>
+<td style="text-align: right;">5</td>
+<td>Retire</td>
+<td>Duplicate</td>
+<td>Users to RPT-021</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Result:</strong> 22 reports become 11, plus 1 under review. Five are retired and five are merged into the reports that absorb them. Four survivors now carry the governed-definition requirement.</p>
+<p>The worksheet is generated by <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/rationalize.py"><code>analysis/rationalize.py</code></a>. Grouping reports into metric families is a judgment call, so the grouping is written in the script where it can be reviewed and changed.</p>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>The criteria are ordered so the cheap, uncontroversial calls (duplicates, unused reports) are made before the ones that need a conversation. Merging keeps every audience&rsquo;s view but leaves one query behind it, which is the real point: two queries for one metric is how two numbers for one metric happen. Views per scheduled run, rather than raw views, keeps a quarterly report from being judged against a daily one. The 30-day objection window costs little and avoids retiring something a regulator asks for once a year.</p>
+<p><em>Format: PDF, generated from this page.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LMS data-quality checklist (LIB-04) and check script (LIB-27) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a pre-publication checklist that a learning operations or reporting team runs before any compliance number leaves the building. The script runs it automatically.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study A</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#the-checklist">The checklist</a></li><li><a href="#results-at-tessaly-health-synthetic">Results at Tessaly Health (synthetic)</a></li><li><a href="#the-script">The script</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_a-what-complete-means_dq_checklist.pdf">Download PDF</a></nav>
+<article>
+<h1 id="lms-data-quality-checklist-lib-04-and-check-script-lib-27">LMS data-quality checklist (LIB-04) and check script (LIB-27)</h1>
+<p><strong>Purpose:</strong> a pre-publication checklist that a learning operations or reporting team runs before any compliance number leaves the building. The script runs it automatically.</p>
+<p><em>Results below are from synthetic data at Tessaly Health, a fictional health system. They show the method, not real results.</em></p>
+<hr />
+<h2 id="the-checklist">The checklist</h2>
+<p>Run in this order: accounts first, because every later check depends on knowing who a record belongs to.</p>
+<h3 id="accounts">Accounts</h3>
+<ul>
+<li>[ ] <strong>C01</strong> Test and training accounts are tagged and excluded.</li>
+<li>[ ] <strong>C02</strong> Manual accounts with no HR ID are matched to a person, with the rule that matched them recorded.</li>
+<li>[ ] <strong>C03</strong> Manual accounts that can&rsquo;t be matched are listed for an administrator, not guessed.</li>
+<li>[ ] <strong>C04</strong> Contractor and agency accounts carry the external ID that links them to their roster.</li>
+<li>[ ] <strong>C05</strong> Accounts for people who&rsquo;ve left are deactivated within 7 days.</li>
+</ul>
+<h3 id="enrollments">Enrollments</h3>
+<ul>
+<li>[ ] <strong>C06</strong> One requirement per person, module and cycle (repeated assignments collapsed).</li>
+<li>[ ] <strong>C07</strong> Every &ldquo;completed&rdquo; status has an attempt or attendance record behind it.</li>
+<li>[ ] <strong>C08</strong> Due dates fall on or after assigned dates.</li>
+<li>[ ] <strong>C09</strong> Completion dates fall on or after assigned dates.</li>
+<li>[ ] <strong>C10</strong> Priority labels on enrollments match the course catalog.</li>
+<li>[ ] <strong>C11</strong> Open enrollments on inactive accounts are identified so leavers don&rsquo;t show as overdue.</li>
+</ul>
+<h3 id="attempts">Attempts</h3>
+<ul>
+<li>[ ] <strong>C12</strong> Duplicate attempt rows are counted once.</li>
+<li>[ ] <strong>C13</strong> Passes on a prior year&rsquo;s version are not credited to the current year.</li>
+</ul>
+<h3 id="catalog">Catalog</h3>
+<ul>
+<li>[ ] <strong>C14</strong> Every active course has an owner.</li>
+<li>[ ] <strong>C15</strong> Every active course was reviewed in the last 3 years.</li>
+</ul>
+<h2 id="results-at-tessaly-health-synthetic">Results at Tessaly Health (synthetic)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>What it found</th>
+<th style="text-align: right;">Rows</th>
+<th>Severity</th>
+<th>What the metric does with them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C01</td>
+<td>Test accounts</td>
+<td style="text-align: right;">6</td>
+<td>high</td>
+<td>Excluded from every metric</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>Manual accounts linked to one person</td>
+<td style="text-align: right;">66</td>
+<td>high</td>
+<td>Merged into that person&rsquo;s record</td>
+</tr>
+<tr>
+<td>C03</td>
+<td>Manual accounts that can&rsquo;t be linked to one person</td>
+<td style="text-align: right;">33</td>
+<td>high</td>
+<td>Held out; listed for an administrator</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>Agency accounts with no agency ID</td>
+<td style="text-align: right;">126</td>
+<td>medium</td>
+<td>Out of the staff metric; can&rsquo;t be linked to the agency roster</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>Accounts active more than 7 days after termination</td>
+<td style="text-align: right;">118</td>
+<td>medium</td>
+<td>Access risk; no metric effect once termination is applied</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>Rows in a repeated person-module-year enrollment</td>
+<td style="text-align: right;">3,218</td>
+<td>high</td>
+<td>Collapsed to one requirement</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>&ldquo;Completed&rdquo; with no attempt</td>
+<td style="text-align: right;">164</td>
+<td>high</td>
+<td>Not counted; sent for evidence follow-up</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>Due date before assigned date</td>
+<td style="text-align: right;">281</td>
+<td>medium</td>
+<td>Due date rebuilt from the assignment rule</td>
+</tr>
+<tr>
+<td>C09</td>
+<td>Completion before assignment</td>
+<td style="text-align: right;">0</td>
+<td>low</td>
+<td>None found</td>
+</tr>
+<tr>
+<td>C10</td>
+<td>Priority label disagrees with catalog</td>
+<td style="text-align: right;">740</td>
+<td>medium</td>
+<td>Catalog wins</td>
+</tr>
+<tr>
+<td>C11</td>
+<td>Open enrollments on inactive accounts</td>
+<td style="text-align: right;">3,280</td>
+<td>medium</td>
+<td>Removed if the person had left by the as-of date</td>
+</tr>
+<tr>
+<td>C12</td>
+<td>Duplicate passed-attempt rows</td>
+<td style="text-align: right;">328</td>
+<td>low</td>
+<td>Counted once</td>
+</tr>
+<tr>
+<td>C13</td>
+<td>Prior-year version passed in a later year</td>
+<td style="text-align: right;">69</td>
+<td>high</td>
+<td>Not credited</td>
+</tr>
+<tr>
+<td>C14</td>
+<td>Courses with no owner</td>
+<td style="text-align: right;">2</td>
+<td>medium</td>
+<td>Owner assigned before next cycle</td>
+</tr>
+<tr>
+<td>C15</td>
+<td>Courses not reviewed in 3+ years</td>
+<td style="text-align: right;">9</td>
+<td>low</td>
+<td>Review scheduled</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How I know the checks work.</strong> The synthetic data generator plants known defects and records them in an answer key. I ran the checks first and opened the answer key afterward. Every check with a matching planted defect found exactly the planted number of rows. All 66 manual accounts the matching rules linked went to the right person. The 33 they couldn&rsquo;t link are the ones a person needs to look at.</p>
+<h2 id="the-script">The script</h2>
+<p><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/analysis/dq_checks.py"><code>analysis/dq_checks.py</code></a> runs all 15 checks and writes two files:
+- <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/outputs/dq_results.csv"><code>outputs/dq_results.csv</code></a>: one row per check, with counts, severity and handling
+- <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/outputs/dq_flagged_records.csv"><code>outputs/dq_flagged_records.csv</code></a>: every flagged record ID, so nothing is dropped silently</p>
+<p><em>Code is AI-assisted (Claude). I specified the checks and the handling rules and validated the output against the answer key.</em></p>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>Checks report and route; they don&rsquo;t delete. A flagged record goes to a list with a stated handling rule, so the number can be explained and the source can be fixed. Identity comes first because a duplicate account quietly turns one compliant person into two half-compliant ones, and no later check can see that. I stopped the matching rules where they&rsquo;d start guessing. The 33 unresolved accounts are cheaper for an administrator to settle than a wrong match is to defend. Severity reflects effect on the published number, not effort to fix, so the high items get done before publication and the rest go on the backlog.</p>
+<p><em>Format: PDF checklist (generated from this page) plus the script in the repo.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

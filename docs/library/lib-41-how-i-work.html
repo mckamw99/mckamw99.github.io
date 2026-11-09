@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I work (LIB-41) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: one page for a hiring manager or new team on how I scope, govern, build and hand off work, so they know what working with me looks like before the first meeting.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../index.html">Start here</a></li><li><a href="../case-studies/index.html">Case studies</a></li><li><a href="index.html" aria-current="page">Library</a></li><li><a href="../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Start here</a> / <a href="index.html">Library</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-i-start-with-the-decision-not-the-data">1. I start with the decision, not the data</a></li><li><a href="#2-i-define-then-govern">2. I define, then govern</a></li><li><a href="#3-i-check-results-not-effort">3. I check results, not effort</a></li><li><a href="#4-i-build-with-ai-and-say-so">4. I build with AI and say so</a></li><li><a href="#5-i-hand-off-so-it-runs-without-me">5. I hand off so it runs without me</a></li><li><a href="#how-i-communicate">How I communicate</a></li><li><a href="#6-how-i-think-learning-works-lib-37">6. How I think learning works (LIB-37)</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../pdf/library_lib-41-how-i-work.pdf">Download PDF</a></nav>
+<article>
+<blockquote>
+<p><strong>DRAFT for Matt to rewrite in his own words.</strong> Every principle below is drawn from how the work on this site was done, with a link to where it shows. Section 6 (how learning works, LIB-37) needs Matt&rsquo;s own beliefs and is left as questions. Marked items: [CONFIRM] = check it&rsquo;s true for you; [YOUR WORDS] = replace with your own.</p>
+</blockquote>
+<h1 id="how-i-work-lib-41">How I work (LIB-41)</h1>
+<p><strong>Purpose:</strong> one page for a hiring manager or new team on how I scope, govern, build and hand off work, so they know what working with me looks like before the first meeting.</p>
+<hr />
+<h2 id="1-i-start-with-the-decision-not-the-data">1. I start with the decision, not the data</h2>
+<p>Before I build anything, I ask who will act on the answer and what they&rsquo;ll do differently. Then I write down the question and the definitions, and only then the query. Most &ldquo;the numbers are wrong&rdquo; problems are two teams answering different questions with the same word.</p>
+<p><em>Where it shows:</em> case study A writes the compliance definition before computing it (<a href="../case-studies/a-what-complete-means/metric_definitions.html">metric definitions</a>).</p>
+<h2 id="2-i-define-then-govern">2. I define, then govern</h2>
+<p>Every metric that leaves my team has a written definition, an owner, a version number and an as-of date. Definitions change through a stated process, and when they change I show the old number next to the new one for a cycle, with the reason. Data-quality problems get flagged and routed to whoever can fix the source; I don&rsquo;t quietly drop rows to make a number look clean.</p>
+<p><em>Where it shows:</em> the data-quality checklist (<a href="../case-studies/a-what-complete-means/dq_checklist.html">LIB-04</a>) and the disputed-KPI process (<a href="../case-studies/a-what-complete-means/disputed_kpi.html">LIB-50</a>).</p>
+<h2 id="3-i-check-results-not-effort">3. I check results, not effort</h2>
+<p>A report isn&rsquo;t done when the query runs. It&rsquo;s done when I&rsquo;ve reproduced the number another way and know why it differs from the last one: reconciling to source, rebuilding it independently, reading records back, tracing a few people end to end. When I test whether something works, I say up front how big an effect the data could detect, so &ldquo;no difference&rdquo; doesn&rsquo;t get mistaken for &ldquo;no effect.&rdquo;</p>
+<p><em>Where it shows:</em> the validation section of every case study; the control backtest in <a href="../case-studies/d-governed-reporting/index.html">case study D</a>.</p>
+<h2 id="4-i-build-with-ai-and-say-so">4. I build with AI and say so</h2>
+<p>I write SQL and Python with an AI assistant, and the code on this site is labeled that way. My part is the design, the definitions and the checks. I treat AI output the way I&rsquo;d treat a new analyst&rsquo;s first draft: useful, fast, and not trusted until it reproduces a known answer.</p>
+<p>[CONFIRM] Link to the &ldquo;How I build with AI&rdquo; page once it clears review (LIB-28).</p>
+<h2 id="5-i-hand-off-so-it-runs-without-me">5. I hand off so it runs without me</h2>
+<p>Work isn&rsquo;t finished until someone else can run it: a README, a reproducible script, a named owner, a schedule, and a list of what to check when it breaks. I&rsquo;d rather retire a report than maintain one nobody reads.</p>
+<p><em>Where it shows:</em> each case study&rsquo;s Files section; the report rationalization worksheet (<a href="../case-studies/d-governed-reporting/report_rationalization.html">LIB-51</a>).</p>
+<h2 id="how-i-communicate">How I communicate</h2>
+<ul>
+<li><strong>Plainly, with the tradeoff.</strong> I&rsquo;d rather give a direct answer with its limits than a hedged one.</li>
+<li><strong>Bad news early and in person.</strong> If a number is about to drop because the definition changed, the owner hears it from me first.</li>
+<li><strong>Fewer priorities, finished.</strong> Three things done beat ten started.</li>
+</ul>
+<p>[CONFIRM] These match how you&rsquo;d describe yourself; add anything colleagues regularly say about working with you. [YOUR WORDS]</p>
+<h2 id="6-how-i-think-learning-works-lib-37">6. How I think learning works (LIB-37)</h2>
+<p>[YOUR WORDS] Two or three short paragraphs. Questions to answer:</p>
+<ol>
+<li>What do you believe makes workplace training actually change what people do?</li>
+<li>What&rsquo;s one common L&amp;D practice you think wastes people&rsquo;s time, and what do you do instead?</li>
+<li>How does your teaching (adult learners, a community college classroom) shape how you design workplace learning? Keep it general: no course names, materials or students.</li>
+</ol>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>[YOUR WORDS] Optional: 3–5 sentences on why you&rsquo;d put this page in front of a hiring manager.</p>
+<p><em>Format: web page.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

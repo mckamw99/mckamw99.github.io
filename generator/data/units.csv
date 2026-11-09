@@ -1,0 +1,121 @@
+unit_id,unit_name,facility_id,unit_kind,department_type,turnover_tier,specialty_cert_required,budgeted_rn,budgeted_lpn,budgeted_na
+U001,Intensive Care,FAC-H1,inpatient,nursing,medium,True,90,0,10
+U002,Step-Down,FAC-H1,inpatient,nursing,high,True,70,0,16
+U003,Medical-Surgical 1,FAC-H1,inpatient,nursing,high,False,65,6,22
+U004,Medical-Surgical 2,FAC-H1,inpatient,nursing,high,False,65,6,22
+U005,Medical-Surgical 3,FAC-H1,inpatient,nursing,medium,False,60,6,20
+U006,Emergency Department,FAC-H1,inpatient,nursing,high,True,100,0,22
+U007,Perioperative Services,FAC-H1,inpatient,nursing,low,True,75,0,12
+U008,Women and Infants,FAC-H1,inpatient,nursing,low,True,70,0,10
+U009,Behavioral Health,FAC-H1,inpatient,nursing,high,False,40,6,22
+U010,Float Pool,FAC-H1,inpatient,nursing,medium,False,45,0,10
+U011,Medical-Surgical,FAC-H2,inpatient,nursing,high,False,60,8,20
+U012,Intensive Care,FAC-H2,inpatient,nursing,medium,True,35,0,6
+U013,Emergency Department,FAC-H2,inpatient,nursing,high,True,50,0,12
+U014,Perioperative Services,FAC-H2,inpatient,nursing,low,True,30,0,6
+U015,Medical-Surgical,FAC-H3,inpatient,nursing,high,False,60,8,20
+U016,Intensive Care,FAC-H3,inpatient,nursing,medium,True,35,0,6
+U017,Emergency Department,FAC-H3,inpatient,nursing,high,True,50,0,12
+U018,Perioperative Services,FAC-H3,inpatient,nursing,low,True,30,0,6
+U019,Home Health East,FAC-HH,home_health,nursing,medium,False,60,15,25
+U020,Home Health West,FAC-HH,home_health,nursing,medium,False,60,15,25
+U021,Nursing Administration,FAC-SO,admin,nursing,low,False,30,0,0
+U022,Clinic Nursing,FAC-C01,clinic,nursing,low,False,10,6,7
+U023,Clinic Nursing,FAC-C02,clinic,nursing,low,False,10,6,7
+U024,Clinic Nursing,FAC-C03,clinic,nursing,low,False,10,6,7
+U025,Clinic Nursing,FAC-C04,clinic,nursing,low,False,10,6,7
+U026,Clinic Nursing,FAC-C05,clinic,nursing,low,False,10,6,7
+U027,Clinic Nursing,FAC-C06,clinic,nursing,low,False,10,6,7
+U028,Clinic Nursing,FAC-C07,clinic,nursing,low,False,10,6,7
+U029,Clinic Nursing,FAC-C08,clinic,nursing,low,False,10,6,7
+U030,Clinic Nursing,FAC-C09,clinic,nursing,low,False,10,6,7
+U031,Clinic Nursing,FAC-C10,clinic,nursing,low,False,10,6,7
+U032,Clinic Nursing,FAC-C11,clinic,nursing,low,False,10,6,7
+U033,Clinic Nursing,FAC-C12,clinic,nursing,low,False,10,6,7
+U034,Clinic Nursing,FAC-C13,clinic,nursing,low,False,10,6,7
+U035,Clinic Nursing,FAC-C14,clinic,nursing,low,False,10,6,7
+U036,Clinic Nursing,FAC-C15,clinic,nursing,low,False,10,6,7
+U037,Clinic Nursing,FAC-C16,clinic,nursing,low,False,10,6,7
+U038,Clinic Nursing,FAC-C17,clinic,nursing,low,False,10,6,7
+U039,Clinic Nursing,FAC-C18,clinic,nursing,low,False,10,6,7
+U040,Clinic Nursing,FAC-C19,clinic,nursing,low,False,10,6,7
+U041,Clinic Nursing,FAC-C20,clinic,nursing,low,False,10,6,7
+U042,Imaging,FAC-H1,department,non_nursing,,False,0,0,0
+U043,Laboratory,FAC-H1,department,non_nursing,,False,0,0,0
+U044,Pharmacy,FAC-H1,department,non_nursing,,False,0,0,0
+U045,Rehabilitation Therapy,FAC-H1,department,non_nursing,,False,0,0,0
+U046,Respiratory Therapy,FAC-H1,department,non_nursing,,False,0,0,0
+U047,Sterile Processing,FAC-H1,department,non_nursing,,False,0,0,0
+U048,Patient Access,FAC-H1,department,non_nursing,,False,0,0,0
+U049,Environmental Services,FAC-H1,department,non_nursing,,False,0,0,0
+U050,Facilities,FAC-H1,department,non_nursing,,False,0,0,0
+U051,Food and Nutrition,FAC-H1,department,non_nursing,,False,0,0,0
+U052,Imaging,FAC-H2,department,non_nursing,,False,0,0,0
+U053,Laboratory,FAC-H2,department,non_nursing,,False,0,0,0
+U054,Pharmacy,FAC-H2,department,non_nursing,,False,0,0,0
+U055,Rehabilitation Therapy,FAC-H2,department,non_nursing,,False,0,0,0
+U056,Respiratory Therapy,FAC-H2,department,non_nursing,,False,0,0,0
+U057,Sterile Processing,FAC-H2,department,non_nursing,,False,0,0,0
+U058,Patient Access,FAC-H2,department,non_nursing,,False,0,0,0
+U059,Environmental Services,FAC-H2,department,non_nursing,,False,0,0,0
+U060,Facilities,FAC-H2,department,non_nursing,,False,0,0,0
+U061,Food and Nutrition,FAC-H2,department,non_nursing,,False,0,0,0
+U062,Imaging,FAC-H3,department,non_nursing,,False,0,0,0
+U063,Laboratory,FAC-H3,department,non_nursing,,False,0,0,0
+U064,Pharmacy,FAC-H3,department,non_nursing,,False,0,0,0
+U065,Rehabilitation Therapy,FAC-H3,department,non_nursing,,False,0,0,0
+U066,Respiratory Therapy,FAC-H3,department,non_nursing,,False,0,0,0
+U067,Sterile Processing,FAC-H3,department,non_nursing,,False,0,0,0
+U068,Patient Access,FAC-H3,department,non_nursing,,False,0,0,0
+U069,Environmental Services,FAC-H3,department,non_nursing,,False,0,0,0
+U070,Facilities,FAC-H3,department,non_nursing,,False,0,0,0
+U071,Food and Nutrition,FAC-H3,department,non_nursing,,False,0,0,0
+U072,Rehabilitation Therapy,FAC-HH,department,non_nursing,,False,0,0,0
+U073,Home Health Administration,FAC-HH,department,non_nursing,,False,0,0,0
+U074,Finance,FAC-SO,department,non_nursing,,False,0,0,0
+U075,Human Resources,FAC-SO,department,non_nursing,,False,0,0,0
+U076,Information Technology,FAC-SO,department,non_nursing,,False,0,0,0
+U077,Revenue Cycle,FAC-SO,department,non_nursing,,False,0,0,0
+U078,Quality and Safety,FAC-SO,department,non_nursing,,False,0,0,0
+U079,Clinical Education,FAC-SO,department,non_nursing,,False,0,0,0
+U080,Executive Administration,FAC-SO,department,non_nursing,,False,0,0,0
+U081,Clinic Support,FAC-C01,department,non_nursing,,False,0,0,0
+U082,Clinic Front Desk,FAC-C01,department,non_nursing,,False,0,0,0
+U083,Clinic Support,FAC-C02,department,non_nursing,,False,0,0,0
+U084,Clinic Front Desk,FAC-C02,department,non_nursing,,False,0,0,0
+U085,Clinic Support,FAC-C03,department,non_nursing,,False,0,0,0
+U086,Clinic Front Desk,FAC-C03,department,non_nursing,,False,0,0,0
+U087,Clinic Support,FAC-C04,department,non_nursing,,False,0,0,0
+U088,Clinic Front Desk,FAC-C04,department,non_nursing,,False,0,0,0
+U089,Clinic Support,FAC-C05,department,non_nursing,,False,0,0,0
+U090,Clinic Front Desk,FAC-C05,department,non_nursing,,False,0,0,0
+U091,Clinic Support,FAC-C06,department,non_nursing,,False,0,0,0
+U092,Clinic Front Desk,FAC-C06,department,non_nursing,,False,0,0,0
+U093,Clinic Support,FAC-C07,department,non_nursing,,False,0,0,0
+U094,Clinic Front Desk,FAC-C07,department,non_nursing,,False,0,0,0
+U095,Clinic Support,FAC-C08,department,non_nursing,,False,0,0,0
+U096,Clinic Front Desk,FAC-C08,department,non_nursing,,False,0,0,0
+U097,Clinic Support,FAC-C09,department,non_nursing,,False,0,0,0
+U098,Clinic Front Desk,FAC-C09,department,non_nursing,,False,0,0,0
+U099,Clinic Support,FAC-C10,department,non_nursing,,False,0,0,0
+U100,Clinic Front Desk,FAC-C10,department,non_nursing,,False,0,0,0
+U101,Clinic Support,FAC-C11,department,non_nursing,,False,0,0,0
+U102,Clinic Front Desk,FAC-C11,department,non_nursing,,False,0,0,0
+U103,Clinic Support,FAC-C12,department,non_nursing,,False,0,0,0
+U104,Clinic Front Desk,FAC-C12,department,non_nursing,,False,0,0,0
+U105,Clinic Support,FAC-C13,department,non_nursing,,False,0,0,0
+U106,Clinic Front Desk,FAC-C13,department,non_nursing,,False,0,0,0
+U107,Clinic Support,FAC-C14,department,non_nursing,,False,0,0,0
+U108,Clinic Front Desk,FAC-C14,department,non_nursing,,False,0,0,0
+U109,Clinic Support,FAC-C15,department,non_nursing,,False,0,0,0
+U110,Clinic Front Desk,FAC-C15,department,non_nursing,,False,0,0,0
+U111,Clinic Support,FAC-C16,department,non_nursing,,False,0,0,0
+U112,Clinic Front Desk,FAC-C16,department,non_nursing,,False,0,0,0
+U113,Clinic Support,FAC-C17,department,non_nursing,,False,0,0,0
+U114,Clinic Front Desk,FAC-C17,department,non_nursing,,False,0,0,0
+U115,Clinic Support,FAC-C18,department,non_nursing,,False,0,0,0
+U116,Clinic Front Desk,FAC-C18,department,non_nursing,,False,0,0,0
+U117,Clinic Support,FAC-C19,department,non_nursing,,False,0,0,0
+U118,Clinic Front Desk,FAC-C19,department,non_nursing,,False,0,0,0
+U119,Clinic Support,FAC-C20,department,non_nursing,,False,0,0,0
+U120,Clinic Front Desk,FAC-C20,department,non_nursing,,False,0,0,0

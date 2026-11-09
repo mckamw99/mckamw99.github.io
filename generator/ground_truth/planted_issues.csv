@@ -1,0 +1,17 @@
+issue_id,table,description,rows_affected
+DQ-01,enrollments,69 learners completed the prior-year version of Information Security in 2025 instead of the current version,69
+DQ-02,attempts,"Exact duplicate passed-attempt rows (new attempt_id, same timestamp)",328
+DQ-03,enrollments,Enrollment marked completed with no attempt record,164
+DQ-04,enrollments,Due date earlier than assigned date,281
+DQ-05,enrollments,2024 Fire and Emergency Preparedness campaign reloaded at Community North; duplicate enrollments never completed,436
+DQ-06,enrollments,2025 Respectful Workplace enrollments at Clinics carry priority_label 'Recommended' though the course is Required,740
+DQ-07,lms_users,Manual duplicate accounts for staff; one compliance cycle recorded on the duplicate,99
+DQ-08,lms_users,Test accounts with completions,6
+DQ-09,courses,"Courses with no owner_role (ON-03, OP-02); OP-02 not reviewed since 2019",2
+DQ-10,lms_users,Agency accounts missing external_id (cannot link to agency roster),126
+PI-01,report_published_values,2024-08 scorecard built from data 4 days stale (HR feed outage 2024-08-27 to 08-29 delayed the load); all facilities,6
+PI-02,report_published_values,2025-03 Community North numerator double-counts March completions (attempts loaded twice),1
+PI-03,report_published_values,2025-10 Flagship Hospital includes agency accounts in numerator and denominator,1
+AX-01,bi_users,Terminated managers whose BI access was never revoked,2
+AX-02,bi_users,Unit manager granted system-wide scope,1
+AX-03,bi_users,Aggregate-only analyst role granted person-level detail,1

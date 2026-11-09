@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training compliance metric definitions (LIB-01) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a shared definition sheet for compliance and leadership teams, so everyone who reports a training compliance number gets the same answer from the same data.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study A</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-shared-rules-apply-to-every-metric-below">1. Shared rules (apply to every metric below)</a></li><li><a href="#2-metrics">2. Metrics</a></li><li><a href="#3-edge-cases">3. Edge cases</a></li><li><a href="#4-worked-example-tessaly-health-2025-cycle-synthetic">4. Worked example: Tessaly Health, 2025 cycle (synthetic)</a></li><li><a href="#5-ownership-and-change-control">5. Ownership and change control</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_a-what-complete-means_metric_definitions.pdf">Download PDF</a></nav>
+<article>
+<h1 id="training-compliance-metric-definitions-lib-01">Training compliance metric definitions (LIB-01)</h1>
+<p><strong>Purpose:</strong> a shared definition sheet for compliance and leadership teams, so everyone who reports a training compliance number gets the same answer from the same data.</p>
+<p><em>Template plus a worked example at Tessaly Health, a fictional health system. All figures are from synthetic data and show the method, not real results.</em></p>
+<hr />
+<h2 id="1-shared-rules-apply-to-every-metric-below">1. Shared rules (apply to every metric below)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unit of measure</strong></td>
+<td>A person, not an LMS account and not an enrollment row. Every account is mapped to one person before counting (see Identity).</td>
+</tr>
+<tr>
+<td><strong>As-of date</strong></td>
+<td>Every number states its as-of date. Compliance is judged on the due date; anything after that date is &ldquo;late,&rdquo; even if it&rsquo;s complete.</td>
+</tr>
+<tr>
+<td><strong>Population</strong></td>
+<td>Employees on staff payroll who were employed on the assignment date and are still employed on the as-of date. Agency staff, students and test accounts are out of scope and reported separately.</td>
+</tr>
+<tr>
+<td><strong>Requirement</strong></td>
+<td>What&rsquo;s required comes from the course catalog&rsquo;s priority, not from the label on an individual enrollment. If they disagree, the catalog wins and the mismatch is logged.</td>
+</tr>
+<tr>
+<td><strong>Evidence</strong></td>
+<td>A requirement is met by a passed attempt (or recorded attendance for instructor-led sessions) on the <strong>current version</strong> of the course, on or before the as-of date. An LMS status of &ldquo;completed&rdquo; with no attempt behind it doesn&rsquo;t count.</td>
+</tr>
+<tr>
+<td><strong>Versions</strong></td>
+<td>Passing last year&rsquo;s version doesn&rsquo;t meet this year&rsquo;s requirement.</td>
+</tr>
+<tr>
+<td><strong>Identity</strong></td>
+<td>Accounts with an HR employee ID map to that person. A manual account maps to a person only if one employee with the same name was employed when the account was created, or, if there are several namesakes, only one of them has records that the manual account fills in. Anything else waits for an administrator.</td>
+</tr>
+<tr>
+<td><strong>Duplicates</strong></td>
+<td>One requirement per person, module and cycle, however many enrollment rows exist. Duplicate attempt rows count once.</td>
+</tr>
+<tr>
+<td><strong>Exemptions</strong></td>
+<td>A valid exemption (approved, in force on the as-of date) removes that requirement from the denominator. It is never counted as a completion. Exemption counts are reported alongside the rate.</td>
+</tr>
+<tr>
+<td><strong>Leavers</strong></td>
+<td>People who left before the as-of date are removed. Their open enrollments are not counted as overdue.</td>
+</tr>
+<tr>
+<td><strong>Attribution</strong></td>
+<td>People are reported under the facility of their HR unit on the as-of date, not the unit stored in the LMS.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-metrics">2. Metrics</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Metric</th>
+<th>Numerator</th>
+<th>Denominator</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td><strong>Annual compliance rate (people)</strong>, the headline</td>
+<td>People in the population who met every non-exempt annual module by the due date</td>
+<td>People in the population with at least one non-exempt module</td>
+<td>Board, executive and regulator reporting</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Annual compliance rate (requirements)</td>
+<td>Non-exempt person-module requirements met by the due date</td>
+<td>All non-exempt person-module requirements</td>
+<td>Operations: where the gaps are</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Completion by year end (people)</td>
+<td>People who completed every non-exempt module by 31 Dec, late or not</td>
+<td>Same as M1</td>
+<td>Shows how much of the gap closes late. Not a compliance number.</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Overdue requirements</td>
+<td>Requirements past due, not met, not exempt, person still employed</td>
+<td>(count)</td>
+<td>Manager follow-up lists</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>New-hire compliance on time</td>
+<td>New hires who met their at-hire modules within 30 days of hire</td>
+<td>New hires still employed on day 30</td>
+<td>Onboarding quality</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>Certification currency</td>
+<td>People in roles that need a certification who hold an unexpired one on the as-of date</td>
+<td>People in those roles on the as-of date</td>
+<td>Needs a role-to-certification requirements matrix. Defined here, not yet computed.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-edge-cases">3. Edge cases</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rehired employee</td>
+<td>Same person. Earlier completions don&rsquo;t carry into a new cycle; the current cycle&rsquo;s requirement applies from the rehire date.</td>
+</tr>
+<tr>
+<td>Transferred mid-cycle</td>
+<td>Counted once, under the unit held on the as-of date.</td>
+</tr>
+<tr>
+<td>On leave on the due date</td>
+<td>Covered by a leave exemption if one is in force; otherwise due like anyone else.</td>
+</tr>
+<tr>
+<td>Left before the due date</td>
+<td>Out of the population.</td>
+</tr>
+<tr>
+<td>Hired after the campaign started</td>
+<td>Measured by M5 on their own due date, not by M1 for that cycle.</td>
+</tr>
+<tr>
+<td>Two enrollments for the same module (two rules fired, or a reload)</td>
+<td>One requirement. Met if either has evidence.</td>
+</tr>
+<tr>
+<td>Completion on a duplicate account</td>
+<td>Counts once the account is linked to the person. Until then, it&rsquo;s listed as unresolved.</td>
+</tr>
+<tr>
+<td>Failed, then passed</td>
+<td>Met on the pass date.</td>
+</tr>
+<tr>
+<td>Completed after the due date</td>
+<td>Not compliant for M1 and M2; counts for M3.</td>
+</tr>
+<tr>
+<td>Passed last year&rsquo;s version</td>
+<td>Not met.</td>
+</tr>
+<tr>
+<td>Status &ldquo;completed,&rdquo; no attempt</td>
+<td>Not met; sent for evidence follow-up.</td>
+</tr>
+<tr>
+<td>Exemption expired before the due date</td>
+<td>Not exempt.</td>
+</tr>
+<tr>
+<td>Enrollment labeled &ldquo;Recommended&rdquo; for a Required course</td>
+<td>Required. Fix the label at the source.</td>
+</tr>
+<tr>
+<td>Agency or test account</td>
+<td>Out of scope for M1–M5.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-worked-example-tessaly-health-2025-cycle-synthetic">4. Worked example: Tessaly Health, 2025 cycle (synthetic)</h2>
+<p>As of 30 Apr 2025, the due date for the five annual modules:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Published scorecard (old definition: LMS &ldquo;completed&rdquo; over all enrollment rows)</td>
+<td>77.5% (16,106 of 20,780 rows)</td>
+</tr>
+<tr>
+<td>M2 Annual compliance rate (requirements)</td>
+<td>81.6% (14,923 of 18,299 requirements)</td>
+</tr>
+<tr>
+<td><strong>M1 Annual compliance rate (people)</strong></td>
+<td><strong>67.3% (2,469 of 3,666 people)</strong></td>
+</tr>
+<tr>
+<td>M3 Completion by year end (people)</td>
+<td>76.3%</td>
+</tr>
+<tr>
+<td>Requirements removed by exemptions</td>
+<td>511</td>
+</tr>
+</tbody>
+</table></div>
+<p>The old number sat between the two governed numbers by accident. It counted leavers and duplicate rows, which pulled it down. It also judged rows rather than people, which pushed it up.</p>
+<h2 id="5-ownership-and-change-control">5. Ownership and change control</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definition owner (Compliance Office)</td>
+<td>Approves this sheet and any change to it</td>
+</tr>
+<tr>
+<td>Data steward (Learning Operations)</td>
+<td>Maintains the identity map, catalog priorities and exemptions; runs the data-quality checks before each publication</td>
+</tr>
+<tr>
+<td>Report owner (BI team)</td>
+<td>Builds reports only from these definitions; shows the version and as-of date on every report</td>
+</tr>
+</tbody>
+</table></div>
+<p>Changes are versioned. A new version is applied to past periods too, so trends stay comparable, and the old number is shown next to the new one for one cycle.</p>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>I made the person the unit because the risk sits with people: an auditor asks whether a named employee finished the training, not what share of enrollment rows are green. Requiring evidence rather than trusting a status field costs a few points but means every &ldquo;compliant&rdquo; can be shown to an auditor. Exemptions come out of the denominator instead of counting as completions, so the rate can&rsquo;t be raised by approving more exemptions, and the exemption count is published next to it. The tradeoff is a lower headline number than leaders are used to. That&rsquo;s why the sheet tells you to show the old and new numbers side by side for one cycle.</p>
+<p><em>Format: PDF, generated from this page.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

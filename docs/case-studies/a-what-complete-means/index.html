@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What does &quot;complete&quot; mean? · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Case study A · Defining and auditing training compliance metrics">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-the-question">1. The question</a></li><li><a href="#2-the-data">2. The data</a></li><li><a href="#3-approach">3. Approach</a></li><li><a href="#4-validation">4. Validation</a></li><li><a href="#5-findings-synthetic-data">5. Findings (synthetic data)</a></li><li><a href="#6-what-id-do-in-practice">6. What I&rsquo;d do in practice</a></li><li><a href="#7-files">7. Files</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_a-what-complete-means.pdf">Download PDF</a></nav>
+<article>
+<h1 id="what-does-complete-mean">What does &ldquo;complete&rdquo; mean?</h1>
+<p><strong>Case study A · Defining and auditing training compliance metrics</strong></p>
+<p><em>Tessaly Health is a fictional nonprofit health system. Every number on this page comes from synthetic data and shows a method, not a real result.</em></p>
+<hr />
+<h2 id="1-the-question">1. The question</h2>
+<p>Tessaly Health&rsquo;s executive scorecard reported 77.5% of annual compliance training complete in April 2025. Leaders read that as &ldquo;about three in four staff are compliant.&rdquo; I wanted to know whether the number meant that, and if not, what the right number was and why the two differed.</p>
+<h2 id="2-the-data">2. The data</h2>
+<p>All data comes from the Tessaly Health synthetic data generator (LIB-23, in <code>generator/</code>, seed 20261108). It simulates three years (2023–2025) of a 4,000-person workforce and its learning records.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Table</th>
+<th style="text-align: right;">Rows used here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employees (employment spells)</td>
+<td style="text-align: right;">6,387</td>
+</tr>
+<tr>
+<td>LMS accounts</td>
+<td style="text-align: right;">6,910</td>
+</tr>
+<tr>
+<td>Enrollments</td>
+<td style="text-align: right;">93,846</td>
+</tr>
+<tr>
+<td>Attempts</td>
+<td style="text-align: right;">91,782</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td style="text-align: right;">404</td>
+</tr>
+<tr>
+<td>Published scorecard values</td>
+<td style="text-align: right;">208</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generator plants realistic defects (duplicate accounts, duplicate rows, statuses with no evidence, old-version completions, a reloaded campaign, mislabeled priorities) and records them in an answer key that I opened only after the analysis was done.</p>
+<p><strong>Limits.</strong> Learning-record behavior (how fast people complete, how often they fail) has no public benchmark, so it rests on my own stated assumptions. Workforce turnover and vacancy are tuned to national hospital surveys. There are no real people, units or courses here.</p>
+<h2 id="3-approach">3. Approach</h2>
+<p>I took three steps.</p>
+<ol>
+<li><strong>Ran a data-quality checklist</strong> (15 checks) before computing anything. Identity checks came first, because a duplicate account turns one compliant person into two half-compliant ones.</li>
+<li><strong>Wrote the metric down</strong> before calculating it: population, unit, evidence, versions, exemptions and an edge-case table. That&rsquo;s <a href="metric_definitions.html">Training compliance metric definitions (LIB-01)</a> (LIB-01).</li>
+<li><strong>Built a bridge</strong> from the published number to the governed one, changing one rule at a time, so each piece of the gap has a size and a reason.</li>
+</ol>
+<p><strong>Alternatives I considered.</strong> I could have simply recomputed &ldquo;the right number&rdquo; and replaced the old one. That gives leaders a new figure with no explanation for why it moved, and no way to know which rule matters. A bridge costs one more step and answers both. For duplicate accounts, I considered fuzzy name matching. I used exact name plus employment dates plus a check that the two accounts&rsquo; records fill each other&rsquo;s gaps, and stopped there. A wrong match is harder to defend than an unresolved one.</p>
+<h2 id="4-validation">4. Validation</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step 0 of the bridge reproduces the published April 2025 scorecard exactly</td>
+<td>16,106 / 20,780 on both. Pass</td>
+</tr>
+<tr>
+<td>The governed 2025 result, rebuilt in SQL from the raw files, matches the Python result by facility</td>
+<td>2,469 / 3,666 on both. Pass</td>
+</tr>
+<tr>
+<td>Manual accounts the matching rules linked to a person, checked against the answer key</td>
+<td>66 of 66 correct. 33 left for an administrator</td>
+</tr>
+<tr>
+<td>Each data-quality check against its planted defect</td>
+<td>9 of 9 exact matches</td>
+</tr>
+<tr>
+<td>Five people traced end to end, by hand</td>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/outputs/trace_sample.md"><code>outputs/trace_sample.md</code></a></td>
+</tr>
+</tbody>
+</table></div>
+<p>The SQL rebuild shares only the identity map with the Python code. Population, evidence, exemptions and facility attribution are computed again from scratch.</p>
+<h2 id="5-findings-synthetic-data">5. Findings (synthetic data)</h2>
+<p><img alt="Horizontal bar chart: the 2025 compliance rate starting at 77.5% under the published definition. Removing leavers raises it to 79.0%. The campaign population leaves it at 79.0%, one requirement per person and module brings 79.2%, merging duplicate accounts 79.5%, requiring a passed attempt 79.4%, and removing exemptions 81.6%. Measuring people instead of requirements drops it to 67.3%." src="outputs/chart1_bridge_2025.png" /></p>
+<p><strong>The published number was wrong in both directions.</strong> Cleaning the data <em>raised</em> the rate: the scorecard counted people who had left, duplicate rows and leave exemptions as gaps. Together they cost it about four points (77.5% to 81.6% of requirements met). But the scorecard counted enrollment rows, not people. Once the question becomes &ldquo;is this person fully compliant?&rdquo;, the answer is <strong>67.3%</strong>: about two in three staff, not three in four.</p>
+<p><strong>&ldquo;Completed&rdquo; isn&rsquo;t &ldquo;compliant.&rdquo;</strong> By year end, 76.3% of people had finished everything, nine points above the share who did it by the due date. A report that doesn&rsquo;t state its as-of date can show either number.</p>
+<p><strong>The 2024 dip was an artifact.</strong> The scorecard showed 74.7% in 2024, against about 77.5% in the other two years. The governed rate was flat all three years (68.7%, 68.3%, 67.3% of people). The dip came from a reloaded campaign at one hospital that created 436 duplicate enrollments nobody could complete.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Cycle</th>
+<th style="text-align: right;">Published</th>
+<th style="text-align: right;">Requirements met (M2)</th>
+<th style="text-align: right;">People compliant (M1)</th>
+<th style="text-align: right;">People complete by year end (M3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td style="text-align: right;">77.4%</td>
+<td style="text-align: right;">81.6%</td>
+<td style="text-align: right;">68.7%</td>
+<td style="text-align: right;">78.7%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td style="text-align: right;">74.7%</td>
+<td style="text-align: right;">81.2%</td>
+<td style="text-align: right;">68.3%</td>
+<td style="text-align: right;">77.3%</td>
+</tr>
+<tr>
+<td>2025</td>
+<td style="text-align: right;">77.5%</td>
+<td style="text-align: right;">81.6%</td>
+<td style="text-align: right;">67.3%</td>
+<td style="text-align: right;">76.3%</td>
+</tr>
+</tbody>
+</table></div>
+<p><img alt="Dot plot by facility for 2025: published rates of 76% to 80% against governed people-level rates of 65% to 71%. Flagship Hospital is lowest on both, at 76% and 65%. Home Health falls from second-highest on the published scorecard (79%) to fourth on the governed measure (67%)." src="outputs/chart2_by_facility_2025.png" /></p>
+<p><strong>The ranking changes too.</strong> Every facility drops 8 to 12 points. Home Health goes from second-best on the scorecard to fourth. A facility leader comparing themselves with peers would draw the wrong conclusion from the published view.</p>
+<p><strong>Some records belong to nobody yet.</strong> 33 manual accounts hold 47 completions that can&rsquo;t be linked to one person without an administrator. None of them changes the 2025 due-date number, but they will in a cycle where they do.</p>
+<h2 id="6-what-id-do-in-practice">6. What I&rsquo;d do in practice</h2>
+<ul>
+<li><strong>Adopt the definition sheet formally.</strong> The compliance office owns it; learning operations stewards the data. Publish M1 as the headline and keep M2 for operations.</li>
+<li><strong>Run the checklist before every publication</strong>, with the high-severity checks as a gate. The scorecard doesn&rsquo;t ship until they&rsquo;re clear or explained.</li>
+<li><strong>Fix the sources, not just the report.</strong> Stop manual account creation for staff (rosters should use existing accounts), add a uniqueness rule to campaign loads, and correct the mislabeled priority at the clinics.</li>
+<li><strong>Show the change, once.</strong> For one cycle, publish 67.3% beside the old 77.5% with a one-line explanation. A 10-point drop with no explanation looks like a failure; with one, it looks like the organization finally measuring what it meant. The steps are in <a href="disputed_kpi.html">Resolving a disputed KPI (LIB-50)</a> (LIB-50).</li>
+<li><strong>Retire the duplicates.</strong> The legacy compliance scorecard and the second &ldquo;by job role&rdquo; report stop running.</li>
+<li><strong>Next:</strong> build the role-to-certification requirements matrix so certification currency (M6) can be measured the same way.</li>
+</ul>
+<h2 id="7-files">7. Files</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="metric_definitions.html">Training compliance metric definitions (LIB-01)</a></td>
+<td>LIB-01 metric definition sheet</td>
+</tr>
+<tr>
+<td><a href="dq_checklist.html">LMS data-quality checklist (LIB-04) and check script (LIB-27)</a></td>
+<td>LIB-04 checklist and results; LIB-27 script description</td>
+</tr>
+<tr>
+<td><a href="disputed_kpi.html">Resolving a disputed KPI (LIB-50)</a></td>
+<td>LIB-50 process for resolving a disputed KPI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/analysis/common.py"><code>analysis/common.py</code></a></td>
+<td>Data loading and identity rules</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/analysis/dq_checks.py"><code>analysis/dq_checks.py</code></a></td>
+<td>The 15 data-quality checks (LIB-27)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/analysis/compliance.py"><code>analysis/compliance.py</code></a></td>
+<td>Bridge, yearly and facility results, charts (LIB-24)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/a-what-complete-means/analysis/validate_a.py"><code>analysis/validate_a.py</code></a></td>
+<td>Read-back, SQL rebuild, answer-key comparison, trace</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/case-studies/a-what-complete-means/outputs"><code>outputs/</code></a></td>
+<td>Results tables, charts, validation report, traced sample</td>
+</tr>
+<tr>
+<td><a href="../../generator/index.html"><code>../../generator/</code></a></td>
+<td>LIB-23 synthetic data generator and its README</td>
+</tr>
+</tbody>
+</table></div>
+<p>To reproduce:</p>
+<pre><code>cd generator &amp;&amp; python generate.py
+cd ../case-studies/a-what-complete-means/analysis
+python dq_checks.py &amp;&amp; python compliance.py &amp;&amp; python validate_a.py
+</code></pre>
+<p><em>All code is AI-assisted (Claude). I designed the definitions, checks, bridge and validation; Claude wrote the code to that design; the validation above is how I checked it.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

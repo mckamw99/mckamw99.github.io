@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assumptions and distributions · Matthew McKay, Ph.D.</title>
+<meta name="description" content="The values live in config.py; change them there and rerun. &quot;Realized&quot; comes from validate.py on seed 20261108. Where a public benchmark exists, the parameter was tuned so the reali">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../index.html">Start here</a></li><li><a href="../case-studies/index.html">Case studies</a></li><li><a href="../library/index.html">Library</a></li><li><a href="../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Start here</a> / <a href="index.html">Synthetic data generator</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#sources">Sources</a></li><li><a href="#1-company-and-window">1. Company and window</a></li><li><a href="#2-workforce-flow">2. Workforce flow</a></li><li><a href="#3-planted-effects-case-study-b">3. Planted effects (case study B)</a></li><li><a href="#4-staffing-and-cost-case-study-c">4. Staffing and cost (case study C)</a></li><li><a href="#5-learning-records-case-studies-a-and-d">5. Learning records (case studies A and D)</a></li><li><a href="#6-planted-data-quality-and-pipeline-issues-case-studies-a-and-d">6. Planted data-quality and pipeline issues (case studies A and D)</a></li><li><a href="#7-known-limits">7. Known limits</a></li></ol>
+<a class="pdf" href="../pdf/generator_assumptions.pdf">Download PDF</a></nav>
+<article>
+<h1 id="assumptions-and-distributions">Assumptions and distributions</h1>
+<p>The values live in <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/config.py"><code>config.py</code></a>; change them there and rerun. &ldquo;Realized&rdquo; comes from <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/validate.py"><code>validate.py</code></a> on seed 20261108. Where a public benchmark exists, the parameter was tuned so the realized rate lands near it. Where none was found, the value is my own assumption and is marked <strong>assumption</strong>.</p>
+<p>Tessaly Health is fictional and sits in an unnamed region, so it uses <strong>national</strong> averages. No local market and no employer data were used.</p>
+<h2 id="sources">Sources</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Source</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NSI-26</td>
+<td>NSI Nursing Solutions, <em>2026 National Health Care Retention &amp; RN Staffing Report</em> (calendar 2025; 527 hospitals)</td>
+<td>RN and hospital turnover, first-year turnover, vacancy, time to recruit, cost per turnover</td>
+</tr>
+<tr>
+<td>NSI-25</td>
+<td>NSI Nursing Solutions, <em>2025 National Health Care Retention &amp; RN Staffing Report</em> (calendar 2024; 450 hospitals)</td>
+<td>Same measures for 2024, turnover by specialty</td>
+</tr>
+<tr>
+<td>ECEC</td>
+<td>BLS, Employer Costs for Employee Compensation, RNs in private hospitals, Dec 2024 (TED article, May 2025)</td>
+<td>Wage per hour worked and benefits load</td>
+</tr>
+<tr>
+<td>OEWS</td>
+<td>BLS, Occupational Employment and Wage Statistics, SOC 29-1141, May 2024 and May 2025</td>
+<td>Wage growth year to year</td>
+</tr>
+<tr>
+<td>SIA</td>
+<td>SIA/NATHO Travel Nurse Benchmarking Survey, selected findings 2025 and 2026</td>
+<td>Agency bill rates</td>
+</tr>
+<tr>
+<td>NRP</td>
+<td>Vizient/AACN Nurse Residency Program outcomes, as reported by Vizient (2025)</td>
+<td>Residency retention check</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-company-and-window">1. Company and window</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Benchmark</th>
+<th>Realized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Window</td>
+<td>1 Jan 2023 to 31 Dec 2025</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Facilities</td>
+<td>1 flagship hospital, 2 community hospitals, 20 clinics, home health, system office</td>
+<td>locked decision</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Units and departments</td>
+<td>41 nursing units, 79 non-nursing departments</td>
+<td></td>
+<td>120</td>
+</tr>
+<tr>
+<td>Budgeted positions</td>
+<td>4,122</td>
+<td>&ldquo;about 4,000 staff&rdquo;</td>
+<td>3,888 to 3,938 filled</td>
+</tr>
+<tr>
+<td>Nursing share</td>
+<td>RNs, LPNs, nursing assistants, nurse managers</td>
+<td>&ldquo;roughly half&rdquo;</td>
+<td>49%</td>
+</tr>
+<tr>
+<td>RN position vacancy</td>
+<td>8%/5%/3% open on day 1 by tier, plus 6%/4%/2% of RN positions that stay open all window (hard to fill)</td>
+<td>NSI-26: 8.6% national RN vacancy</td>
+<td>8.8–8.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p>Turnover tiers follow NSI&rsquo;s specialty ranking. <strong>High:</strong> Behavioral Health, Emergency, Step-Down, Medical-Surgical (NSI-26: 22.5%, 20.7%, 19.0%, 18.1%). <strong>Low:</strong> Perioperative, Women and Infants (NSI-26: 14.9%, 15.0%), plus clinics and Nursing Administration. <strong>Medium:</strong> Intensive Care, Float Pool, Home Health.</p>
+<h2 id="2-workforce-flow">2. Workforce flow</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Benchmark</th>
+<th>Realized (2023 / 2024 / 2025)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voluntary turnover, year 2+</td>
+<td>RN high 17%, medium 13%, low 10%; LPN/NA 15–22%; clinical support 14%; administrative 12%; facilities/EVS 22%; managers 7%</td>
+<td></td>
+<td>see next rows</td>
+</tr>
+<tr>
+<td>All RNs</td>
+<td></td>
+<td>NSI-25: 16.4% (2024); NSI-26: 17.6% (2025)</td>
+<td>19.1% / 16.4% / 15.4%</td>
+</tr>
+<tr>
+<td>High-tier RNs</td>
+<td></td>
+<td>NSI-26 high specialties: 18.1–22.5%</td>
+<td>23.7% / 20.9% / 21.9%</td>
+</tr>
+<tr>
+<td>Low-tier RNs</td>
+<td></td>
+<td>NSI-26 low specialties: 13.4–15.0%</td>
+<td>14.6% / 10.1% / 10.9%</td>
+</tr>
+<tr>
+<td>All hospital staff</td>
+<td></td>
+<td>NSI-25: 18.3%; NSI-26: 18.5%</td>
+<td>20.1% / 17.8% / 18.3%</td>
+</tr>
+<tr>
+<td>First-year multiplier</td>
+<td>Year-1 hazard × 2.0</td>
+<td>NSI-26: 22.7% of new RNs leave within a year</td>
+<td>21.5% (2023 hires), 17.4% (2024 hires)</td>
+</tr>
+<tr>
+<td>Involuntary turnover</td>
+<td>2% per year</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Time to fill</td>
+<td>Gamma(shape 2); mean 95 days high-tier RN, 75 other RN, 45 everyone else</td>
+<td>NSI-26: 78 days to recruit an experienced RN (range 56–102)</td>
+<td></td>
+</tr>
+<tr>
+<td>Starting tenure</td>
+<td>Gamma(shape 1.3, scale 5 years), capped at 35</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>FTE</td>
+<td>1.0 (62%), 0.9 (14%), 0.75 (10%), 0.6 (9%), 0.5 (5%)</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Internal transfer fills</td>
+<td>10% of RN fills, 6% of others</td>
+<td><strong>assumption</strong></td>
+<td>161 transfers</td>
+</tr>
+<tr>
+<td>Rehires</td>
+<td>5% of external fills</td>
+<td><strong>assumption</strong></td>
+<td>103</td>
+</tr>
+<tr>
+<td>New-grad RNs</td>
+<td>35% of inpatient RN hires, 5% elsewhere</td>
+<td><strong>assumption</strong></td>
+<td>197 residents</td>
+</tr>
+</tbody>
+</table></div>
+<p>Low-tier RN turnover runs a little under NSI&rsquo;s lowest specialties. Clinics and administration are mixed into that tier, and NSI surveys hospitals only.</p>
+<h2 id="3-planted-effects-case-study-b">3. Planted effects (case study B)</h2>
+<p>These are the true answers an analysis should try to recover. They&rsquo;re in <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/ground_truth/planted_effects.csv"><code>ground_truth/planted_effects.csv</code></a>.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Planted effect</th>
+<th>Built-in trap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-01</td>
+<td>Year-1 voluntary exit hazard × 0.70 if role onboarding is finished within 30 days. Sized to be detectable with about 2,500 hires (<strong>assumption</strong>)</td>
+<td>On-time rate is 80% normally, 65% on high-turnover units, which also lose more people. Naive ratio on this seed: 0.74.</td>
+</tr>
+<tr>
+<td>E-02</td>
+<td>Year-1 hazard × 0.65 for new-grad RNs with attendance propensity of 0.80 or higher (Beta(5, 2), minus 0.10 on high-turnover units) (<strong>assumption</strong>)</td>
+<td>Completers must stay 12 months, so they show 0% year-1 exits: immortal-time bias. About 130 residents have a full year of follow-up, with about two dozen first-year exits, so any honest estimate is noisy. Realized resident first-year exit is 20%, above the NRP-reported 11% (89% retention). NRP&rsquo;s figure covers participating programs, so it&rsquo;s likely a favorable comparison; I kept the gap rather than tune to it.</td>
+</tr>
+<tr>
+<td>E-04</td>
+<td>Days to proficiency: new grad Gamma(mean 140, sd 35) if high attender, (170, 45) if not; experienced (75, 25); agency (12, 4); × 1.2 on ICU, ED, Step-Down (<strong>assumption</strong>)</td>
+<td>Nurses who leave first are censored, not missing.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-staffing-and-cost-case-study-c">4. Staffing and cost (case study C)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Benchmark</th>
+<th>Realized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required RN hours</td>
+<td>Budgeted RNs × mean FTE × 36 h/week ÷ 7 × (1 − 7% absence)</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Demand variation</td>
+<td>+6% Dec–Feb, −3% Jul–Aug, daily noise sd 4%</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Coverage order</td>
+<td>Overtime (25–40% of the gap, capped at 12% of required; 60–80% where no agency), then agency, then unfilled</td>
+<td><strong>assumption</strong>; no public US benchmark found for overtime share</td>
+<td>High tier: agency 6.4%, OT 4.4%, unfilled 2.8%</td>
+</tr>
+<tr>
+<td>Agency booking</td>
+<td>Monthly, 13-week contracts covering 90% of the past 28 days&rsquo; gap, 14-day lead, 25% extension chance</td>
+<td><strong>assumption</strong>; 13 weeks is the standard travel contract</td>
+<td>497 agency nurses, 634 segments</td>
+</tr>
+<tr>
+<td>Staff RN wage per hour worked</td>
+<td>$49.10 / $51.09 / $53.24 (2023–25)</td>
+<td>ECEC: $51.09 in Dec 2024. Other years scaled about 4% a year from OEWS growth (approximate)</td>
+<td></td>
+</tr>
+<tr>
+<td>Benefits load on wages</td>
+<td>56%</td>
+<td>ECEC: benefits $28.43 vs. wages $51.09 per hour worked</td>
+<td>Fully loaded staff RN about $79.70 in 2024</td>
+</tr>
+<tr>
+<td>Overtime premium</td>
+<td>1.5 × wage</td>
+<td>federal minimum overtime premium</td>
+<td></td>
+</tr>
+<tr>
+<td>Agency bill rate</td>
+<td>$106.63 / $90.13 / $90.54</td>
+<td>SIA national aggregate</td>
+<td>2024 agency premium over a fully loaded staff hour: about 13%</td>
+</tr>
+<tr>
+<td>Cost per RN turnover</td>
+<td>$61,110 (2024), $60,090 (2025)</td>
+<td>NSI-25, NSI-26</td>
+<td></td>
+</tr>
+<tr>
+<td>Agency orientation per contract</td>
+<td>$1,200</td>
+<td><strong>assumption</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the benchmarks change for case C.</strong> With public figures, an agency hour costs only about 13% more than a fully loaded staff hour in 2024. That&rsquo;s down from about 39% in 2023. So the case for converting agency nurses rests less on the hourly rate and more on turnover cost, orientation, time to proficiency and continuity. Also, NSI&rsquo;s turnover cost already includes some vacancy coverage, so adding it to agency hours would double-count. The case study has to pick one.</p>
+<h2 id="5-learning-records-case-studies-a-and-d">5. Learning records (case studies A and D)</h2>
+<p>No public benchmark was found for training completion behavior, so this whole section is <strong>assumption</strong>.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>Value</th>
+<th>Realized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annual compliance</td>
+<td>5 modules, new version each year; assigned 1 Feb, due 30 Apr</td>
+<td></td>
+</tr>
+<tr>
+<td>New-hire compliance</td>
+<td>Hires from 15 Jan on get current modules at hire, due in 30 days</td>
+<td>Hires 15 Jan–1 Feb get both: a natural duplicate</td>
+</tr>
+<tr>
+<td>Completion behavior</td>
+<td>Base 88% on time, with person (sd 0.6) and unit (sd 0.3) effects on the log-odds, −0.3 on high-turnover units; of the rest, 65% late (due + Exp(21 days)), 35% never; 4% skip one module</td>
+<td>Raw on-time 74–77% of enrollments, before cleanup</td>
+</tr>
+<tr>
+<td>Assessments</td>
+<td>7% fail first try, then retake; 10% of those fail twice</td>
+<td></td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>2.5% leave of absence per cycle; 1% equivalent credit for Workplace Safety</td>
+<td>302 and 102</td>
+</tr>
+<tr>
+<td>Certifications</td>
+<td>Life Support (2 yr), Equipment (1 yr), Specialty Unit (2 yr), Hazardous Materials (1 yr); renewal 60 days before expiry; 85% on time, 10% late, 5% lapse</td>
+<td>19,247 records</td>
+</tr>
+<tr>
+<td>Onboarding</td>
+<td>Orientation due in 14 days, role onboarding in 30, nursing unit checklist in 60</td>
+<td></td>
+</tr>
+<tr>
+<td>Residency</td>
+<td>Cohorts Feb, Jun, Sep; 12 monthly sessions; complete = 10+ attended and still employed at session 12</td>
+<td>197 residents</td>
+</tr>
+<tr>
+<td>LMS accounts</td>
+<td>Nightly HR feed; 5% of deactivations lag 8–40 days; 30% of rehires get a new account; 2% of staff have a manual duplicate; agency accounts manual, 75% with an agency ID</td>
+<td>6,910 accounts</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-planted-data-quality-and-pipeline-issues-case-studies-a-and-d">6. Planted data-quality and pipeline issues (case studies A and D)</h2>
+<p>Listed with row counts in <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/ground_truth/planted_issues.csv"><code>ground_truth/planted_issues.csv</code></a>.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DQ-01</td>
+<td>Some 2025 learners completed the 2024 version of Information Security</td>
+</tr>
+<tr>
+<td>DQ-02</td>
+<td>Exact duplicate passed-attempt rows</td>
+</tr>
+<tr>
+<td>DQ-03</td>
+<td>Enrollments marked completed with no attempt</td>
+</tr>
+<tr>
+<td>DQ-04</td>
+<td>Due date before assigned date</td>
+</tr>
+<tr>
+<td>DQ-05</td>
+<td>2024 Fire and Emergency campaign reloaded at Community North; duplicates never completed</td>
+</tr>
+<tr>
+<td>DQ-06</td>
+<td>2025 Respectful Workplace at the clinics labeled &ldquo;Recommended&rdquo; though the course is Required</td>
+</tr>
+<tr>
+<td>DQ-07</td>
+<td>Manual duplicate accounts; one compliance cycle recorded on the duplicate</td>
+</tr>
+<tr>
+<td>DQ-08</td>
+<td>Test accounts with completions</td>
+</tr>
+<tr>
+<td>DQ-09</td>
+<td>Courses with no owner; one not reviewed since 2019</td>
+</tr>
+<tr>
+<td>DQ-10</td>
+<td>Agency accounts with no agency ID</td>
+</tr>
+<tr>
+<td>PI-01</td>
+<td>Aug 2024 scorecard built from 4-day-old data after an HR feed outage</td>
+</tr>
+<tr>
+<td>PI-02</td>
+<td>Mar 2025 Community North numerator double-counts March completions</td>
+</tr>
+<tr>
+<td>PI-03</td>
+<td>Oct 2025 Flagship Hospital includes agency accounts</td>
+</tr>
+<tr>
+<td>AX-01 to 03</td>
+<td>BI access: two terminated managers never revoked, one unit manager with system scope, one aggregate-only analyst with person-level detail</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-known-limits">7. Known limits</h2>
+<ul>
+<li>Benchmarks are national survey averages. NSI surveys acute-care hospitals only, so clinic and home-health rates are extrapolated.</li>
+<li>2023 and 2025 wages are scaled from one 2024 benchmark, so treat them as approximate.</li>
+<li>Only RN hours are simulated at the unit-day level.</li>
+<li>No patient, clinical or quality outcomes, no demographics, no pay by person.</li>
+<li>Names come from short lists of common names, so different people share names on purpose.</li>
+<li>The published scorecard uses one deliberately naive definition (LMS status &ldquo;completed&rdquo; over all enrollments). Case study A replaces it.</li>
+</ul>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

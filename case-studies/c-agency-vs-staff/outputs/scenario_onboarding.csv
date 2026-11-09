@@ -1,0 +1,5 @@
+scenario,mean_3yr
+Base case (2025 rates),12750
+Agency at the 2023 national rate,83863
+Break-even agency bill rate: $87.42/hour (2025 benchmark $90.54),0
+"First-year exits x 0.77 (case study B onboarding link, if causal)",15704

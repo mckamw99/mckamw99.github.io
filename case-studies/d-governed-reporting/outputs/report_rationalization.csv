@@ -1,0 +1,23 @@
+report_id,report_name,owner,audience,metric_family,views_90d,views_per_run,decision,reason,action,executive_control
+RPT-001,Executive Compliance Scorecard,Learning Operations,Executive team,annual compliance,41,13.7,Keep,"Used, unique",,Governed definition and pre-publication checks required
+RPT-002,Compliance Scorecard (Legacy),Learning Operations,Executive team,annual compliance,3,1.0,Retire,Catalog marks it a duplicate,Point users to RPT-001,
+RPT-003,Overdue Training by Unit,Learning Operations,Unit managers,overdue training,212,16.3,Keep (absorbs peers),Same metric and source as RPT-004,"One report, role-based views by audience",
+RPT-004,Overdue Training by Manager,Human Resources,Department managers,overdue training,64,4.9,Merge,Same metric and source as RPT-003,Fold into RPT-003 as a view,
+RPT-005,Certification Expiry 60-Day Outlook,Clinical Education,Nurse managers,certification status,180,13.8,Keep (absorbs peers),Same metric and source as RPT-006,"One report, role-based views by audience",
+RPT-006,Certification Lapses,Clinical Education,Nursing leadership,certification status,22,7.3,Merge,Same metric and source as RPT-005,Fold into RPT-005 as a view,
+RPT-007,New Hire Onboarding Status,Learning Operations,Unit managers,onboarding,95,7.3,Keep (absorbs peers),Same metric and source as RPT-008,"One report, role-based views by audience",
+RPT-008,Onboarding Completion Rates,Human Resources,HR leadership,onboarding,8,2.7,Merge,Same metric and source as RPT-007,Fold into RPT-007 as a view,
+RPT-009,Residency Attendance,Clinical Education,Residency coordinators,residency,30,10.0,Keep,"Used, unique",,
+RPT-010,Agency Utilization by Unit,Nursing Finance,Nursing leadership,agency use,27,9.0,Keep (absorbs peers),Same metric and source as RPT-011,"One report, role-based views by audience",Governed definition and pre-publication checks required
+RPT-011,Agency Spend Summary,Finance,Executive team,agency use,12,4.0,Merge,Same metric and source as RPT-010,Fold into RPT-010 as a view,
+RPT-012,Agency Hours (Old Format),Nursing Finance,Nursing leadership,agency use,1,0.3,Retire,Catalog marks it a duplicate,Point users to RPT-010,
+RPT-013,Annual Compliance Raw Extract,Learning Operations,Analysts,annual compliance (raw),15,0.2,"Keep, restrict",Row-level extract,Analyst role only; replace with a governed dataset,Governed definition and pre-publication checks required
+RPT-014,Course Catalog Inventory,Learning Operations,LMS administrators,catalog,4,4.0,Keep,"Used, unique",,
+RPT-015,Elective Course Usage,Learning Operations,Learning Operations,elective usage,0,0.0,Retire,No views in 90 days,Retire in 30 days unless the owner names a decision it supports,
+RPT-016,Turnover by Unit,Human Resources,HR leadership,turnover,19,6.3,Keep (absorbs peers),Same metric and source as RPT-017,"One report, role-based views by audience",
+RPT-017,First-Year Turnover,Human Resources,Nursing leadership,turnover,9,9.0,Merge,Same metric and source as RPT-016,Fold into RPT-016 as a view,
+RPT-018,Time to Proficiency,Clinical Education,Nursing leadership,proficiency,6,6.0,Keep,"Used, unique",,
+RPT-019,Training Hours per FTE,Learning Operations,HR leadership,training hours,0,0.0,Retire,No views in 90 days,Retire in 30 days unless the owner names a decision it supports,
+RPT-020,LMS Login Activity,Information Technology,LMS administrators,LMS logins,2,0.7,Review,Fewer views than runs,Owner confirms use or it retires next quarter,
+RPT-021,Compliance by Job Role,Compliance Office,Compliance Office,compliance by role,11,3.7,Keep,"Used, unique",,Governed definition and pre-publication checks required
+RPT-022,Compliance by Job Role v2,Compliance Office,Compliance Office,compliance by role,5,1.7,Retire,Catalog marks it a duplicate,Point users to RPT-021,

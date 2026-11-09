@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed reporting · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Case study D · Lineage, reconciliation and access control for a recurring executive report">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-the-question">1. The question</a></li><li><a href="#2-the-data">2. The data</a></li><li><a href="#3-approach">3. Approach</a></li><li><a href="#4-validation">4. Validation</a></li><li><a href="#5-findings-synthetic-data">5. Findings (synthetic data)</a></li><li><a href="#6-what-id-do-in-practice">6. What I&rsquo;d do in practice</a></li><li><a href="#7-files">7. Files</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_d-governed-reporting.pdf">Download PDF</a></nav>
+<article>
+<h1 id="governed-reporting">Governed reporting</h1>
+<p><strong>Case study D · Lineage, reconciliation and access control for a recurring executive report</strong></p>
+<p><em>Tessaly Health is a fictional nonprofit health system. Every number on this page comes from synthetic data and shows a method, not a real result.</em></p>
+<hr />
+<h2 id="1-the-question">1. The question</h2>
+<p>Tessaly Health&rsquo;s executive team gets a compliance scorecard every month. Case study A fixed <em>what</em> the scorecard should measure. This one asks whether the monthly numbers actually match the source data, who can see what, and which controls would catch a bad month before it reaches executives.</p>
+<h2 id="2-the-data">2. The data</h2>
+<p>All from the Tessaly Health synthetic data generator (LIB-23, <code>generator/</code>, seed 20261108), covering 2023–2025:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Table</th>
+<th style="text-align: right;">Rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Published scorecard values (facility-month)</td>
+<td style="text-align: right;">208 across 35 months</td>
+</tr>
+<tr>
+<td>Enrollments behind them</td>
+<td style="text-align: right;">93,846</td>
+</tr>
+<tr>
+<td>Nightly HR feed runs</td>
+<td style="text-align: right;">1,096</td>
+</tr>
+<tr>
+<td>Report lineage steps for the scorecard</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>BI users / access roles</td>
+<td style="text-align: right;">186 / 5</td>
+</tr>
+<tr>
+<td>Report catalog</td>
+<td style="text-align: right;">22 reports</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generator plants pipeline defects in three published months and three access problems, and records them in an answer key I opened only after the analysis.</p>
+<p><strong>Limits.</strong> The report catalog, its view counts and the access roles are invented and small. The pipeline defects are three plausible kinds, not a full catalog of what goes wrong. Reconciliation here uses the scorecard&rsquo;s <em>own</em> definition, so it tests the pipeline, not the definition. Case study A covers the definition.</p>
+<h2 id="3-approach">3. Approach</h2>
+<ol>
+<li><strong>Trace the lineage.</strong> The scorecard&rsquo;s five steps run from HR system to BI tool. Three have controls, and all three check that rows moved, not that the number is right. The two steps that turn rows into a compliance rate have none.</li>
+<li><strong>Reconcile every published number to source.</strong> Rebuild each of the 208 facility-months from raw data using the scorecard&rsquo;s documented definition, and compare.</li>
+<li><strong>Diagnose by testing explanations.</strong> For each mismatch, test specific hypotheses against the source: stale data (does it match as of an earlier date?), wrong population (does it match if agency accounts are included?), double load (is the excess exactly that month&rsquo;s completions?). A diagnosis counts only if it reproduces the published number exactly.</li>
+<li><strong>Backtest controls.</strong> Run five candidate controls across all 35 months to see which would have caught each defect, and how many false alarms each would have raised.</li>
+<li><strong>Review access and the report estate.</strong> Audit BI access against a role model (LIB-07), and apply keep, merge or retire criteria to the 22 reports (LIB-51).</li>
+</ol>
+<p><strong>Alternatives I considered.</strong> A trend alarm (flag any month that moves more than 3 points) is the usual cheap control, so I tested it rather than assumed it. Rebuilding the pipeline was the other option. Reconciling to source answers the question without rebuilding anything.</p>
+<h2 id="4-validation">4. Validation</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every mismatch reproduced exactly by a tested explanation</td>
+<td>7 of 7 facility-months. Pass</td>
+</tr>
+<tr>
+<td>Mismatched months vs. the answer key</td>
+<td>Exactly the 3 planted months, no others. Pass</td>
+</tr>
+<tr>
+<td>Each diagnosis vs. the planted cause</td>
+<td>Stale data (4 days), double load, agency population: all correct. Pass</td>
+</tr>
+<tr>
+<td>Access review vs. the answer key</td>
+<td>Exactly the 3 planted problems (4 accounts), nothing else. Pass</td>
+</tr>
+<tr>
+<td>Mockup numbers vs. case study A&rsquo;s governed results</td>
+<td>Identical. Pass</td>
+</tr>
+</tbody>
+</table></div>
+<p>The answer key lists 6 rows for the stale month; 5 differed. The sixth facility had no activity in the stale window, so its numbers came out the same.</p>
+<h2 id="5-findings-synthetic-data">5. Findings (synthetic data)</h2>
+<p><strong>Three of 35 months were published wrong, and nobody would have seen two of them.</strong></p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Facility</th>
+<th style="text-align: right;">Published</th>
+<th style="text-align: right;">Source</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aug 2024</td>
+<td>5 of 6 facilities</td>
+<td style="text-align: right;">e.g. 84.8%</td>
+<td style="text-align: right;">84.7%</td>
+<td>Built from data 4 days old after a 3-night HR feed outage</td>
+</tr>
+<tr>
+<td>Mar 2025</td>
+<td>Community North</td>
+<td style="text-align: right;">65.1%</td>
+<td style="text-align: right;">52.3%</td>
+<td>Completions loaded twice: 301 extra</td>
+</tr>
+<tr>
+<td>Oct 2025</td>
+<td>Flagship Hospital</td>
+<td style="text-align: right;">86.6%</td>
+<td style="text-align: right;">86.4%</td>
+<td>Agency accounts included (174 extra rows)</td>
+</tr>
+</tbody>
+</table></div>
+<p><img alt="Line chart of Community North's compliance rate by month end in 2025, published versus reconciled to source. The lines match every month except March, when the published value is 65.1% and the source value is 52.3%." src="outputs/chart1_community_north_2025.png" /></p>
+<p>The March error was large, 12.8 points, and it happened mid-campaign, when the number is supposed to move fast. The other two moved the rate by less than half a point, which is exactly why they&rsquo;re dangerous: nothing about them looks wrong.</p>
+<p><strong>The usual alarm caught nothing.</strong> I backtested five controls over all 35 months:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Caught</th>
+<th>Missed</th>
+<th style="text-align: right;">False alarms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K1 Feed freshness (no failed run in the last 3 days of the month)</td>
+<td>Aug 2024</td>
+<td>Mar, Oct 2025</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>K2 Full reconciliation to source</td>
+<td>All three</td>
+<td>none</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>K3 Month&rsquo;s numerator increase ≤ completions recorded that month</td>
+<td>Mar, Oct 2025</td>
+<td>Aug 2024</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>K4 Denominator ≤ staff-only assignments</td>
+<td>Oct 2025</td>
+<td>Aug 2024, Mar 2025</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>K5 Rate moves more than 3 points (outside the campaign)</td>
+<td>none</td>
+<td>all three</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table></div>
+<p>Full reconciliation is the only single control that catches everything. Freshness, numerator and population checks are each cheaper, and together they cover all three. The trend alarm, the control most teams already have, missed all three and raised a false alarm. K3&rsquo;s one &ldquo;false alarm&rdquo; is September 2024, the month after the stale load, when four days of August completions arrived at once. It&rsquo;s the stale month echoing, not noise.</p>
+<p><strong>Access had outlived jobs.</strong> Of 138 active BI users, two managers who had left still had person-level access to their old units. One unit manager had system-wide scope, and one aggregate-only analyst had person-level detail. Five people could see named records for the whole system; the role model allows three. Details are in <a href="access_model.html">Role-based access model for learning data (LIB-07)</a> (LIB-07).</p>
+<p><strong>Half the reports could go.</strong> 22 reports become 11 plus 1 under review: five duplicates or unused reports retire, and five merge into the reports that absorb them. Two of the retirements are duplicate copies of compliance reports, the same kind of second number that started case study A. Details are in <a href="report_rationalization.html">Report rationalization worksheet (LIB-51)</a> (LIB-51).</p>
+<h2 id="6-what-id-do-in-practice">6. What I&rsquo;d do in practice</h2>
+<ul>
+<li><strong>Gate publication on three cheap checks plus a monthly reconciliation:</strong> feed freshness, numerator vs. completions, and staff-only population. Reconciliation runs before the executive version is released, not after.</li>
+<li><strong>Put controls where meaning is created.</strong> Add the data-quality checks before the fact table and the reconciliation before the scorecard (see <a href="architecture.html">Learning data architecture with governance points (LIB-46)</a>, LIB-46).</li>
+<li><strong>Drop the trend alarm as the main control.</strong> Keep it, if at all, as a prompt to look, not as assurance.</li>
+<li><strong>Correct and annotate the three months.</strong> Republish with a note that says what changed and why.</li>
+<li><strong>Wire access to HR events.</strong> Leavers lose access within 2 business days, movers&rsquo; scope follows their unit, and a quarterly review catches the rest.</li>
+<li><strong>Retire and merge the reports in one release</strong>, with a 30-day window for owners to object.</li>
+<li><strong>Publish the governed weekly view</strong> (mockup in <a href="dashboard_mockup.html">Governed weekly compliance view (LIB-03)</a>, LIB-03), with definition, date, freshness and check status in its header.</li>
+</ul>
+<h2 id="7-files">7. Files</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="access_model.html">Role-based access model for learning data (LIB-07)</a></td>
+<td>LIB-07 role-based access model and review</td>
+</tr>
+<tr>
+<td><a href="report_rationalization.html">Report rationalization worksheet (LIB-51)</a></td>
+<td>LIB-51 keep, merge, retire worksheet</td>
+</tr>
+<tr>
+<td><a href="architecture.html">Learning data architecture with governance points (LIB-46)</a></td>
+<td>LIB-46 data path with control points</td>
+</tr>
+<tr>
+<td><a href="dashboard_mockup.html">Governed weekly compliance view (LIB-03)</a></td>
+<td>LIB-03 governed weekly view</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/reconcile.py"><code>analysis/reconcile.py</code></a></td>
+<td>Reconciliation, diagnosis and control backtest</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/access_review.py"><code>analysis/access_review.py</code></a></td>
+<td>Access review against the role model</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/rationalize.py"><code>analysis/rationalize.py</code></a></td>
+<td>Report rationalization</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/visuals.py"><code>analysis/visuals.py</code></a></td>
+<td>Chart, architecture diagram and mockup</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/validate_d.py"><code>analysis/validate_d.py</code></a></td>
+<td>Comparison with the answer key and with case study A</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/case-studies/d-governed-reporting/outputs"><code>outputs/</code></a></td>
+<td>Result tables, figures, validation report</td>
+</tr>
+</tbody>
+</table></div>
+<p>To reproduce (after case study A):</p>
+<pre><code>cd case-studies/d-governed-reporting/analysis
+python reconcile.py &amp;&amp; python access_review.py &amp;&amp; python rationalize.py &amp;&amp; python visuals.py &amp;&amp; python validate_d.py
+</code></pre>
+<p><em>All code is AI-assisted (Claude). I designed the reconciliation, the hypotheses, the controls, the access model and the criteria; Claude wrote the code to that design; the validation above is how I checked it.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

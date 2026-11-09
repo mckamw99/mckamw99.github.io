@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessaly Health synthetic data generator · Matthew McKay, Ph.D.</title>
+<meta name="description" content="A seeded Python generator that builds three years of workforce, staffing and learning data for Tessaly Health, a fictional nonprofit regional health system of about 4,000 staff. It">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../index.html">Start here</a></li><li><a href="../case-studies/index.html">Case studies</a></li><li><a href="../library/index.html">Library</a></li><li><a href="../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Start here</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#ai-assisted-code">AI-assisted code</a></li><li><a href="#run-it">Run it</a></li><li><a href="#what-it-supports">What it supports</a></li><li><a href="#folder-layout">Folder layout</a></li><li><a href="#ground-truth">Ground truth</a></li><li><a href="#validation">Validation</a></li><li><a href="#limits">Limits</a></li><li><a href="#license-and-disclaimer">License and disclaimer</a></li></ol>
+<a class="pdf" href="../pdf/generator.pdf">Download PDF</a></nav>
+<article>
+<h1 id="tessaly-health-synthetic-data-generator">Tessaly Health synthetic data generator</h1>
+<p>A seeded Python generator that builds three years of workforce, staffing and learning data for <strong>Tessaly Health</strong>, a fictional nonprofit regional health system of about 4,000 staff. It&rsquo;s the shared data source for every case study and data-based library item in this portfolio.</p>
+<blockquote>
+<p><strong>Method demonstration, not findings.</strong> Every row is synthetic. Turnover, vacancy, time to recruit, wages, benefits, agency bill rates and turnover cost are tuned to national public benchmarks (NSI, BLS, SIA). Everything else is my own assumption. Both are listed, with sources, in <a href="assumptions.html">ASSUMPTIONS.md</a>. Nothing here describes a real organization, and no result from this data says anything about real health systems.</p>
+</blockquote>
+<h2 id="ai-assisted-code">AI-assisted code</h2>
+<p>The Python in this repo (<a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/generate.py"><code>generate.py</code></a>, <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/validate.py"><code>validate.py</code></a>, <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/config.py"><code>config.py</code></a>) was written with Claude, an AI assistant. I specified the data model, the assumptions, the planted effects and issues, and the checks. Claude wrote the code to my specification. I reviewed the output through the validation steps below. I don&rsquo;t present this as hand-written engineering work. The skill on display is the data design and the validation.</p>
+<h2 id="run-it">Run it</h2>
+<pre><code>pip install -r ../requirements.txt
+python generate.py      # writes data/ and ground_truth/   (about 10 seconds)
+python validate.py      # writes validation_report.md; exits 1 if an integrity check fails
+</code></pre>
+<p>Seed <code>20261108</code> is fixed in <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/config.py"><code>config.py</code></a>. Same seed and same package versions give identical files. To test a different assumption, change <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/config.py"><code>config.py</code></a>, not the generator.</p>
+<h2 id="what-it-supports">What it supports</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Case study</th>
+<th>Question</th>
+<th>Main tables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. What does &ldquo;complete&rdquo; mean?</td>
+<td>How many people are actually compliant, and why does the number change with the definition?</td>
+<td><code>enrollments</code>, <code>attempts</code>, <code>exemptions</code>, <code>certifications</code>, <code>lms_users</code>, <code>courses</code>, <code>employees</code></td>
+</tr>
+<tr>
+<td>D. Governed reporting</td>
+<td>Can the monthly executive scorecard be traced, reconciled and access-controlled?</td>
+<td><code>report_published_values</code>, <code>report_lineage</code>, <code>report_catalog</code>, <code>hr_feed_runs</code>, <code>bi_users</code>, <code>bi_access_roles</code></td>
+</tr>
+<tr>
+<td>B. Does training change outcomes?</td>
+<td>Is on-time onboarding or residency attendance linked to first-year retention?</td>
+<td><code>employees</code>, <code>enrollments</code> (ON-02, NR-01), <code>residency_attendance</code>, <code>employee_unit_history</code></td>
+</tr>
+<tr>
+<td>C. Agency vs. staff nurses</td>
+<td>What does the agency mix cost, and where would conversion pay off?</td>
+<td><code>unit_staffing_daily</code>, <code>agency_contracts</code>, <code>proficiency</code>, <code>cost_assumptions</code>, <code>employees</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>It also feeds library items LIB-03 (dashboard mockup), LIB-24 (completion notebook) and LIB-27 (data-quality script).</p>
+<h2 id="folder-layout">Folder layout</h2>
+<pre><code>config.py              all assumptions (the only file to edit)
+(LICENSE and LICENSE-DATA are at the repo root)
+generate.py            the generator
+validate.py            integrity, calibration and recovery checks
+ASSUMPTIONS.md         every assumption and distribution in plain language
+DATA_DICTIONARY.md     every table and column
+data/                  25 CSV tables + manifest.json (row counts and seed)
+ground_truth/          planted_effects.csv, planted_issues.csv (the answer key)
+validation_report.md   output of validate.py
+(CHANGELOG.md and SANITIZATION_LOG.md live at the repo root)
+</code></pre>
+<h2 id="ground-truth">Ground truth</h2>
+<p>The generator plants known effects (for example, on-time onboarding lowers first-year exit risk by a hazard ratio of 0.70) and known defects (duplicate accounts, a stale month in the published scorecard). They&rsquo;re listed in <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/generator/ground_truth"><code>ground_truth/</code></a>. A case study should do its analysis first and check the answer key afterward. The point is to show whether the method finds what&rsquo;s there, and how far a naive method misses.</p>
+<h2 id="validation">Validation</h2>
+<p><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/validate.py"><code>validate.py</code></a> runs three kinds of checks:</p>
+<ol>
+<li><strong>Integrity.</strong> Primary keys are unique, every foreign key resolves, terminations follow hires, and staffing hours add up to required hours. All pass on the current seed.</li>
+<li><strong>Calibration.</strong> Output compared with the inputs: headcount stays between 3,900 and 4,050 and nursing at 49%; realized turnover, agency share and raw completion rates are reported next to the assumptions.</li>
+<li><strong>Recovery.</strong> Can the planted items be found again? A month-by-month reconciliation of the published scorecard against the raw tables flags exactly the three planted months and no others. The onboarding effect shows up in a naive comparison (ratio 0.74 against a true 0.70), but the within-tier ratios swing from 0.60 to 0.95, which is why case study B has to adjust for unit before claiming anything.</li>
+</ol>
+<p>One recovery check is too thin to trust, and I&rsquo;m leaving it that way. About 130 residents have a full year of follow-up, with about two dozen first-year exits. Early attendance points the right way, but the estimate is too noisy to report as a finding. That&rsquo;s realistic for a system this size, and case study B uses it to show a power limit rather than hiding it.</p>
+<h2 id="limits">Limits</h2>
+<ul>
+<li>Benchmarks are national averages from hospital surveys; clinic and home-health rates are extrapolated. Learning-record behavior has no public benchmark.</li>
+<li>Only RN hours are simulated by unit and day.</li>
+<li>No patient or clinical data, no demographics, no compensation by person.</li>
+<li>Names are random combinations from short lists of common names, so different people share names on purpose.</li>
+<li>Training names are generic, and nothing here implies clinical or regulatory expertise.</li>
+</ul>
+<h2 id="license-and-disclaimer">License and disclaimer</h2>
+<p>Code: MIT (<a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/LICENSE"><code>../LICENSE</code></a>). Synthetic data in <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/generator/data"><code>data/</code></a> and <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/generator/ground_truth"><code>ground_truth/</code></a>: CC0 1.0 (<a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/LICENSE-DATA"><code>../LICENSE-DATA</code></a>). The public benchmarks in <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/config.py"><code>config.py</code></a> are cited facts, credited to their sources in ASSUMPTIONS.md.</p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

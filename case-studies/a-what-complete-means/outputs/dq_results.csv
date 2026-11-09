@@ -1,0 +1,16 @@
+check_id,area,check,rows_flagged,severity,metric_handling
+C01,accounts,Test accounts,6,high,Excluded from every metric
+C02,accounts,"Manual accounts linked to one person (name, employment date, complementary records)",66,high,Merged into that person's record
+C03,accounts,Manual accounts that can't be linked to one person,33,high,Held out; listed for an administrator to resolve
+C04,accounts,Agency accounts with no agency ID,126,medium,Out of staff metric; agency metric can't link them to the roster
+C05,accounts,Accounts still active more than 7 days after termination,118,medium,Access risk; no metric effect once termination is applied
+C06,enrollments,"More than one enrollment for the same person, module and year",3218,high,Collapsed to one requirement per person and module
+C07,enrollments,Status 'completed' with no attempt on record,164,high,Not counted as complete; sent for evidence follow-up
+C08,enrollments,Due date earlier than assigned date,281,medium,Due date rebuilt from the assignment rule
+C09,enrollments,Completion date earlier than assigned date,0,low,Would be reviewed; none expected
+C10,enrollments,Enrollment priority label disagrees with the course catalog,740,medium,Catalog priority wins
+C11,enrollments,Open enrollments on inactive accounts,3280,medium,Removed from the denominator if the person had left by the as-of date
+C12,attempts,Duplicate passed-attempt rows,328,low,Counted once
+C13,attempts,Prior-year version of an annual module started and passed in a later year,69,high,Doesn't satisfy the current year's requirement
+C14,catalog,Courses with no owner,2,medium,Owner assigned before next cycle
+C15,catalog,Active courses not reviewed in 3+ years,9,low,Content review scheduled

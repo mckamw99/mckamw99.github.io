@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Governed weekly compliance view (LIB-03) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a mockup of the weekly view a learning operations leader would use during an annual compliance campaign. It shows the numbers they act on, with the definition and data sta">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study D</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#whats-on-it-and-why">What&rsquo;s on it and why</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_d-governed-reporting_dashboard_mockup.pdf">Download PDF</a></nav>
+<article>
+<h1 id="governed-weekly-compliance-view-lib-03">Governed weekly compliance view (LIB-03)</h1>
+<p><strong>Purpose:</strong> a mockup of the weekly view a learning operations leader would use during an annual compliance campaign. It shows the numbers they act on, with the definition and data status stated on the page.</p>
+<p><em>Mockup on synthetic data for Tessaly Health, a fictional health system. A layout I designed for this portfolio.</em></p>
+<hr />
+<p><img alt="Dashboard mockup titled &quot;Annual compliance training: weekly view,&quot; as of 30 Apr 2025, definition v1.0. Six tiles: people fully compliant 67.3%, requirements met 81.6%, overdue requirements 3,376, requirements exempted 511, people in scope 3,666, unresolved accounts 33. A line chart shows people fully compliant rising from 8.7% on 7 Feb to 67.3% on 30 Apr. A bar chart shows the rate by facility, from 64.8% at Flagship Hospital to 70.8% at Community South. A list shows the five units with the most overdue requirements, led by Intensive Care at Flagship Hospital with 123." src="outputs/lib03_dashboard_mockup.png" /></p>
+<h2 id="whats-on-it-and-why">What&rsquo;s on it and why</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Why it&rsquo;s there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definition version, as-of date, feed status, check status (header)</td>
+<td>A number without its definition and date can&rsquo;t be compared or trusted. These four facts answer &ldquo;can I use this?&rdquo; before anyone reads a figure.</td>
+</tr>
+<tr>
+<td>People fully compliant (headline)</td>
+<td>The question leaders actually ask. Defined in case study A as M1.</td>
+</tr>
+<tr>
+<td>Requirements met</td>
+<td>Shows how close the gap is to closing. 81.6% of requirements but 67.3% of people means many people are one module short.</td>
+</tr>
+<tr>
+<td>Overdue requirements</td>
+<td>The workload. Drives manager follow-up.</td>
+</tr>
+<tr>
+<td>Exemptions</td>
+<td>Shown beside the rate so the rate can&rsquo;t be raised quietly by exempting people.</td>
+</tr>
+<tr>
+<td>Unresolved accounts</td>
+<td>Open data problems that could move the number.</td>
+</tr>
+<tr>
+<td>Campaign progress by week</td>
+<td>Tells the leader whether to send reminders now or wait.</td>
+</tr>
+<tr>
+<td>By facility</td>
+<td>Where to focus. One color: the bars compare facilities, they don&rsquo;t need separate identities.</td>
+</tr>
+<tr>
+<td>Most overdue by unit</td>
+<td>The follow-up list. Unit managers see names for their own unit only.</td>
+</tr>
+</tbody>
+</table></div>
+<p>All numbers on the mockup are computed from the synthetic data by <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/d-governed-reporting/analysis/visuals.py"><code>analysis/visuals.py</code></a>. They match case study A&rsquo;s governed results exactly; <code>validate_d.py</code> checks that.</p>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>I limited it to six numbers, because a weekly view that needs explaining every week won&rsquo;t get read. The header carries the governance (definition, date, freshness, checks), so the trust question is answered in one line instead of a footnote. Rates are paired with the counts behind them, since a rate alone hides how much work is left. The page is static here. In a live BI tool, each tile would link to its definition and every chart would have a table view.</p>
+<p><em>Format: image (PNG and SVG in <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/case-studies/d-governed-reporting/outputs"><code>outputs/</code></a>).</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

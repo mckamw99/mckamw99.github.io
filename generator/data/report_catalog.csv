@@ -1,0 +1,23 @@
+report_id,report_name,owner_department,primary_audience,refresh_frequency,grain,catalog_status,views_last_90_days
+RPT-001,Executive Compliance Scorecard,Learning Operations,Executive team,monthly,facility-month,active,41
+RPT-002,Compliance Scorecard (Legacy),Learning Operations,Executive team,monthly,facility-month,duplicate,3
+RPT-003,Overdue Training by Unit,Learning Operations,Unit managers,weekly,unit-week,active,212
+RPT-004,Overdue Training by Manager,Human Resources,Department managers,weekly,manager-week,active,64
+RPT-005,Certification Expiry 60-Day Outlook,Clinical Education,Nurse managers,weekly,person,active,180
+RPT-006,Certification Lapses,Clinical Education,Nursing leadership,monthly,unit-month,active,22
+RPT-007,New Hire Onboarding Status,Learning Operations,Unit managers,weekly,person,active,95
+RPT-008,Onboarding Completion Rates,Human Resources,HR leadership,monthly,facility-month,active,8
+RPT-009,Residency Attendance,Clinical Education,Residency coordinators,monthly,person-session,active,30
+RPT-010,Agency Utilization by Unit,Nursing Finance,Nursing leadership,monthly,unit-month,active,27
+RPT-011,Agency Spend Summary,Finance,Executive team,monthly,facility-month,active,12
+RPT-012,Agency Hours (Old Format),Nursing Finance,Nursing leadership,monthly,unit-month,duplicate,1
+RPT-013,Annual Compliance Raw Extract,Learning Operations,Analysts,daily,enrollment,active,15
+RPT-014,Course Catalog Inventory,Learning Operations,LMS administrators,quarterly,course,active,4
+RPT-015,Elective Course Usage,Learning Operations,Learning Operations,quarterly,course-quarter,active,0
+RPT-016,Turnover by Unit,Human Resources,HR leadership,monthly,unit-month,active,19
+RPT-017,First-Year Turnover,Human Resources,Nursing leadership,quarterly,cohort-quarter,active,9
+RPT-018,Time to Proficiency,Clinical Education,Nursing leadership,quarterly,person,active,6
+RPT-019,Training Hours per FTE,Learning Operations,HR leadership,quarterly,facility-quarter,active,0
+RPT-020,LMS Login Activity,Information Technology,LMS administrators,monthly,user-month,active,2
+RPT-021,Compliance by Job Role,Compliance Office,Compliance Office,monthly,role-month,active,11
+RPT-022,Compliance by Job Role v2,Compliance Office,Compliance Office,monthly,role-month,duplicate,5

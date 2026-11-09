@@ -1,0 +1,3667 @@
+person_id,employee_id,satisfied,completed_by_year_end,facility_group
+P000001,E000001,False,True,Flagship Hospital
+P000002,E000002,True,True,Flagship Hospital
+P000003,E000003,True,True,Flagship Hospital
+P000004,E000004,True,True,Flagship Hospital
+P000005,E000005,True,True,Flagship Hospital
+P000007,E000007,True,True,Flagship Hospital
+P000008,E000008,True,True,Flagship Hospital
+P000009,E000009,False,False,Flagship Hospital
+P000010,E000010,True,True,Community North
+P000011,E000011,False,False,Flagship Hospital
+P000013,E000013,True,True,Flagship Hospital
+P000015,E000015,False,False,Community South
+P000016,E000016,True,True,Flagship Hospital
+P000017,E000017,False,True,Flagship Hospital
+P000019,E000019,False,False,Flagship Hospital
+P000020,E000020,True,True,Flagship Hospital
+P000021,E000021,True,True,Flagship Hospital
+P000022,E000022,True,True,Flagship Hospital
+P000023,E000023,False,False,Flagship Hospital
+P000024,E000024,True,True,Flagship Hospital
+P000025,E000025,True,True,Flagship Hospital
+P000026,E000026,False,False,Flagship Hospital
+P000027,E000027,True,True,Flagship Hospital
+P000029,E000029,True,True,Flagship Hospital
+P000030,E000030,True,True,Flagship Hospital
+P000032,E000032,True,True,Flagship Hospital
+P000034,E000034,True,True,Flagship Hospital
+P000035,E000035,True,True,Flagship Hospital
+P000036,E000036,True,True,Flagship Hospital
+P000038,E000038,True,True,Flagship Hospital
+P000039,E000039,False,False,Flagship Hospital
+P000040,E000040,False,False,Flagship Hospital
+P000041,E000041,False,False,Flagship Hospital
+P000042,E000042,False,True,Flagship Hospital
+P000043,E000043,True,True,Flagship Hospital
+P000044,E000044,True,True,Flagship Hospital
+P000046,E000046,False,False,Flagship Hospital
+P000050,E000050,True,True,Flagship Hospital
+P000051,E004436,False,False,Flagship Hospital
+P000052,E000052,False,False,Flagship Hospital
+P000053,E000053,False,True,Flagship Hospital
+P000054,E000054,False,False,Flagship Hospital
+P000055,E000055,True,True,Flagship Hospital
+P000057,E000057,False,False,Flagship Hospital
+P000058,E000058,False,False,Flagship Hospital
+P000059,E000059,True,True,Flagship Hospital
+P000060,E000060,True,True,Flagship Hospital
+P000062,E000062,False,False,Flagship Hospital
+P000064,E000064,False,False,Flagship Hospital
+P000065,E000065,False,False,Flagship Hospital
+P000066,E000066,False,True,Flagship Hospital
+P000068,E000068,False,False,Flagship Hospital
+P000069,E000069,False,True,Flagship Hospital
+P000071,E000071,True,True,Flagship Hospital
+P000072,E000072,True,True,Flagship Hospital
+P000073,E000073,True,True,Flagship Hospital
+P000075,E000075,True,True,Flagship Hospital
+P000076,E000076,True,True,Flagship Hospital
+P000077,E000077,False,False,Flagship Hospital
+P000078,E000078,True,True,Flagship Hospital
+P000081,E000081,False,False,Flagship Hospital
+P000083,E000083,False,True,Flagship Hospital
+P000084,E000084,True,True,Flagship Hospital
+P000088,E000088,True,True,Flagship Hospital
+P000089,E000089,True,True,Flagship Hospital
+P000090,E000090,True,True,Flagship Hospital
+P000091,E000091,False,False,Flagship Hospital
+P000100,E000100,True,True,Flagship Hospital
+P000102,E000102,False,True,Flagship Hospital
+P000103,E000103,False,False,Flagship Hospital
+P000104,E000104,True,True,Flagship Hospital
+P000106,E000106,True,True,Flagship Hospital
+P000109,E000109,False,True,Flagship Hospital
+P000111,E000111,True,True,Flagship Hospital
+P000112,E000112,True,True,Flagship Hospital
+P000113,E000113,True,True,Flagship Hospital
+P000114,E000114,True,True,Community South
+P000116,E000116,True,True,Flagship Hospital
+P000117,E000117,False,False,Flagship Hospital
+P000118,E000118,False,False,Flagship Hospital
+P000122,E000122,True,True,Flagship Hospital
+P000123,E000123,True,True,Flagship Hospital
+P000124,E000124,True,True,Flagship Hospital
+P000125,E000125,False,False,Flagship Hospital
+P000126,E000126,False,False,Flagship Hospital
+P000127,E000127,False,True,Flagship Hospital
+P000128,E000128,True,True,Flagship Hospital
+P000129,E000129,False,True,Flagship Hospital
+P000130,E000130,False,False,Flagship Hospital
+P000131,E000131,True,True,Flagship Hospital
+P000132,E000132,True,True,Flagship Hospital
+P000133,E000133,True,True,Flagship Hospital
+P000135,E000135,False,False,Flagship Hospital
+P000136,E000136,False,True,Flagship Hospital
+P000138,E000138,True,True,Flagship Hospital
+P000141,E000141,True,True,Flagship Hospital
+P000144,E000144,True,True,Flagship Hospital
+P000147,E000147,True,True,Flagship Hospital
+P000150,E000150,True,True,Flagship Hospital
+P000152,E000152,False,False,Flagship Hospital
+P000156,E000156,True,True,Flagship Hospital
+P000159,E000159,True,True,Flagship Hospital
+P000160,E000160,True,True,Flagship Hospital
+P000162,E000162,True,True,Flagship Hospital
+P000163,E000163,True,True,Flagship Hospital
+P000164,E000164,False,False,Flagship Hospital
+P000167,E000167,True,True,Flagship Hospital
+P000170,E000170,True,True,Flagship Hospital
+P000171,E000171,False,True,Flagship Hospital
+P000173,E000173,True,True,Flagship Hospital
+P000174,E000174,False,True,Flagship Hospital
+P000176,E000176,True,True,Flagship Hospital
+P000177,E000177,False,False,Flagship Hospital
+P000182,E000182,True,True,Flagship Hospital
+P000183,E000183,False,True,Flagship Hospital
+P000184,E000184,True,True,Flagship Hospital
+P000187,E000187,True,True,Flagship Hospital
+P000191,E000191,False,False,Flagship Hospital
+P000192,E000192,False,False,Community South
+P000193,E000193,True,True,Flagship Hospital
+P000196,E000196,True,True,Flagship Hospital
+P000197,E000197,True,True,Flagship Hospital
+P000199,E000199,True,True,Flagship Hospital
+P000200,E000200,True,True,Flagship Hospital
+P000201,E000201,False,False,Flagship Hospital
+P000203,E000203,True,True,Flagship Hospital
+P000204,E000204,True,True,Flagship Hospital
+P000205,E000205,True,True,Flagship Hospital
+P000206,E000206,False,False,Flagship Hospital
+P000207,E000207,False,False,Flagship Hospital
+P000209,E000209,False,False,Flagship Hospital
+P000210,E000210,True,True,Flagship Hospital
+P000213,E000213,False,True,Flagship Hospital
+P000214,E000214,True,True,Flagship Hospital
+P000215,E000215,True,True,Flagship Hospital
+P000216,E000216,True,True,Flagship Hospital
+P000217,E000217,False,False,Flagship Hospital
+P000218,E000218,True,True,Flagship Hospital
+P000219,E000219,True,True,Flagship Hospital
+P000223,E000223,False,True,Flagship Hospital
+P000224,E000224,True,True,Flagship Hospital
+P000225,E000225,True,True,Flagship Hospital
+P000231,E000231,False,False,Flagship Hospital
+P000233,E000233,True,True,Flagship Hospital
+P000238,E000238,True,True,Flagship Hospital
+P000240,E000240,False,False,Flagship Hospital
+P000241,E000241,True,True,Flagship Hospital
+P000242,E000242,False,False,Flagship Hospital
+P000244,E000244,True,True,Flagship Hospital
+P000245,E000245,True,True,Flagship Hospital
+P000248,E000248,True,True,Community North
+P000250,E000250,False,False,Flagship Hospital
+P000251,E000251,True,True,Flagship Hospital
+P000252,E000252,True,True,Flagship Hospital
+P000253,E000253,False,False,Flagship Hospital
+P000254,E000254,True,True,Flagship Hospital
+P000255,E000255,True,True,Flagship Hospital
+P000256,E000256,False,True,Flagship Hospital
+P000257,E000257,False,False,Flagship Hospital
+P000258,E000258,True,True,Flagship Hospital
+P000260,E000260,False,False,Flagship Hospital
+P000262,E000262,True,True,Flagship Hospital
+P000263,E000263,False,False,Flagship Hospital
+P000265,E000265,True,True,Flagship Hospital
+P000269,E000269,False,True,Flagship Hospital
+P000271,E000271,False,False,Flagship Hospital
+P000272,E000272,True,True,Flagship Hospital
+P000275,E000275,True,True,Flagship Hospital
+P000276,E000276,True,True,Flagship Hospital
+P000280,E000280,True,True,Flagship Hospital
+P000281,E000281,False,False,Flagship Hospital
+P000282,E000282,True,True,Flagship Hospital
+P000283,E000283,True,True,Flagship Hospital
+P000286,E000286,False,True,Community North
+P000287,E000287,False,True,Flagship Hospital
+P000288,E000288,True,True,Flagship Hospital
+P000289,E005230,False,True,Community North
+P000293,E000293,False,False,Flagship Hospital
+P000294,E000294,True,True,Flagship Hospital
+P000295,E000295,True,True,Flagship Hospital
+P000296,E000296,True,True,Flagship Hospital
+P000297,E000297,True,True,Flagship Hospital
+P000298,E000298,True,True,Flagship Hospital
+P000303,E000303,False,False,Flagship Hospital
+P000304,E000304,True,True,Flagship Hospital
+P000308,E000308,True,True,Flagship Hospital
+P000310,E000310,True,True,Flagship Hospital
+P000311,E000311,True,True,Flagship Hospital
+P000312,E000312,True,True,Flagship Hospital
+P000313,E005413,True,True,Flagship Hospital
+P000314,E000314,True,True,Flagship Hospital
+P000315,E000315,False,False,Flagship Hospital
+P000317,E000317,False,False,Flagship Hospital
+P000318,E000318,True,True,Flagship Hospital
+P000319,E000319,True,True,Flagship Hospital
+P000320,E000320,False,False,Flagship Hospital
+P000322,E000322,False,False,Flagship Hospital
+P000323,E000323,False,True,Flagship Hospital
+P000325,E000325,True,True,Flagship Hospital
+P000326,E000326,True,True,Flagship Hospital
+P000327,E000327,True,True,Flagship Hospital
+P000328,E000328,True,True,Flagship Hospital
+P000329,E000329,False,False,Flagship Hospital
+P000332,E000332,True,True,Flagship Hospital
+P000335,E000335,True,True,Flagship Hospital
+P000338,E000338,True,True,Flagship Hospital
+P000340,E000340,False,True,Flagship Hospital
+P000341,E000341,True,True,Flagship Hospital
+P000342,E000342,False,False,Flagship Hospital
+P000346,E000346,True,True,Flagship Hospital
+P000347,E000347,True,True,Flagship Hospital
+P000348,E000348,False,False,Flagship Hospital
+P000349,E000349,False,False,Flagship Hospital
+P000351,E000351,True,True,Flagship Hospital
+P000352,E000352,True,True,Flagship Hospital
+P000354,E000354,False,False,Flagship Hospital
+P000355,E000355,True,True,Flagship Hospital
+P000359,E000359,False,False,Flagship Hospital
+P000361,E000361,True,True,Flagship Hospital
+P000362,E000362,True,True,Flagship Hospital
+P000365,E000365,False,False,Flagship Hospital
+P000366,E000366,True,True,Flagship Hospital
+P000369,E000369,True,True,Flagship Hospital
+P000370,E000370,True,True,Flagship Hospital
+P000375,E000375,True,True,Flagship Hospital
+P000377,E000377,True,True,Flagship Hospital
+P000381,E000381,True,True,Flagship Hospital
+P000382,E000382,False,False,Flagship Hospital
+P000384,E000384,True,True,Flagship Hospital
+P000385,E000385,True,True,Flagship Hospital
+P000389,E000389,False,False,Community South
+P000390,E000390,False,False,Flagship Hospital
+P000391,E000391,False,True,Flagship Hospital
+P000393,E000393,True,True,Flagship Hospital
+P000396,E000396,True,True,Flagship Hospital
+P000397,E000397,True,True,Flagship Hospital
+P000399,E000399,True,True,Flagship Hospital
+P000400,E000400,False,False,Flagship Hospital
+P000401,E000401,True,True,Flagship Hospital
+P000402,E000402,True,True,Flagship Hospital
+P000404,E000404,False,True,Flagship Hospital
+P000405,E000405,True,True,Flagship Hospital
+P000406,E000406,True,True,Flagship Hospital
+P000408,E000408,False,False,Flagship Hospital
+P000409,E000409,False,False,Flagship Hospital
+P000411,E000411,True,True,Flagship Hospital
+P000412,E000412,False,True,Flagship Hospital
+P000413,E000413,True,True,Flagship Hospital
+P000414,E000414,False,False,Flagship Hospital
+P000415,E000415,True,True,Flagship Hospital
+P000416,E000416,False,False,Flagship Hospital
+P000417,E000417,True,True,Flagship Hospital
+P000419,E000419,True,True,Flagship Hospital
+P000420,E000420,False,False,Flagship Hospital
+P000421,E000421,True,True,Flagship Hospital
+P000423,E000423,True,True,Flagship Hospital
+P000424,E004311,True,True,Community North
+P000425,E000425,True,True,Flagship Hospital
+P000426,E000426,True,True,Flagship Hospital
+P000427,E000427,True,True,Flagship Hospital
+P000428,E000428,False,False,Flagship Hospital
+P000429,E000429,True,True,Flagship Hospital
+P000430,E000430,True,True,Flagship Hospital
+P000434,E000434,False,True,Flagship Hospital
+P000436,E000436,True,True,Flagship Hospital
+P000438,E000438,False,False,Flagship Hospital
+P000439,E000439,False,False,Flagship Hospital
+P000442,E000442,False,True,Flagship Hospital
+P000443,E000443,False,False,Flagship Hospital
+P000444,E000444,False,False,Community South
+P000446,E000446,True,True,Community North
+P000448,E000448,False,False,Flagship Hospital
+P000449,E000449,False,False,Flagship Hospital
+P000450,E000450,True,True,Flagship Hospital
+P000452,E000452,False,False,Flagship Hospital
+P000453,E000453,True,True,Flagship Hospital
+P000454,E000454,True,True,Flagship Hospital
+P000455,E000455,True,True,Flagship Hospital
+P000456,E000456,True,True,Flagship Hospital
+P000457,E000457,True,True,Flagship Hospital
+P000459,E000459,True,True,Flagship Hospital
+P000460,E000460,False,False,Flagship Hospital
+P000462,E000462,True,True,Flagship Hospital
+P000464,E000464,True,True,Flagship Hospital
+P000465,E000465,False,False,Flagship Hospital
+P000466,E000466,False,False,Flagship Hospital
+P000467,E000467,False,False,Flagship Hospital
+P000468,E000468,True,True,Flagship Hospital
+P000469,E000469,False,False,Flagship Hospital
+P000472,E000472,True,True,Flagship Hospital
+P000474,E000474,True,True,Flagship Hospital
+P000476,E000476,True,True,Flagship Hospital
+P000480,E000480,True,True,Flagship Hospital
+P000482,E000482,False,False,Flagship Hospital
+P000483,E000483,True,True,Community South
+P000486,E000486,True,True,Flagship Hospital
+P000487,E000487,False,False,Flagship Hospital
+P000488,E000488,False,False,Flagship Hospital
+P000489,E000489,False,False,Flagship Hospital
+P000490,E000490,True,True,Flagship Hospital
+P000491,E000491,False,False,Flagship Hospital
+P000492,E000492,False,True,Flagship Hospital
+P000495,E000495,True,True,Flagship Hospital
+P000496,E000496,True,True,Flagship Hospital
+P000497,E000497,True,True,Flagship Hospital
+P000498,E000498,True,True,Flagship Hospital
+P000502,E000502,False,True,Flagship Hospital
+P000503,E000503,True,True,Flagship Hospital
+P000504,E000504,True,True,Flagship Hospital
+P000505,E000505,True,True,Flagship Hospital
+P000507,E000507,True,True,Flagship Hospital
+P000508,E000508,False,True,Flagship Hospital
+P000509,E000509,True,True,Flagship Hospital
+P000515,E000515,True,True,Flagship Hospital
+P000517,E000517,False,False,Flagship Hospital
+P000518,E000518,True,True,Flagship Hospital
+P000519,E000519,True,True,Flagship Hospital
+P000520,E000520,True,True,Flagship Hospital
+P000522,E000522,True,True,Flagship Hospital
+P000525,E000525,True,True,Flagship Hospital
+P000526,E000526,True,True,Flagship Hospital
+P000527,E000527,True,True,Flagship Hospital
+P000528,E000528,True,True,Flagship Hospital
+P000530,E000530,True,True,Flagship Hospital
+P000533,E000533,True,True,Flagship Hospital
+P000534,E000534,True,True,Flagship Hospital
+P000537,E000537,False,True,Flagship Hospital
+P000538,E000538,True,True,Flagship Hospital
+P000540,E000540,False,False,Flagship Hospital
+P000541,E000541,True,True,Flagship Hospital
+P000542,E000542,False,True,Flagship Hospital
+P000543,E000543,True,True,Flagship Hospital
+P000547,E000547,False,False,Flagship Hospital
+P000548,E000548,True,True,Flagship Hospital
+P000551,E000551,True,True,Flagship Hospital
+P000552,E000552,False,False,Flagship Hospital
+P000553,E000553,True,True,Flagship Hospital
+P000554,E000554,True,True,Flagship Hospital
+P000556,E000556,True,True,Flagship Hospital
+P000557,E000557,False,False,Flagship Hospital
+P000558,E000558,True,True,Flagship Hospital
+P000559,E000559,True,True,Flagship Hospital
+P000561,E000561,False,False,Flagship Hospital
+P000563,E000563,False,False,Flagship Hospital
+P000565,E000565,False,False,Flagship Hospital
+P000567,E000567,True,True,Flagship Hospital
+P000568,E000568,False,False,Flagship Hospital
+P000569,E000569,False,False,Flagship Hospital
+P000570,E000570,False,False,Flagship Hospital
+P000573,E000573,False,False,Flagship Hospital
+P000575,E000575,True,True,Flagship Hospital
+P000576,E000576,True,True,Flagship Hospital
+P000577,E000577,False,True,Flagship Hospital
+P000579,E000579,False,True,Flagship Hospital
+P000581,E000581,True,True,Flagship Hospital
+P000582,E000582,True,True,Flagship Hospital
+P000583,E005393,False,False,Community South
+P000584,E000584,False,False,Flagship Hospital
+P000585,E000585,False,True,Flagship Hospital
+P000586,E000586,False,False,Flagship Hospital
+P000588,E000588,False,True,Flagship Hospital
+P000590,E000590,True,True,Flagship Hospital
+P000591,E000591,False,True,Flagship Hospital
+P000593,E000593,False,False,Flagship Hospital
+P000594,E000594,False,True,Flagship Hospital
+P000595,E000595,True,True,Flagship Hospital
+P000596,E000596,False,True,Flagship Hospital
+P000597,E005574,False,False,Clinics
+P000598,E000598,True,True,Flagship Hospital
+P000599,E000599,False,False,Flagship Hospital
+P000602,E000602,False,False,Flagship Hospital
+P000603,E000603,False,True,Flagship Hospital
+P000604,E000604,True,True,Flagship Hospital
+P000605,E000605,False,False,Flagship Hospital
+P000607,E000607,True,True,Flagship Hospital
+P000608,E000608,True,True,Flagship Hospital
+P000609,E000609,True,True,Flagship Hospital
+P000610,E000610,True,True,Flagship Hospital
+P000611,E000611,True,True,Flagship Hospital
+P000613,E000613,False,False,Flagship Hospital
+P000614,E005140,True,True,Flagship Hospital
+P000619,E000619,True,True,Flagship Hospital
+P000623,E000623,False,True,Flagship Hospital
+P000624,E000624,False,True,Flagship Hospital
+P000625,E000625,True,True,Flagship Hospital
+P000626,E000626,True,True,Flagship Hospital
+P000629,E000629,True,True,Flagship Hospital
+P000631,E000631,False,False,Flagship Hospital
+P000633,E000633,False,False,Flagship Hospital
+P000634,E000634,True,True,Flagship Hospital
+P000636,E000636,False,False,Flagship Hospital
+P000637,E000637,False,False,Flagship Hospital
+P000638,E000638,False,False,Flagship Hospital
+P000639,E000639,False,False,Flagship Hospital
+P000641,E000641,True,True,Flagship Hospital
+P000642,E000642,False,True,Flagship Hospital
+P000643,E000643,False,False,Flagship Hospital
+P000644,E000644,False,False,Flagship Hospital
+P000645,E000645,True,True,Flagship Hospital
+P000646,E000646,True,True,Flagship Hospital
+P000647,E000647,True,True,Flagship Hospital
+P000648,E000648,False,False,Flagship Hospital
+P000650,E000650,True,True,Flagship Hospital
+P000651,E000651,True,True,Flagship Hospital
+P000652,E000652,False,True,Flagship Hospital
+P000653,E000653,False,True,Flagship Hospital
+P000655,E000655,False,False,Flagship Hospital
+P000656,E000656,True,True,Flagship Hospital
+P000657,E000657,False,False,Flagship Hospital
+P000658,E000658,True,True,Flagship Hospital
+P000659,E000659,True,True,Flagship Hospital
+P000660,E000660,True,True,Flagship Hospital
+P000661,E000661,True,True,Flagship Hospital
+P000662,E000662,True,True,Flagship Hospital
+P000663,E000663,False,False,Flagship Hospital
+P000665,E000665,False,False,Community North
+P000666,E000666,True,True,Flagship Hospital
+P000667,E000667,False,True,Flagship Hospital
+P000670,E004485,True,True,Flagship Hospital
+P000671,E000671,False,True,Flagship Hospital
+P000672,E000672,True,True,Flagship Hospital
+P000675,E000675,False,False,Flagship Hospital
+P000677,E000677,True,True,Flagship Hospital
+P000678,E000678,True,True,Flagship Hospital
+P000679,E000679,True,True,Flagship Hospital
+P000681,E000681,True,True,Flagship Hospital
+P000682,E000682,True,True,Flagship Hospital
+P000683,E000683,False,False,Flagship Hospital
+P000684,E000684,True,True,Flagship Hospital
+P000685,E000685,True,True,Flagship Hospital
+P000688,E000688,False,True,Flagship Hospital
+P000689,E000689,True,True,Flagship Hospital
+P000691,E000691,True,True,Flagship Hospital
+P000693,E000693,False,False,Flagship Hospital
+P000694,E000694,True,True,Flagship Hospital
+P000695,E000695,True,True,Flagship Hospital
+P000697,E000697,True,True,Flagship Hospital
+P000701,E000701,True,True,Flagship Hospital
+P000702,E000702,False,False,Flagship Hospital
+P000703,E000703,True,True,Flagship Hospital
+P000707,E000707,True,True,Flagship Hospital
+P000708,E000708,True,True,Flagship Hospital
+P000709,E000709,True,True,Flagship Hospital
+P000712,E000712,True,True,Flagship Hospital
+P000713,E000713,True,True,Flagship Hospital
+P000714,E000714,True,True,Flagship Hospital
+P000715,E000715,False,False,Flagship Hospital
+P000716,E000716,True,True,Flagship Hospital
+P000717,E000717,True,True,Flagship Hospital
+P000718,E000718,True,True,Flagship Hospital
+P000723,E000723,True,True,Flagship Hospital
+P000725,E000725,False,True,Flagship Hospital
+P000726,E000726,True,True,Flagship Hospital
+P000727,E000727,True,True,Flagship Hospital
+P000728,E000728,True,True,Flagship Hospital
+P000730,E000730,True,True,Flagship Hospital
+P000732,E000732,True,True,Flagship Hospital
+P000733,E000733,True,True,Flagship Hospital
+P000735,E000735,False,True,Flagship Hospital
+P000741,E000741,True,True,Flagship Hospital
+P000742,E000742,True,True,Flagship Hospital
+P000743,E000743,True,True,Flagship Hospital
+P000745,E000745,False,False,Flagship Hospital
+P000749,E000749,True,True,Flagship Hospital
+P000750,E000750,True,True,Flagship Hospital
+P000752,E000752,False,False,Flagship Hospital
+P000753,E000753,True,True,Flagship Hospital
+P000755,E000755,True,True,Flagship Hospital
+P000756,E000756,True,True,Flagship Hospital
+P000757,E000757,True,True,Flagship Hospital
+P000758,E000758,True,True,Community South
+P000760,E000760,True,True,Flagship Hospital
+P000761,E000761,True,True,Flagship Hospital
+P000762,E000762,False,False,Flagship Hospital
+P000763,E000763,True,True,Flagship Hospital
+P000764,E000764,True,True,Flagship Hospital
+P000765,E000765,True,True,Flagship Hospital
+P000766,E000766,True,True,Flagship Hospital
+P000767,E005037,False,True,Flagship Hospital
+P000769,E000769,True,True,Flagship Hospital
+P000772,E000772,True,True,Flagship Hospital
+P000773,E000773,False,False,Flagship Hospital
+P000774,E000774,True,True,Flagship Hospital
+P000776,E000776,True,True,Flagship Hospital
+P000777,E000777,True,True,Flagship Hospital
+P000778,E000778,True,True,Flagship Hospital
+P000781,E000781,False,False,Flagship Hospital
+P000782,E000782,True,True,Flagship Hospital
+P000784,E000784,True,True,Flagship Hospital
+P000786,E000786,True,True,Flagship Hospital
+P000787,E000787,True,True,Flagship Hospital
+P000790,E000790,True,True,Flagship Hospital
+P000793,E000793,True,True,Community North
+P000796,E000796,True,True,Community North
+P000799,E000799,True,True,Community North
+P000801,E000801,True,True,Community North
+P000802,E000802,False,True,Community North
+P000804,E000804,True,True,Community North
+P000807,E000807,True,True,Community North
+P000808,E000808,True,True,Community North
+P000809,E000809,True,True,Community North
+P000810,E000810,True,True,Community North
+P000813,E000813,True,True,Community North
+P000814,E000814,True,True,Community North
+P000816,E000816,False,False,Community North
+P000818,E000818,True,True,Community North
+P000820,E000820,False,False,Community North
+P000823,E000823,True,True,Community North
+P000825,E000825,True,True,Community North
+P000826,E000826,True,True,Community North
+P000828,E000828,False,True,Community North
+P000832,E000832,False,True,Community North
+P000835,E000835,True,True,Community North
+P000837,E000837,False,False,Community North
+P000839,E000839,True,True,Community North
+P000841,E000841,True,True,Community North
+P000842,E000842,True,True,Community North
+P000843,E000843,True,True,Community North
+P000844,E000844,False,False,Community North
+P000845,E000845,True,True,Community North
+P000850,E000850,False,False,Community North
+P000851,E000851,True,True,Community North
+P000852,E000852,False,True,Community North
+P000856,E000856,True,True,Community North
+P000857,E000857,True,True,Community North
+P000859,E000859,False,False,Community North
+P000860,E000860,True,True,Community North
+P000864,E005360,False,False,Flagship Hospital
+P000865,E000865,True,True,Community North
+P000866,E000866,False,True,Community North
+P000867,E000867,False,False,Community North
+P000868,E000868,False,False,Community North
+P000870,E000870,False,False,Community North
+P000872,E000872,False,False,Community North
+P000873,E000873,True,True,Community North
+P000874,E000874,True,True,Community North
+P000875,E000875,True,True,Community North
+P000876,E000876,True,True,Community North
+P000878,E000878,False,False,Community South
+P000880,E000880,True,True,Community North
+P000881,E000881,False,True,Community North
+P000882,E000882,True,True,Community North
+P000883,E000883,False,False,Community North
+P000885,E000885,True,True,Community North
+P000886,E000886,True,True,Flagship Hospital
+P000889,E000889,False,True,Community North
+P000891,E000891,True,True,Community North
+P000892,E000892,False,False,Community North
+P000894,E000894,True,True,Community North
+P000896,E000896,False,False,Community North
+P000897,E000897,False,False,Community North
+P000898,E000898,True,True,Community North
+P000900,E000900,False,False,Community North
+P000902,E000902,False,False,Community North
+P000907,E000907,True,True,Community North
+P000908,E000908,True,True,Community North
+P000910,E000910,True,True,Community North
+P000911,E000911,False,False,Community North
+P000912,E000912,False,False,Community South
+P000913,E000913,True,True,Community North
+P000915,E000915,True,True,Community North
+P000916,E000916,False,False,Community North
+P000917,E000917,True,True,Community North
+P000918,E000918,True,True,Community North
+P000919,E004709,False,False,Flagship Hospital
+P000920,E000920,True,True,Community North
+P000921,E000921,True,True,Community North
+P000923,E000923,False,False,Community North
+P000924,E000924,True,True,Community North
+P000928,E000928,True,True,Community North
+P000929,E000929,False,True,Community North
+P000930,E000930,True,True,Community North
+P000932,E000932,True,True,Community North
+P000934,E000934,False,False,Community North
+P000935,E000935,False,True,Community North
+P000938,E000938,True,True,Community North
+P000940,E000940,False,False,Community North
+P000941,E000941,False,False,Community North
+P000944,E000944,True,True,Community North
+P000946,E000946,False,False,Community North
+P000947,E000947,True,True,Community North
+P000948,E000948,False,True,Community North
+P000950,E000950,True,True,Community North
+P000951,E000951,True,True,Community North
+P000952,E000952,True,True,Community North
+P000957,E000957,False,False,Community North
+P000959,E000959,True,True,Community North
+P000962,E000962,False,False,Community North
+P000963,E000963,True,True,Community North
+P000966,E000966,False,False,Community North
+P000967,E000967,True,True,Community North
+P000969,E000969,True,True,Community North
+P000970,E000970,True,True,Community North
+P000971,E000971,False,False,Community North
+P000972,E000972,True,True,Community North
+P000975,E000975,False,False,Community North
+P000977,E000977,True,True,Community North
+P000978,E000978,True,True,Community North
+P000979,E000979,False,True,Community North
+P000982,E000982,False,False,Community North
+P000983,E000983,False,False,Community North
+P000984,E000984,True,True,Community North
+P000986,E000986,False,True,Community North
+P000987,E000987,True,True,Community North
+P000988,E000988,True,True,Community North
+P000993,E000993,True,True,Community North
+P000996,E000996,True,True,Community North
+P001000,E001000,True,True,Community South
+P001002,E001002,True,True,Community South
+P001003,E001003,False,True,Community South
+P001006,E001006,False,False,Community South
+P001012,E001012,False,False,Community South
+P001013,E001013,True,True,Community South
+P001017,E001017,True,True,Community South
+P001019,E001019,True,True,Community South
+P001020,E001020,False,True,Community South
+P001022,E001022,True,True,Community South
+P001023,E001023,True,True,Community South
+P001024,E001024,True,True,Community South
+P001027,E001027,True,True,Community South
+P001030,E001030,True,True,Community South
+P001031,E001031,False,True,Community South
+P001033,E001033,True,True,Community South
+P001034,E001034,False,False,Community South
+P001035,E001035,False,True,Flagship Hospital
+P001036,E001036,True,True,Community South
+P001039,E001039,True,True,Community South
+P001041,E001041,True,True,Community South
+P001042,E001042,False,False,Community South
+P001043,E001043,True,True,Community South
+P001044,E001044,True,True,Community South
+P001048,E001048,True,True,Community South
+P001049,E001049,True,True,Community South
+P001050,E001050,True,True,Flagship Hospital
+P001055,E001055,True,True,Community South
+P001056,E001056,False,False,Community South
+P001059,E001059,True,True,Community South
+P001062,E001062,True,True,Community South
+P001064,E001064,True,True,Community South
+P001065,E001065,False,False,Community South
+P001066,E001066,True,True,Community South
+P001067,E001067,False,False,Community South
+P001068,E001068,True,True,Community South
+P001069,E001069,True,True,Community South
+P001072,E001072,True,True,Community South
+P001075,E001075,True,True,Community South
+P001076,E001076,True,True,Community South
+P001078,E001078,False,True,Community South
+P001080,E001080,False,False,Community South
+P001082,E001082,True,True,Community South
+P001083,E001083,True,True,Community South
+P001085,E001085,True,True,Community South
+P001086,E001086,True,True,Community South
+P001087,E001087,False,True,Community South
+P001090,E001090,True,True,Community South
+P001093,E001093,True,True,Community South
+P001094,E001094,True,True,Community South
+P001097,E001097,True,True,Community South
+P001098,E001098,True,True,Community South
+P001102,E001102,True,True,Community South
+P001103,E001103,False,True,Community South
+P001104,E001104,True,True,Community South
+P001105,E001105,True,True,Community South
+P001106,E001106,False,False,Community South
+P001107,E001107,True,True,Community South
+P001108,E001108,True,True,Community South
+P001110,E001110,True,True,Community South
+P001111,E001111,False,True,Community South
+P001112,E001112,True,True,Community South
+P001113,E001113,True,True,Community South
+P001114,E001114,True,True,Community South
+P001116,E001116,True,True,Community South
+P001117,E001117,False,False,Community South
+P001118,E001118,True,True,Community South
+P001120,E001120,True,True,Community South
+P001121,E001121,True,True,Community South
+P001122,E001122,True,True,Community South
+P001124,E001124,True,True,Community South
+P001125,E005106,True,True,Community North
+P001126,E001126,True,True,Community South
+P001127,E001127,True,True,Community South
+P001128,E001128,True,True,Community South
+P001131,E001131,False,False,Community South
+P001132,E001132,True,True,Community South
+P001133,E001133,False,False,Community South
+P001136,E001136,True,True,Community South
+P001137,E001137,False,True,Community South
+P001139,E001139,True,True,Community South
+P001142,E001142,False,True,Community South
+P001143,E001143,True,True,Community South
+P001144,E001144,True,True,Community South
+P001146,E001146,True,True,Community South
+P001148,E001148,True,True,Community South
+P001150,E001150,False,False,Community South
+P001151,E001151,False,False,Community South
+P001152,E001152,True,True,Community South
+P001153,E001153,True,True,Community South
+P001154,E001154,False,True,Community South
+P001156,E001156,True,True,Community South
+P001160,E001160,True,True,Community South
+P001161,E001161,True,True,Community South
+P001163,E001163,True,True,Community South
+P001165,E001165,True,True,Community South
+P001166,E001166,True,True,Community South
+P001171,E001171,False,False,Community South
+P001172,E001172,True,True,Community South
+P001174,E001174,True,True,Community South
+P001176,E001176,True,True,Community South
+P001179,E001179,True,True,Community South
+P001180,E001180,False,True,Community South
+P001182,E001182,True,True,Flagship Hospital
+P001183,E001183,True,True,Community South
+P001184,E001184,False,False,Flagship Hospital
+P001185,E001185,True,True,Community South
+P001186,E001186,True,True,Community South
+P001187,E001187,True,True,Community South
+P001188,E001188,False,True,Community South
+P001189,E001189,True,True,Community South
+P001192,E001192,True,True,Community South
+P001194,E001194,True,True,Community South
+P001195,E001195,True,True,Community South
+P001196,E001196,True,True,Community South
+P001197,E001197,True,True,Flagship Hospital
+P001198,E001198,False,False,Community South
+P001204,E001204,True,True,Community South
+P001205,E001205,False,False,Community South
+P001206,E001206,True,True,Community South
+P001207,E001207,True,True,Community South
+P001208,E001208,True,True,Community South
+P001209,E001209,False,False,Community South
+P001210,E001210,True,True,Community South
+P001211,E001211,True,True,Community South
+P001212,E001212,True,True,Community South
+P001213,E001213,True,True,Home Health
+P001216,E001216,True,True,Home Health
+P001217,E001217,True,True,Home Health
+P001218,E001218,True,True,Home Health
+P001219,E001219,False,False,Home Health
+P001220,E001220,False,False,Home Health
+P001221,E001221,True,True,Home Health
+P001222,E001222,True,True,Home Health
+P001223,E001223,True,True,Home Health
+P001224,E001224,False,False,Home Health
+P001225,E001225,False,False,Home Health
+P001227,E001227,True,True,Home Health
+P001228,E001228,True,True,Home Health
+P001229,E001229,True,True,Home Health
+P001230,E001230,True,True,Home Health
+P001231,E001231,True,True,Home Health
+P001232,E001232,True,True,Home Health
+P001233,E001233,True,True,Home Health
+P001235,E001235,True,True,Home Health
+P001236,E001236,True,True,Home Health
+P001238,E001238,False,False,Home Health
+P001241,E001241,False,False,Home Health
+P001242,E001242,True,True,Home Health
+P001243,E001243,False,False,Home Health
+P001245,E001245,True,True,Home Health
+P001246,E001246,True,True,Home Health
+P001247,E001247,True,True,Home Health
+P001248,E001248,False,False,Home Health
+P001249,E001249,True,True,Home Health
+P001250,E001250,True,True,Home Health
+P001252,E001252,False,False,Home Health
+P001254,E001254,True,True,Home Health
+P001258,E001258,False,False,Home Health
+P001259,E001259,True,True,Home Health
+P001260,E001260,False,False,Home Health
+P001261,E001261,False,False,Home Health
+P001263,E001263,True,True,Home Health
+P001265,E001265,True,True,Home Health
+P001267,E001267,False,True,Home Health
+P001270,E001270,True,True,Home Health
+P001271,E001271,True,True,Home Health
+P001272,E005455,False,False,Flagship Hospital
+P001273,E001273,True,True,Home Health
+P001274,E001274,True,True,Home Health
+P001275,E001275,False,False,Home Health
+P001276,E001276,True,True,Home Health
+P001277,E001277,True,True,Home Health
+P001278,E001278,True,True,Home Health
+P001279,E001279,False,False,Home Health
+P001280,E001280,False,False,Home Health
+P001281,E001281,False,False,Home Health
+P001282,E001282,True,True,Home Health
+P001284,E001284,False,True,Home Health
+P001285,E001285,False,False,Home Health
+P001286,E001286,False,False,Home Health
+P001287,E001287,True,True,Home Health
+P001289,E005095,False,True,Clinics
+P001290,E001290,False,False,Home Health
+P001291,E001291,True,True,Home Health
+P001292,E001292,False,False,Home Health
+P001294,E001294,True,True,Home Health
+P001297,E001297,False,True,Home Health
+P001298,E001298,True,True,Home Health
+P001300,E001300,True,True,Home Health
+P001301,E001301,True,True,Home Health
+P001302,E001302,True,True,Home Health
+P001303,E005027,True,True,Community North
+P001304,E001304,False,True,Home Health
+P001305,E001305,False,False,Home Health
+P001306,E001306,False,False,Home Health
+P001307,E001307,True,True,Home Health
+P001309,E001309,False,True,Home Health
+P001310,E001310,True,True,Home Health
+P001311,E001311,True,True,Home Health
+P001312,E001312,True,True,Home Health
+P001316,E001316,True,True,Home Health
+P001317,E001317,True,True,Home Health
+P001318,E001318,True,True,Home Health
+P001320,E001320,True,True,Home Health
+P001321,E001321,False,False,Home Health
+P001324,E001324,True,True,Home Health
+P001326,E001326,False,False,Home Health
+P001328,E001328,True,True,Home Health
+P001330,E001330,True,True,Home Health
+P001335,E001335,True,True,Home Health
+P001336,E001336,False,True,Home Health
+P001337,E001337,False,True,Home Health
+P001340,E001340,True,True,Home Health
+P001341,E005469,True,True,Flagship Hospital
+P001342,E001342,True,True,Home Health
+P001343,E001343,True,True,Home Health
+P001345,E001345,False,False,Home Health
+P001346,E001346,False,False,Home Health
+P001347,E001347,True,True,Home Health
+P001348,E001348,False,False,Home Health
+P001351,E001351,True,True,Home Health
+P001352,E001352,False,True,Home Health
+P001353,E001353,True,True,Home Health
+P001355,E001355,True,True,Home Health
+P001356,E001356,False,False,Home Health
+P001357,E001357,True,True,Home Health
+P001359,E001359,False,True,Home Health
+P001360,E001360,True,True,Home Health
+P001361,E001361,True,True,Home Health
+P001362,E001362,True,True,Home Health
+P001363,E001363,False,True,Home Health
+P001364,E001364,False,True,Home Health
+P001365,E001365,False,False,Home Health
+P001370,E001370,True,True,Home Health
+P001373,E001373,False,False,Home Health
+P001374,E001374,False,True,Home Health
+P001375,E001375,True,True,Home Health
+P001376,E001376,False,True,Home Health
+P001377,E001377,True,True,Home Health
+P001378,E001378,True,True,Home Health
+P001379,E001379,True,True,Home Health
+P001380,E001380,True,True,Home Health
+P001382,E001382,False,False,Home Health
+P001384,E001384,True,True,Home Health
+P001385,E001385,False,True,Home Health
+P001388,E001388,True,True,Home Health
+P001389,E001389,True,True,Home Health
+P001390,E001390,False,False,Home Health
+P001391,E001391,True,True,Home Health
+P001394,E001394,True,True,Home Health
+P001399,E001399,True,True,Home Health
+P001400,E001400,True,True,Home Health
+P001402,E001402,False,False,System Office
+P001404,E001404,True,True,System Office
+P001406,E001406,True,True,System Office
+P001408,E001408,False,True,System Office
+P001409,E001409,True,True,System Office
+P001410,E001410,False,False,System Office
+P001411,E001411,False,True,System Office
+P001413,E001413,False,True,System Office
+P001414,E001414,True,True,System Office
+P001415,E001415,False,False,System Office
+P001416,E001416,True,True,System Office
+P001418,E001418,False,False,System Office
+P001420,E001420,True,True,System Office
+P001421,E001421,False,False,System Office
+P001422,E001422,True,True,System Office
+P001423,E001423,False,False,System Office
+P001424,E001424,True,True,System Office
+P001425,E001425,False,False,System Office
+P001426,E001426,False,False,System Office
+P001428,E001428,True,True,System Office
+P001429,E001429,False,False,System Office
+P001430,E001430,True,True,Clinics
+P001431,E001431,False,False,Clinics
+P001432,E001432,True,True,Clinics
+P001433,E001433,False,True,Clinics
+P001434,E001434,False,False,Clinics
+P001437,E001437,False,False,Clinics
+P001438,E001438,False,False,Clinics
+P001440,E004141,False,False,System Office
+P001442,E001442,False,True,Clinics
+P001443,E001443,True,True,Clinics
+P001444,E001444,True,True,Clinics
+P001447,E001447,False,True,Clinics
+P001449,E001449,True,True,Clinics
+P001451,E001451,True,True,Clinics
+P001452,E001452,True,True,Clinics
+P001453,E001453,True,True,Clinics
+P001456,E001456,True,True,Clinics
+P001457,E001457,True,True,Clinics
+P001458,E001458,True,True,Clinics
+P001460,E001460,True,True,Clinics
+P001461,E001461,True,True,Clinics
+P001462,E001462,True,True,Clinics
+P001464,E001464,False,False,Clinics
+P001467,E001467,False,False,Clinics
+P001468,E001468,False,False,Clinics
+P001469,E001469,True,True,Clinics
+P001470,E001470,True,True,Clinics
+P001471,E001471,True,True,Clinics
+P001472,E001472,False,True,Clinics
+P001474,E001474,True,True,Clinics
+P001475,E001475,True,True,Clinics
+P001476,E001476,True,True,Clinics
+P001477,E001477,True,True,Clinics
+P001479,E001479,False,False,Clinics
+P001480,E001480,True,True,Clinics
+P001481,E001481,True,True,Clinics
+P001482,E001482,True,True,Clinics
+P001483,E001483,False,False,Clinics
+P001484,E001484,True,True,Clinics
+P001485,E001485,True,True,Clinics
+P001487,E001487,True,True,Clinics
+P001488,E001488,False,False,Clinics
+P001489,E001489,False,True,Clinics
+P001490,E001490,True,True,Clinics
+P001491,E001491,True,True,Clinics
+P001494,E001494,False,True,Clinics
+P001496,E001496,True,True,Clinics
+P001497,E001497,False,False,Clinics
+P001498,E001498,True,True,Clinics
+P001500,E001500,True,True,Clinics
+P001501,E001501,True,True,Clinics
+P001503,E001503,True,True,Clinics
+P001504,E001504,True,True,Clinics
+P001505,E001505,True,True,Clinics
+P001507,E001507,True,True,Clinics
+P001508,E001508,True,True,Clinics
+P001509,E001509,False,False,Clinics
+P001510,E001510,True,True,Clinics
+P001511,E001511,True,True,Clinics
+P001512,E004572,True,True,Community South
+P001513,E001513,True,True,Clinics
+P001514,E001514,True,True,Clinics
+P001516,E001516,True,True,Clinics
+P001522,E001522,True,True,Clinics
+P001524,E001524,True,True,Clinics
+P001525,E001525,True,True,Clinics
+P001526,E001526,True,True,Clinics
+P001527,E001527,True,True,Clinics
+P001530,E001530,False,False,Clinics
+P001531,E001531,True,True,Clinics
+P001532,E001532,True,True,Clinics
+P001534,E001534,True,True,Clinics
+P001535,E001535,False,False,Clinics
+P001538,E001538,True,True,Clinics
+P001540,E001540,True,True,Clinics
+P001542,E001542,True,True,Clinics
+P001546,E004460,True,True,Clinics
+P001547,E001547,True,True,Clinics
+P001548,E001548,False,False,Clinics
+P001550,E001550,False,True,Clinics
+P001551,E001551,False,False,Clinics
+P001553,E001553,True,True,Clinics
+P001554,E001554,False,True,Clinics
+P001555,E001555,False,True,Clinics
+P001556,E001556,False,False,Clinics
+P001558,E001558,True,True,Clinics
+P001559,E001559,False,False,Clinics
+P001560,E001560,True,True,Clinics
+P001561,E001561,True,True,Clinics
+P001563,E001563,True,True,Clinics
+P001564,E001564,True,True,Clinics
+P001566,E001566,True,True,Clinics
+P001567,E001567,False,False,Clinics
+P001568,E001568,True,True,Clinics
+P001569,E001569,True,True,Clinics
+P001571,E001571,True,True,Clinics
+P001572,E001572,True,True,Clinics
+P001574,E001574,True,True,Clinics
+P001575,E001575,True,True,Clinics
+P001576,E001576,True,True,Clinics
+P001577,E001577,True,True,Clinics
+P001578,E001578,True,True,Clinics
+P001579,E001579,True,True,Clinics
+P001580,E001580,True,True,Clinics
+P001582,E001582,False,True,Clinics
+P001584,E001584,False,False,Clinics
+P001585,E001585,True,True,Clinics
+P001587,E001587,True,True,Clinics
+P001590,E001590,False,False,Clinics
+P001591,E001591,False,False,Clinics
+P001592,E001592,False,False,Clinics
+P001593,E001593,False,True,Clinics
+P001594,E001594,False,False,Clinics
+P001597,E001597,False,False,Clinics
+P001598,E001598,False,False,Clinics
+P001599,E001599,True,True,Clinics
+P001600,E001600,False,True,Clinics
+P001602,E001602,True,True,Clinics
+P001603,E001603,True,True,Clinics
+P001604,E001604,True,True,Clinics
+P001605,E001605,False,False,Clinics
+P001606,E001606,False,True,Clinics
+P001608,E001608,False,False,Clinics
+P001610,E001610,True,True,Clinics
+P001611,E001611,False,True,Clinics
+P001613,E001613,True,True,Clinics
+P001614,E001614,True,True,Clinics
+P001615,E001615,True,True,Clinics
+P001616,E001616,True,True,Clinics
+P001617,E001617,True,True,Clinics
+P001618,E001618,True,True,Clinics
+P001619,E001619,True,True,Clinics
+P001625,E001625,False,False,Clinics
+P001626,E001626,True,True,Clinics
+P001627,E001627,False,False,Clinics
+P001628,E001628,True,True,Clinics
+P001629,E001629,True,True,Clinics
+P001630,E001630,True,True,Clinics
+P001632,E001632,True,True,Clinics
+P001633,E001633,True,True,Clinics
+P001634,E001634,False,False,Clinics
+P001636,E001636,True,True,Clinics
+P001637,E001637,True,True,Clinics
+P001638,E001638,True,True,Clinics
+P001639,E001639,False,False,Clinics
+P001642,E001642,True,True,Clinics
+P001643,E001643,True,True,Clinics
+P001644,E001644,False,False,Clinics
+P001645,E001645,True,True,Clinics
+P001647,E001647,True,True,Clinics
+P001650,E001650,True,True,Clinics
+P001651,E001651,True,True,Clinics
+P001654,E001654,True,True,Clinics
+P001656,E001656,True,True,Clinics
+P001657,E001657,True,True,Clinics
+P001658,E001658,True,True,Clinics
+P001659,E001659,True,True,Clinics
+P001660,E001660,True,True,Clinics
+P001661,E001661,True,True,Clinics
+P001662,E001662,True,True,Clinics
+P001663,E001663,False,False,Clinics
+P001664,E001664,True,True,Clinics
+P001665,E001665,True,True,Clinics
+P001666,E001666,True,True,Clinics
+P001668,E001668,True,True,Clinics
+P001669,E001669,False,False,Clinics
+P001670,E001670,True,True,Clinics
+P001671,E001671,True,True,Clinics
+P001673,E001673,True,True,Clinics
+P001674,E001674,False,False,Clinics
+P001675,E001675,True,True,Clinics
+P001676,E001676,True,True,Clinics
+P001677,E001677,False,False,Clinics
+P001679,E001679,True,True,Clinics
+P001683,E005506,True,True,Community South
+P001684,E001684,True,True,Clinics
+P001685,E001685,True,True,Clinics
+P001686,E001686,True,True,Clinics
+P001687,E001687,True,True,Clinics
+P001688,E001688,True,True,Clinics
+P001689,E001689,False,False,Clinics
+P001690,E001690,True,True,Clinics
+P001692,E001692,False,True,Clinics
+P001693,E001693,False,True,Clinics
+P001694,E001694,False,True,Clinics
+P001696,E001696,False,False,Clinics
+P001697,E001697,True,True,Clinics
+P001698,E001698,True,True,Clinics
+P001699,E001699,True,True,Clinics
+P001700,E001700,True,True,Clinics
+P001701,E001701,True,True,Clinics
+P001702,E001702,False,False,Clinics
+P001705,E001705,True,True,Clinics
+P001707,E001707,False,False,Clinics
+P001709,E001709,True,True,Clinics
+P001712,E001712,True,True,Clinics
+P001713,E001713,False,False,Clinics
+P001715,E001715,False,False,Clinics
+P001716,E001716,True,True,Clinics
+P001720,E001720,True,True,Clinics
+P001722,E001722,True,True,Clinics
+P001723,E001723,True,True,Clinics
+P001724,E001724,True,True,Clinics
+P001726,E001726,True,True,Clinics
+P001728,E001728,True,True,Clinics
+P001730,E001730,True,True,Clinics
+P001731,E001731,True,True,Clinics
+P001732,E001732,True,True,Clinics
+P001733,E001733,False,False,Clinics
+P001735,E001735,True,True,Clinics
+P001736,E001736,False,False,Clinics
+P001738,E001738,True,True,Clinics
+P001739,E001739,True,True,Clinics
+P001740,E001740,False,False,Clinics
+P001741,E001741,True,True,Clinics
+P001742,E001742,True,True,Clinics
+P001744,E001744,True,True,Clinics
+P001745,E001745,False,False,Clinics
+P001746,E001746,True,True,Clinics
+P001747,E001747,True,True,Clinics
+P001748,E001748,True,True,Clinics
+P001749,E001749,False,True,Clinics
+P001750,E001750,True,True,Clinics
+P001751,E005020,True,True,Flagship Hospital
+P001752,E001752,True,True,Clinics
+P001753,E001753,True,True,Clinics
+P001754,E001754,True,True,Clinics
+P001755,E001755,False,True,Clinics
+P001757,E001757,True,True,Clinics
+P001760,E001760,True,True,Clinics
+P001762,E001762,True,True,Clinics
+P001764,E001764,True,True,Clinics
+P001766,E001766,False,False,Clinics
+P001767,E001767,True,True,Clinics
+P001773,E001773,True,True,Clinics
+P001774,E001774,True,True,Clinics
+P001775,E001775,True,True,Clinics
+P001777,E001777,False,False,Clinics
+P001778,E001778,True,True,Clinics
+P001779,E001779,False,False,Clinics
+P001780,E001780,True,True,Clinics
+P001781,E001781,True,True,Clinics
+P001782,E001782,True,True,Clinics
+P001783,E001783,True,True,Clinics
+P001784,E001784,True,True,Clinics
+P001785,E001785,False,False,Clinics
+P001786,E001786,True,True,Clinics
+P001787,E001787,False,False,Clinics
+P001788,E001788,True,True,Clinics
+P001789,E001789,True,True,Clinics
+P001790,E001790,True,True,Clinics
+P001791,E001791,True,True,Clinics
+P001794,E001794,True,True,Clinics
+P001796,E001796,True,True,Clinics
+P001797,E001797,True,True,Clinics
+P001799,E001799,True,True,Clinics
+P001800,E001800,True,True,Clinics
+P001801,E001801,True,True,Clinics
+P001802,E001802,True,True,Clinics
+P001803,E001803,True,True,Clinics
+P001806,E001806,True,True,Clinics
+P001809,E001809,True,True,Clinics
+P001811,E001811,True,True,Clinics
+P001813,E001813,True,True,Clinics
+P001817,E001817,False,False,Clinics
+P001818,E001818,True,True,Clinics
+P001821,E001821,True,True,Clinics
+P001823,E001823,True,True,Clinics
+P001825,E001825,True,True,Clinics
+P001829,E001829,True,True,Clinics
+P001830,E001830,False,False,Clinics
+P001833,E001833,True,True,Clinics
+P001834,E001834,True,True,Clinics
+P001835,E001835,False,False,Clinics
+P001836,E001836,False,False,Clinics
+P001839,E001839,True,True,Clinics
+P001840,E001840,False,False,Clinics
+P001841,E001841,True,True,Clinics
+P001843,E001843,False,True,Clinics
+P001844,E001844,True,True,Clinics
+P001845,E001845,False,False,Clinics
+P001846,E001846,True,True,Clinics
+P001847,E001847,True,True,Clinics
+P001850,E001850,False,False,Clinics
+P001851,E001851,True,True,Clinics
+P001854,E004437,True,True,Community North
+P001855,E001855,True,True,Clinics
+P001856,E001856,False,False,Clinics
+P001857,E004669,True,True,Clinics
+P001858,E001858,True,True,Clinics
+P001859,E001859,True,True,Clinics
+P001860,E001860,True,True,Clinics
+P001861,E001861,False,True,Clinics
+P001862,E001862,True,True,Clinics
+P001863,E001863,True,True,Clinics
+P001864,E001864,False,True,Clinics
+P001865,E001865,True,True,Clinics
+P001866,E001866,True,True,Clinics
+P001867,E001867,True,True,Clinics
+P001869,E001869,False,False,Clinics
+P001870,E001870,True,True,Clinics
+P001871,E001871,True,True,Clinics
+P001872,E005022,True,True,Community North
+P001873,E001873,True,True,Clinics
+P001875,E001875,True,True,Clinics
+P001876,E001876,False,False,Clinics
+P001877,E001877,False,True,Clinics
+P001882,E001882,True,True,Clinics
+P001883,E001883,False,False,Clinics
+P001884,E001884,True,True,Clinics
+P001885,E001885,True,True,Clinics
+P001887,E001887,True,True,Clinics
+P001888,E001888,False,True,Clinics
+P001889,E001889,True,True,Flagship Hospital
+P001890,E001890,False,True,Flagship Hospital
+P001892,E001892,False,False,Flagship Hospital
+P001894,E001894,False,False,Flagship Hospital
+P001895,E001895,True,True,Flagship Hospital
+P001897,E001897,True,True,Flagship Hospital
+P001898,E001898,True,True,Flagship Hospital
+P001899,E001899,False,True,Flagship Hospital
+P001900,E001900,False,True,Flagship Hospital
+P001902,E001902,True,True,Flagship Hospital
+P001904,E001904,False,False,Flagship Hospital
+P001905,E001905,False,True,Flagship Hospital
+P001906,E001906,False,True,Flagship Hospital
+P001907,E001907,False,False,Flagship Hospital
+P001908,E001908,True,True,Flagship Hospital
+P001909,E001909,True,True,Flagship Hospital
+P001912,E001912,True,True,Flagship Hospital
+P001913,E001913,True,True,Flagship Hospital
+P001914,E001914,True,True,Flagship Hospital
+P001915,E001915,True,True,Community North
+P001920,E001920,False,False,Flagship Hospital
+P001921,E001921,False,False,Flagship Hospital
+P001924,E001924,True,True,Flagship Hospital
+P001925,E001925,False,False,Flagship Hospital
+P001926,E001926,True,True,Flagship Hospital
+P001931,E001931,True,True,Flagship Hospital
+P001933,E001933,False,False,Flagship Hospital
+P001936,E001936,True,True,Flagship Hospital
+P001937,E001937,True,True,Flagship Hospital
+P001938,E001938,False,True,Flagship Hospital
+P001940,E001940,True,True,Flagship Hospital
+P001941,E001941,False,False,Flagship Hospital
+P001943,E001943,False,False,Flagship Hospital
+P001945,E001945,True,True,Flagship Hospital
+P001946,E001946,False,False,Flagship Hospital
+P001947,E001947,False,False,Flagship Hospital
+P001948,E001948,True,True,Flagship Hospital
+P001949,E001949,False,False,Flagship Hospital
+P001950,E001950,True,True,Flagship Hospital
+P001952,E001952,True,True,Flagship Hospital
+P001953,E001953,True,True,Flagship Hospital
+P001954,E001954,True,True,Flagship Hospital
+P001955,E001955,False,False,Flagship Hospital
+P001956,E001956,True,True,Flagship Hospital
+P001958,E001958,True,True,Flagship Hospital
+P001959,E001959,False,False,Flagship Hospital
+P001960,E001960,False,False,Flagship Hospital
+P001962,E001962,True,True,Flagship Hospital
+P001963,E001963,False,False,Flagship Hospital
+P001964,E001964,True,True,Flagship Hospital
+P001965,E001965,False,False,Flagship Hospital
+P001966,E001966,False,False,Flagship Hospital
+P001967,E001967,True,True,Flagship Hospital
+P001970,E001970,True,True,Flagship Hospital
+P001971,E001971,False,True,Flagship Hospital
+P001972,E001972,False,False,Flagship Hospital
+P001973,E001973,False,True,Flagship Hospital
+P001974,E001974,True,True,Flagship Hospital
+P001980,E001980,True,True,Flagship Hospital
+P001981,E001981,False,False,Flagship Hospital
+P001982,E001982,False,False,Flagship Hospital
+P001983,E001983,True,True,Flagship Hospital
+P001985,E001985,True,True,Flagship Hospital
+P001986,E001986,True,True,Flagship Hospital
+P001987,E001987,True,True,Flagship Hospital
+P001989,E001989,True,True,Flagship Hospital
+P001991,E001991,True,True,Flagship Hospital
+P001992,E001992,False,True,Flagship Hospital
+P001993,E001993,True,True,Flagship Hospital
+P001996,E001996,False,False,Flagship Hospital
+P001998,E001998,False,False,Flagship Hospital
+P001999,E001999,True,True,Flagship Hospital
+P002001,E002001,True,True,Flagship Hospital
+P002003,E005477,True,True,Flagship Hospital
+P002004,E002004,True,True,Flagship Hospital
+P002005,E002005,False,False,Flagship Hospital
+P002006,E002006,False,False,Flagship Hospital
+P002011,E002011,False,False,Flagship Hospital
+P002013,E002013,True,True,Flagship Hospital
+P002014,E002014,True,True,Flagship Hospital
+P002017,E002017,False,False,Flagship Hospital
+P002018,E002018,False,False,Flagship Hospital
+P002021,E002021,True,True,Flagship Hospital
+P002022,E002022,False,True,Flagship Hospital
+P002023,E002023,True,True,Flagship Hospital
+P002024,E002024,False,False,Flagship Hospital
+P002025,E002025,True,True,Flagship Hospital
+P002027,E002027,False,False,Flagship Hospital
+P002029,E002029,False,False,Flagship Hospital
+P002030,E002030,True,True,Flagship Hospital
+P002031,E002031,True,True,Flagship Hospital
+P002034,E002034,False,True,Flagship Hospital
+P002035,E002035,True,True,Flagship Hospital
+P002036,E005557,False,True,Community South
+P002037,E002037,True,True,Flagship Hospital
+P002038,E002038,False,True,Flagship Hospital
+P002039,E002039,True,True,Flagship Hospital
+P002040,E002040,False,False,Flagship Hospital
+P002042,E002042,False,False,Flagship Hospital
+P002045,E002045,True,True,Flagship Hospital
+P002047,E002047,True,True,Flagship Hospital
+P002049,E002049,False,True,Flagship Hospital
+P002050,E002050,False,False,Flagship Hospital
+P002051,E002051,True,True,Flagship Hospital
+P002053,E002053,True,True,Flagship Hospital
+P002054,E002054,False,False,Flagship Hospital
+P002055,E002055,False,False,Flagship Hospital
+P002056,E002056,True,True,Flagship Hospital
+P002057,E002057,False,False,Flagship Hospital
+P002058,E002058,True,True,Flagship Hospital
+P002059,E002059,True,True,Flagship Hospital
+P002062,E002062,True,True,Flagship Hospital
+P002066,E002066,False,False,Flagship Hospital
+P002067,E002067,True,True,Flagship Hospital
+P002068,E002068,True,True,Flagship Hospital
+P002069,E002069,False,False,Flagship Hospital
+P002070,E002070,True,True,Flagship Hospital
+P002071,E002071,True,True,Flagship Hospital
+P002073,E002073,True,True,Flagship Hospital
+P002076,E002076,True,True,Community North
+P002077,E002077,True,True,Flagship Hospital
+P002078,E002078,True,True,Flagship Hospital
+P002079,E002079,True,True,Flagship Hospital
+P002080,E002080,True,True,Flagship Hospital
+P002081,E002081,True,True,Flagship Hospital
+P002082,E002082,True,True,Flagship Hospital
+P002083,E002083,True,True,Flagship Hospital
+P002084,E002084,True,True,Flagship Hospital
+P002085,E002085,False,False,Flagship Hospital
+P002086,E002086,True,True,Flagship Hospital
+P002087,E002087,True,True,Flagship Hospital
+P002091,E002091,True,True,Flagship Hospital
+P002092,E002092,True,True,Flagship Hospital
+P002094,E002094,True,True,Flagship Hospital
+P002096,E002096,True,True,Flagship Hospital
+P002097,E004551,False,False,Community North
+P002098,E002098,True,True,Flagship Hospital
+P002099,E002099,False,True,Flagship Hospital
+P002100,E002100,True,True,Flagship Hospital
+P002104,E002104,True,True,Flagship Hospital
+P002106,E002106,False,False,Flagship Hospital
+P002109,E002109,True,True,Flagship Hospital
+P002110,E002110,True,True,Flagship Hospital
+P002111,E002111,False,False,Flagship Hospital
+P002112,E002112,True,True,Flagship Hospital
+P002113,E005035,True,True,Home Health
+P002114,E002114,True,True,Flagship Hospital
+P002115,E002115,True,True,Flagship Hospital
+P002117,E002117,False,False,Flagship Hospital
+P002118,E002118,True,True,Flagship Hospital
+P002119,E002119,True,True,Flagship Hospital
+P002120,E002120,True,True,Flagship Hospital
+P002122,E002122,False,False,Flagship Hospital
+P002123,E002123,False,False,Flagship Hospital
+P002125,E002125,False,True,Flagship Hospital
+P002127,E002127,True,True,Flagship Hospital
+P002128,E002128,True,True,Flagship Hospital
+P002129,E002129,False,True,Flagship Hospital
+P002131,E002131,True,True,Flagship Hospital
+P002132,E002132,True,True,Flagship Hospital
+P002134,E002134,False,False,Flagship Hospital
+P002136,E002136,True,True,Flagship Hospital
+P002138,E002138,True,True,Flagship Hospital
+P002139,E002139,True,True,Flagship Hospital
+P002143,E002143,False,False,Flagship Hospital
+P002144,E002144,False,True,Flagship Hospital
+P002147,E002147,True,True,Flagship Hospital
+P002148,E002148,True,True,Flagship Hospital
+P002150,E002150,True,True,Flagship Hospital
+P002151,E002151,False,False,Flagship Hospital
+P002152,E002152,False,False,Flagship Hospital
+P002153,E002153,True,True,Flagship Hospital
+P002154,E002154,True,True,Flagship Hospital
+P002155,E002155,True,True,Flagship Hospital
+P002156,E002156,True,True,Flagship Hospital
+P002159,E002159,True,True,Flagship Hospital
+P002160,E002160,True,True,Flagship Hospital
+P002162,E002162,True,True,Flagship Hospital
+P002163,E002163,True,True,Flagship Hospital
+P002165,E002165,True,True,Flagship Hospital
+P002166,E002166,False,False,Flagship Hospital
+P002167,E002167,True,True,Flagship Hospital
+P002168,E002168,True,True,Flagship Hospital
+P002169,E002169,True,True,Flagship Hospital
+P002172,E002172,False,True,Flagship Hospital
+P002174,E002174,True,True,Flagship Hospital
+P002176,E005374,False,True,Community South
+P002180,E002180,False,False,Flagship Hospital
+P002186,E002186,True,True,Flagship Hospital
+P002187,E002187,True,True,Flagship Hospital
+P002190,E002190,False,False,Flagship Hospital
+P002192,E002192,True,True,Flagship Hospital
+P002196,E002196,False,False,Flagship Hospital
+P002197,E002197,False,False,Flagship Hospital
+P002198,E002198,False,False,Flagship Hospital
+P002199,E002199,True,True,Flagship Hospital
+P002200,E002200,False,False,Flagship Hospital
+P002201,E002201,True,True,Flagship Hospital
+P002203,E002203,True,True,Flagship Hospital
+P002204,E002204,False,True,Flagship Hospital
+P002205,E002205,True,True,Flagship Hospital
+P002208,E002208,True,True,Flagship Hospital
+P002210,E002210,True,True,Flagship Hospital
+P002212,E002212,False,False,Flagship Hospital
+P002213,E002213,True,True,Flagship Hospital
+P002214,E002214,True,True,Flagship Hospital
+P002216,E002216,False,False,Flagship Hospital
+P002217,E002217,False,False,Flagship Hospital
+P002218,E002218,False,False,Flagship Hospital
+P002219,E002219,False,True,Flagship Hospital
+P002220,E002220,False,False,Flagship Hospital
+P002221,E002221,True,True,Flagship Hospital
+P002223,E002223,True,True,Flagship Hospital
+P002224,E002224,False,False,Flagship Hospital
+P002225,E002225,True,True,Flagship Hospital
+P002228,E002228,False,False,Flagship Hospital
+P002229,E002229,True,True,Flagship Hospital
+P002230,E002230,False,False,Flagship Hospital
+P002231,E002231,True,True,Flagship Hospital
+P002232,E004842,True,True,Flagship Hospital
+P002234,E002234,True,True,Flagship Hospital
+P002235,E002235,True,True,Flagship Hospital
+P002236,E002236,False,False,Flagship Hospital
+P002237,E002237,True,True,Flagship Hospital
+P002241,E002241,True,True,Flagship Hospital
+P002242,E002242,False,True,Flagship Hospital
+P002243,E002243,True,True,Flagship Hospital
+P002245,E002245,False,False,Flagship Hospital
+P002246,E002246,True,True,Flagship Hospital
+P002247,E002247,True,True,Flagship Hospital
+P002248,E002248,False,False,Flagship Hospital
+P002249,E002249,True,True,Flagship Hospital
+P002250,E002250,True,True,Flagship Hospital
+P002251,E002251,True,True,Flagship Hospital
+P002252,E002252,False,False,Flagship Hospital
+P002254,E002254,True,True,Flagship Hospital
+P002255,E002255,True,True,Flagship Hospital
+P002257,E002257,True,True,Flagship Hospital
+P002258,E002258,True,True,Flagship Hospital
+P002259,E002259,True,True,Flagship Hospital
+P002260,E002260,False,True,Flagship Hospital
+P002261,E002261,True,True,Flagship Hospital
+P002264,E002264,False,True,Flagship Hospital
+P002266,E002266,True,True,Flagship Hospital
+P002267,E002267,True,True,Flagship Hospital
+P002268,E002268,True,True,Flagship Hospital
+P002269,E002269,False,True,Flagship Hospital
+P002271,E002271,True,True,Flagship Hospital
+P002272,E002272,True,True,Flagship Hospital
+P002273,E002273,False,False,Flagship Hospital
+P002275,E002275,False,False,Flagship Hospital
+P002276,E002276,True,True,Flagship Hospital
+P002279,E002279,True,True,Flagship Hospital
+P002280,E002280,False,False,Flagship Hospital
+P002282,E002282,True,True,Flagship Hospital
+P002284,E002284,True,True,Flagship Hospital
+P002285,E002285,False,False,Flagship Hospital
+P002288,E002288,False,False,Flagship Hospital
+P002291,E002291,True,True,Flagship Hospital
+P002292,E002292,True,True,Flagship Hospital
+P002293,E002293,True,True,Flagship Hospital
+P002294,E002294,True,True,Flagship Hospital
+P002295,E002295,False,False,Flagship Hospital
+P002296,E002296,True,True,Flagship Hospital
+P002299,E002299,True,True,Flagship Hospital
+P002301,E002301,True,True,Flagship Hospital
+P002302,E002302,True,True,Flagship Hospital
+P002303,E002303,True,True,System Office
+P002304,E002304,False,False,Flagship Hospital
+P002305,E002305,True,True,Flagship Hospital
+P002307,E002307,True,True,Flagship Hospital
+P002308,E002308,True,True,Flagship Hospital
+P002309,E002309,False,False,Flagship Hospital
+P002310,E002310,True,True,Flagship Hospital
+P002311,E002311,False,False,Flagship Hospital
+P002312,E002312,True,True,Flagship Hospital
+P002313,E002313,True,True,Flagship Hospital
+P002314,E002314,False,False,Flagship Hospital
+P002315,E002315,True,True,Flagship Hospital
+P002316,E002316,True,True,Flagship Hospital
+P002317,E002317,True,True,Flagship Hospital
+P002318,E002318,True,True,Flagship Hospital
+P002319,E002319,True,True,Flagship Hospital
+P002320,E002320,True,True,Flagship Hospital
+P002321,E002321,False,False,Flagship Hospital
+P002325,E002325,True,True,Flagship Hospital
+P002328,E002328,False,False,Flagship Hospital
+P002329,E002329,True,True,Flagship Hospital
+P002330,E002330,False,False,Flagship Hospital
+P002331,E002331,False,False,Community South
+P002335,E002335,False,True,Flagship Hospital
+P002338,E002338,True,True,Flagship Hospital
+P002339,E002339,True,True,Flagship Hospital
+P002341,E002341,False,False,Flagship Hospital
+P002342,E002342,False,False,Flagship Hospital
+P002343,E002343,False,True,Flagship Hospital
+P002346,E002346,True,True,Flagship Hospital
+P002352,E002352,True,True,Flagship Hospital
+P002354,E002354,True,True,Flagship Hospital
+P002355,E002355,True,True,Flagship Hospital
+P002356,E002356,True,True,Flagship Hospital
+P002357,E002357,True,True,Flagship Hospital
+P002358,E002358,True,True,Flagship Hospital
+P002361,E002361,True,True,Flagship Hospital
+P002362,E002362,True,True,Flagship Hospital
+P002363,E002363,True,True,Flagship Hospital
+P002369,E002369,False,False,Flagship Hospital
+P002371,E002371,True,True,Flagship Hospital
+P002372,E002372,True,True,Flagship Hospital
+P002377,E002377,True,True,Flagship Hospital
+P002378,E002378,True,True,Flagship Hospital
+P002383,E002383,True,True,Flagship Hospital
+P002386,E002386,True,True,Flagship Hospital
+P002387,E002387,False,False,Flagship Hospital
+P002389,E002389,True,True,Flagship Hospital
+P002392,E002392,False,False,Flagship Hospital
+P002393,E002393,True,True,Flagship Hospital
+P002394,E002394,True,True,Flagship Hospital
+P002396,E002396,True,True,Flagship Hospital
+P002397,E002397,False,False,Flagship Hospital
+P002400,E002400,True,True,Flagship Hospital
+P002401,E002401,True,True,Flagship Hospital
+P002402,E002402,True,True,Flagship Hospital
+P002404,E002404,True,True,Flagship Hospital
+P002407,E002407,True,True,Flagship Hospital
+P002408,E002408,False,False,Flagship Hospital
+P002409,E002409,True,True,Flagship Hospital
+P002410,E002410,True,True,Flagship Hospital
+P002411,E002411,True,True,Flagship Hospital
+P002415,E002415,True,True,Flagship Hospital
+P002416,E002416,True,True,Flagship Hospital
+P002417,E002417,True,True,Flagship Hospital
+P002419,E002419,True,True,Flagship Hospital
+P002420,E002420,False,False,Flagship Hospital
+P002421,E002421,False,False,Flagship Hospital
+P002422,E002422,True,True,Flagship Hospital
+P002423,E002423,True,True,Flagship Hospital
+P002424,E002424,False,False,Flagship Hospital
+P002426,E002426,False,False,Flagship Hospital
+P002427,E002427,True,True,Flagship Hospital
+P002429,E002429,False,False,Flagship Hospital
+P002432,E002432,True,True,Flagship Hospital
+P002436,E002436,True,True,Flagship Hospital
+P002437,E002437,True,True,Flagship Hospital
+P002438,E002438,True,True,Flagship Hospital
+P002439,E002439,True,True,Flagship Hospital
+P002440,E002440,True,True,Flagship Hospital
+P002441,E002441,True,True,Flagship Hospital
+P002442,E002442,True,True,Flagship Hospital
+P002443,E002443,False,True,Flagship Hospital
+P002445,E002445,True,True,Flagship Hospital
+P002446,E002446,True,True,Flagship Hospital
+P002448,E002448,True,True,Flagship Hospital
+P002449,E002449,True,True,Flagship Hospital
+P002450,E002450,True,True,Flagship Hospital
+P002451,E002451,False,False,Flagship Hospital
+P002455,E002455,True,True,Flagship Hospital
+P002456,E002456,True,True,Flagship Hospital
+P002457,E002457,False,False,Flagship Hospital
+P002459,E002459,True,True,Flagship Hospital
+P002460,E002460,True,True,Flagship Hospital
+P002461,E002461,True,True,Flagship Hospital
+P002463,E002463,True,True,Flagship Hospital
+P002465,E002465,False,True,Flagship Hospital
+P002466,E002466,True,True,Flagship Hospital
+P002467,E002467,True,True,Flagship Hospital
+P002468,E002468,True,True,Flagship Hospital
+P002470,E002470,True,True,Flagship Hospital
+P002472,E002472,True,True,Flagship Hospital
+P002473,E002473,True,True,Flagship Hospital
+P002474,E002474,False,True,Flagship Hospital
+P002477,E002477,False,False,Flagship Hospital
+P002480,E005649,True,True,Community North
+P002483,E002483,True,True,Flagship Hospital
+P002485,E002485,False,False,Flagship Hospital
+P002486,E002486,True,True,Flagship Hospital
+P002489,E002489,False,True,Flagship Hospital
+P002490,E002490,False,False,Flagship Hospital
+P002493,E002493,False,True,Flagship Hospital
+P002494,E002494,True,True,Flagship Hospital
+P002496,E002496,True,True,Flagship Hospital
+P002499,E002499,True,True,Flagship Hospital
+P002500,E002500,True,True,Flagship Hospital
+P002503,E002503,True,True,Flagship Hospital
+P002504,E002504,False,True,Flagship Hospital
+P002505,E002505,False,False,Flagship Hospital
+P002508,E002508,True,True,Flagship Hospital
+P002510,E002510,False,False,Flagship Hospital
+P002511,E002511,True,True,Flagship Hospital
+P002512,E002512,True,True,Flagship Hospital
+P002513,E002513,True,True,Flagship Hospital
+P002514,E002514,False,False,Flagship Hospital
+P002516,E002516,True,True,Flagship Hospital
+P002519,E002519,True,True,Flagship Hospital
+P002520,E002520,True,True,Flagship Hospital
+P002521,E002521,True,True,Flagship Hospital
+P002523,E002523,False,False,Flagship Hospital
+P002529,E002529,True,True,Flagship Hospital
+P002531,E002531,True,True,Flagship Hospital
+P002532,E002532,True,True,Flagship Hospital
+P002534,E002534,True,True,Flagship Hospital
+P002535,E002535,True,True,Flagship Hospital
+P002538,E002538,True,True,Flagship Hospital
+P002541,E002541,True,True,Flagship Hospital
+P002542,E002542,True,True,Flagship Hospital
+P002543,E002543,False,False,Flagship Hospital
+P002544,E002544,True,True,Flagship Hospital
+P002546,E002546,False,True,Flagship Hospital
+P002551,E002551,True,True,Flagship Hospital
+P002553,E002553,True,True,Flagship Hospital
+P002554,E002554,False,False,Flagship Hospital
+P002558,E002558,False,False,Flagship Hospital
+P002559,E002559,True,True,Flagship Hospital
+P002561,E002561,False,False,Flagship Hospital
+P002562,E002562,False,False,Flagship Hospital
+P002563,E002563,True,True,Flagship Hospital
+P002564,E002564,True,True,Flagship Hospital
+P002565,E002565,True,True,Flagship Hospital
+P002566,E002566,True,True,Flagship Hospital
+P002569,E002569,True,True,Flagship Hospital
+P002570,E002570,True,True,Flagship Hospital
+P002571,E002571,True,True,Flagship Hospital
+P002573,E002573,True,True,Flagship Hospital
+P002574,E002574,True,True,Flagship Hospital
+P002579,E002579,False,False,Community North
+P002580,E002580,True,True,Flagship Hospital
+P002582,E005625,True,True,Flagship Hospital
+P002585,E004758,True,True,Flagship Hospital
+P002586,E002586,True,True,Flagship Hospital
+P002587,E002587,True,True,Community North
+P002588,E002588,False,False,Community North
+P002589,E002589,True,True,Community North
+P002590,E002590,True,True,Community North
+P002592,E002592,True,True,Community North
+P002594,E002594,False,True,Community North
+P002595,E002595,True,True,Community North
+P002596,E002596,False,False,Community North
+P002597,E002597,True,True,Community North
+P002598,E002598,False,False,Community North
+P002599,E002599,True,True,Community North
+P002600,E002600,True,True,Flagship Hospital
+P002602,E002602,True,True,Community North
+P002605,E002605,True,True,Community North
+P002607,E002607,False,True,Community North
+P002608,E002608,False,True,Community North
+P002611,E002611,True,True,Community North
+P002613,E002613,True,True,Community North
+P002614,E002614,True,True,Community North
+P002615,E002615,True,True,Community North
+P002616,E002616,True,True,Community North
+P002617,E002617,True,True,Community North
+P002619,E002619,False,True,Community North
+P002620,E002620,True,True,Community South
+P002621,E002621,True,True,Community North
+P002622,E002622,True,True,Community North
+P002623,E002623,True,True,Community North
+P002627,E002627,True,True,Community North
+P002629,E002629,True,True,Flagship Hospital
+P002631,E002631,True,True,Community North
+P002633,E002633,False,False,Community North
+P002634,E002634,True,True,Community North
+P002635,E002635,True,True,Community North
+P002636,E002636,True,True,Community North
+P002640,E002640,True,True,Community North
+P002641,E002641,False,False,Community North
+P002642,E002642,True,True,Community North
+P002643,E002643,False,False,Community North
+P002644,E002644,True,True,Community North
+P002645,E002645,False,True,Community North
+P002646,E002646,False,True,Community North
+P002647,E002647,True,True,Community North
+P002649,E002649,False,False,Community North
+P002652,E002652,True,True,Community North
+P002653,E002653,False,False,Community North
+P002654,E002654,True,True,Community North
+P002655,E002655,True,True,Flagship Hospital
+P002659,E002659,True,True,Community North
+P002661,E002661,True,True,Community North
+P002662,E002662,True,True,Community North
+P002664,E002664,True,True,Community North
+P002665,E002665,True,True,Community North
+P002666,E002666,False,False,Community North
+P002667,E002667,True,True,Community North
+P002668,E002668,False,False,Community North
+P002669,E002669,True,True,Community North
+P002670,E002670,True,True,Community North
+P002671,E002671,False,False,Community North
+P002673,E002673,True,True,Community North
+P002674,E002674,True,True,Community North
+P002676,E004940,True,True,Community South
+P002677,E002677,False,False,Community North
+P002678,E002678,True,True,Community North
+P002679,E002679,True,True,Community North
+P002680,E002680,True,True,Community North
+P002684,E002684,True,True,Community North
+P002685,E002685,True,True,Community North
+P002686,E002686,False,False,Community North
+P002690,E002690,False,False,Community North
+P002691,E002691,False,False,Community North
+P002693,E002693,False,False,Community North
+P002696,E002696,True,True,Community North
+P002697,E002697,True,True,Community North
+P002698,E002698,False,True,Community North
+P002699,E002699,True,True,Flagship Hospital
+P002700,E002700,False,False,Community North
+P002702,E002702,True,True,Community North
+P002703,E002703,True,True,Community North
+P002704,E002704,True,True,Community North
+P002705,E002705,True,True,Community North
+P002707,E002707,True,True,Community North
+P002708,E002708,True,True,Community North
+P002713,E002713,True,True,Community North
+P002714,E002714,False,False,Community North
+P002715,E002715,False,True,Community North
+P002716,E002716,True,True,Community North
+P002717,E002717,True,True,Community North
+P002718,E002718,True,True,Community North
+P002719,E002719,True,True,Community North
+P002720,E002720,True,True,Community North
+P002721,E002721,True,True,Community North
+P002724,E002724,True,True,Community North
+P002725,E002725,True,True,Community North
+P002727,E002727,True,True,Community North
+P002729,E002729,False,False,Community North
+P002731,E002731,True,True,Community North
+P002732,E002732,True,True,Community North
+P002734,E002734,True,True,Community North
+P002735,E002735,True,True,Community North
+P002737,E002737,True,True,Community North
+P002738,E002738,False,False,Community North
+P002739,E002739,True,True,Community North
+P002744,E002744,True,True,Community North
+P002745,E002745,False,False,Community North
+P002746,E002746,True,True,Community North
+P002750,E002750,True,True,Community North
+P002753,E002753,False,False,Community North
+P002755,E002755,True,True,Community North
+P002756,E002756,True,True,Community North
+P002757,E002757,True,True,Community North
+P002758,E002758,True,True,Community North
+P002759,E002759,False,True,Flagship Hospital
+P002762,E002762,True,True,Community North
+P002764,E002764,True,True,Flagship Hospital
+P002765,E002765,True,True,Community North
+P002766,E002766,False,False,Community North
+P002771,E002771,True,True,Community North
+P002777,E002777,True,True,Community North
+P002778,E002778,True,True,Community North
+P002779,E002779,True,True,Community North
+P002780,E002780,True,True,Community North
+P002781,E002781,False,False,Community North
+P002782,E002782,True,True,Flagship Hospital
+P002783,E002783,True,True,Community North
+P002785,E002785,True,True,Community North
+P002788,E002788,True,True,Community North
+P002790,E002790,True,True,Flagship Hospital
+P002792,E002792,True,True,Community North
+P002793,E002793,True,True,Community North
+P002796,E002796,True,True,Community North
+P002798,E002798,True,True,Community North
+P002800,E002800,True,True,Community North
+P002803,E002803,False,False,Community North
+P002804,E002804,True,True,Community North
+P002806,E002806,False,False,Community North
+P002811,E002811,True,True,Community North
+P002812,E002812,True,True,Community North
+P002813,E005356,True,True,Community North
+P002815,E002815,False,False,Community North
+P002818,E002818,True,True,Community North
+P002820,E002820,False,False,Community North
+P002821,E002821,False,False,Community North
+P002822,E002822,False,True,Community North
+P002824,E002824,True,True,Community South
+P002826,E002826,False,False,Community South
+P002828,E002828,True,True,Community South
+P002829,E002829,False,True,Community South
+P002830,E002830,True,True,Community South
+P002831,E002831,True,True,Community South
+P002834,E002834,True,True,Community South
+P002835,E002835,False,False,Community South
+P002836,E002836,False,False,Community South
+P002837,E002837,True,True,Community South
+P002838,E002838,True,True,Community South
+P002839,E002839,False,False,Community South
+P002842,E002842,True,True,Community South
+P002843,E002843,True,True,Community South
+P002844,E002844,True,True,Community South
+P002845,E002845,False,False,Community South
+P002846,E002846,True,True,Community South
+P002847,E002847,True,True,Community South
+P002848,E002848,True,True,Community South
+P002850,E002850,False,False,Community South
+P002851,E002851,True,True,Community South
+P002852,E002852,False,False,Community South
+P002853,E002853,True,True,Community South
+P002854,E002854,False,False,Community South
+P002855,E002855,True,True,Community South
+P002857,E002857,True,True,Community South
+P002858,E002858,True,True,Community South
+P002859,E002859,False,False,Community South
+P002862,E002862,True,True,Community South
+P002863,E002863,True,True,Community South
+P002864,E002864,False,False,Community South
+P002866,E002866,True,True,Community South
+P002867,E002867,True,True,Community South
+P002868,E002868,False,False,Community South
+P002869,E002869,True,True,Community South
+P002871,E002871,True,True,Community South
+P002873,E002873,False,False,Community South
+P002874,E002874,False,False,Community South
+P002878,E002878,True,True,Community South
+P002879,E002879,True,True,Community South
+P002880,E002880,True,True,Community South
+P002881,E002881,True,True,Community South
+P002885,E002885,True,True,Community South
+P002886,E002886,True,True,Community South
+P002888,E002888,True,True,Community South
+P002889,E002889,True,True,Community South
+P002891,E002891,True,True,Community South
+P002894,E002894,True,True,Community South
+P002896,E002896,False,False,Community South
+P002897,E002897,True,True,Community South
+P002903,E002903,True,True,Community South
+P002904,E002904,False,False,Community South
+P002905,E002905,True,True,Community South
+P002906,E002906,True,True,Community South
+P002908,E002908,False,False,Community South
+P002911,E002911,False,False,Community South
+P002912,E002912,True,True,Community South
+P002913,E002913,True,True,Community South
+P002914,E002914,True,True,Community South
+P002916,E002916,True,True,Community South
+P002920,E002920,True,True,Flagship Hospital
+P002921,E002921,True,True,Flagship Hospital
+P002922,E002922,False,True,Community South
+P002924,E002924,True,True,Community North
+P002928,E002928,True,True,Community South
+P002929,E002929,True,True,Community South
+P002931,E002931,False,True,Community South
+P002933,E002933,True,True,Community South
+P002936,E002936,True,True,Community South
+P002938,E002938,True,True,Community South
+P002939,E002939,True,True,Community South
+P002940,E002940,True,True,Community South
+P002941,E002941,True,True,Community South
+P002942,E002942,True,True,Community South
+P002944,E002944,False,False,Community South
+P002946,E002946,True,True,Community South
+P002947,E002947,True,True,Community South
+P002948,E002948,True,True,Community South
+P002949,E002949,False,False,Community South
+P002950,E002950,True,True,System Office
+P002951,E002951,True,True,Community South
+P002953,E002953,True,True,Community South
+P002954,E002954,True,True,Community South
+P002955,E002955,True,True,Community South
+P002956,E002956,True,True,Community South
+P002957,E002957,False,False,Community South
+P002958,E002958,False,False,Community South
+P002959,E002959,True,True,Community South
+P002961,E002961,True,True,Community South
+P002962,E002962,False,False,Community South
+P002963,E002963,False,True,Community South
+P002964,E002964,True,True,Community South
+P002965,E002965,False,True,Community South
+P002966,E004537,True,True,Community North
+P002970,E002970,True,True,Flagship Hospital
+P002974,E002974,True,True,Community South
+P002975,E002975,True,True,Community South
+P002976,E002976,True,True,Community South
+P002980,E002980,False,False,Community South
+P002981,E002981,False,False,Community South
+P002982,E002982,True,True,Community South
+P002983,E002983,True,True,Community South
+P002989,E002989,True,True,Community South
+P002992,E002992,True,True,Community South
+P002994,E002994,True,True,Community South
+P002995,E002995,True,True,Community South
+P002996,E002996,True,True,Community South
+P002997,E002997,True,True,Community South
+P002998,E002998,False,True,Community South
+P002999,E002999,True,True,Community South
+P003001,E003001,True,True,Community South
+P003003,E004371,True,True,Community North
+P003004,E003004,False,False,Community South
+P003006,E003006,True,True,Community South
+P003008,E003008,True,True,Flagship Hospital
+P003009,E003009,False,False,Community South
+P003010,E003010,True,True,Community South
+P003011,E003011,True,True,Community South
+P003017,E003017,True,True,Community South
+P003018,E003018,True,True,Community South
+P003020,E003020,True,True,Community South
+P003023,E003023,False,False,Community South
+P003029,E003029,False,True,Community South
+P003031,E003031,True,True,Flagship Hospital
+P003034,E003034,False,False,Community South
+P003036,E003036,True,True,Community South
+P003037,E003037,True,True,Community South
+P003041,E003041,False,False,Community South
+P003042,E003042,False,False,Community South
+P003043,E003043,True,True,Community South
+P003044,E003044,True,True,Community South
+P003045,E003045,False,False,Community South
+P003047,E003047,True,True,Community South
+P003048,E003048,False,False,Community South
+P003050,E003050,True,True,Flagship Hospital
+P003051,E003051,False,False,Community South
+P003052,E003052,True,True,Community South
+P003054,E003054,False,False,Community South
+P003055,E003055,True,True,Home Health
+P003056,E003056,True,True,Home Health
+P003057,E003057,False,False,Home Health
+P003058,E003058,True,True,Home Health
+P003059,E003059,True,True,Home Health
+P003061,E003061,False,True,Home Health
+P003062,E003062,True,True,Home Health
+P003063,E003063,True,True,Home Health
+P003064,E003064,True,True,Home Health
+P003065,E003065,True,True,Home Health
+P003066,E003066,True,True,Home Health
+P003067,E003067,True,True,Home Health
+P003068,E003068,False,False,Home Health
+P003069,E003069,True,True,Home Health
+P003070,E003070,True,True,Home Health
+P003072,E003072,True,True,Home Health
+P003074,E003074,True,True,Home Health
+P003075,E003075,False,False,Home Health
+P003079,E003079,True,True,Home Health
+P003080,E003080,True,True,Home Health
+P003081,E003081,True,True,Home Health
+P003082,E003082,True,True,Home Health
+P003083,E003083,True,True,Home Health
+P003084,E003084,True,True,Home Health
+P003086,E003086,True,True,Home Health
+P003087,E003087,False,False,Home Health
+P003088,E003088,False,True,Home Health
+P003089,E003089,True,True,Home Health
+P003090,E003090,True,True,Home Health
+P003091,E003091,True,True,Home Health
+P003092,E003092,True,True,Home Health
+P003094,E003094,False,True,Home Health
+P003095,E003095,True,True,Home Health
+P003096,E003096,False,False,Home Health
+P003098,E003098,True,True,Home Health
+P003099,E003099,True,True,Home Health
+P003100,E003100,True,True,Home Health
+P003102,E003102,True,True,Home Health
+P003104,E003104,True,True,Home Health
+P003105,E003105,False,False,Home Health
+P003108,E003108,True,True,Home Health
+P003110,E003110,True,True,Home Health
+P003112,E003112,True,True,Home Health
+P003113,E003113,True,True,Home Health
+P003115,E003115,True,True,Home Health
+P003117,E003117,True,True,Home Health
+P003118,E003118,True,True,Home Health
+P003119,E003119,True,True,Home Health
+P003120,E003120,False,True,Home Health
+P003122,E003122,False,False,Home Health
+P003123,E003123,False,False,System Office
+P003124,E003124,False,True,System Office
+P003126,E003126,True,True,System Office
+P003127,E003127,True,True,System Office
+P003128,E003128,True,True,System Office
+P003130,E003130,True,True,System Office
+P003131,E003131,True,True,System Office
+P003132,E003132,True,True,System Office
+P003133,E003133,True,True,System Office
+P003135,E003135,True,True,System Office
+P003136,E003136,True,True,System Office
+P003137,E003137,True,True,System Office
+P003138,E003138,True,True,System Office
+P003139,E003139,True,True,System Office
+P003140,E003140,False,False,System Office
+P003142,E003142,True,True,System Office
+P003143,E003143,True,True,System Office
+P003146,E003146,True,True,System Office
+P003147,E003147,True,True,System Office
+P003148,E003148,False,False,System Office
+P003149,E003149,True,True,System Office
+P003150,E003150,False,False,System Office
+P003151,E003151,True,True,System Office
+P003152,E003152,True,True,System Office
+P003153,E003153,False,False,System Office
+P003154,E003154,True,True,System Office
+P003156,E003156,True,True,System Office
+P003157,E003157,True,True,System Office
+P003158,E003158,False,False,System Office
+P003159,E003159,True,True,System Office
+P003160,E003160,False,False,System Office
+P003163,E003163,True,True,System Office
+P003164,E003164,False,False,System Office
+P003168,E003168,True,True,System Office
+P003170,E003170,False,False,System Office
+P003171,E003171,True,True,System Office
+P003172,E003172,True,True,System Office
+P003174,E003174,False,False,System Office
+P003175,E003175,True,True,System Office
+P003176,E003176,True,True,System Office
+P003177,E003177,False,False,System Office
+P003179,E003179,True,True,System Office
+P003180,E003180,True,True,System Office
+P003181,E003181,False,False,System Office
+P003182,E004418,True,True,Flagship Hospital
+P003184,E003184,True,True,System Office
+P003185,E003185,True,True,System Office
+P003186,E003186,False,True,System Office
+P003187,E003187,True,True,System Office
+P003188,E003188,True,True,System Office
+P003189,E003189,True,True,System Office
+P003190,E003190,True,True,System Office
+P003191,E003191,True,True,System Office
+P003192,E003192,True,True,System Office
+P003193,E003193,True,True,System Office
+P003194,E003194,False,True,System Office
+P003196,E003196,True,True,System Office
+P003197,E003197,True,True,System Office
+P003198,E003198,True,True,System Office
+P003201,E003201,False,False,System Office
+P003202,E003202,True,True,System Office
+P003203,E003203,True,True,System Office
+P003205,E003205,True,True,System Office
+P003207,E003207,True,True,System Office
+P003210,E003210,True,True,System Office
+P003213,E003213,True,True,System Office
+P003214,E003214,True,True,System Office
+P003215,E003215,True,True,System Office
+P003216,E003216,True,True,System Office
+P003217,E003217,True,True,System Office
+P003218,E003218,False,True,System Office
+P003220,E003220,False,False,System Office
+P003221,E003221,False,False,System Office
+P003223,E003223,True,True,System Office
+P003224,E003224,False,False,System Office
+P003225,E003225,True,True,System Office
+P003228,E003228,False,True,System Office
+P003229,E003229,False,True,System Office
+P003230,E003230,True,True,System Office
+P003231,E003231,True,True,System Office
+P003232,E003232,True,True,System Office
+P003234,E003234,True,True,System Office
+P003236,E003236,True,True,System Office
+P003239,E003239,True,True,System Office
+P003240,E003240,False,False,System Office
+P003241,E003241,True,True,System Office
+P003242,E003242,True,True,System Office
+P003243,E003243,True,True,System Office
+P003244,E003244,True,True,System Office
+P003245,E003245,True,True,System Office
+P003246,E003246,False,False,System Office
+P003247,E003247,True,True,System Office
+P003248,E003248,True,True,System Office
+P003249,E003249,False,False,System Office
+P003250,E003250,True,True,System Office
+P003251,E003251,False,False,System Office
+P003252,E003252,True,True,System Office
+P003253,E003253,False,False,System Office
+P003254,E003254,False,False,System Office
+P003256,E003256,True,True,System Office
+P003257,E003257,True,True,System Office
+P003258,E003258,False,False,System Office
+P003259,E003259,True,True,System Office
+P003261,E003261,True,True,System Office
+P003262,E003262,True,True,System Office
+P003264,E003264,True,True,System Office
+P003265,E003265,False,False,System Office
+P003267,E003267,False,True,System Office
+P003268,E003268,True,True,System Office
+P003269,E003269,True,True,System Office
+P003271,E003271,True,True,System Office
+P003273,E003273,True,True,System Office
+P003274,E003274,True,True,System Office
+P003277,E003277,True,True,System Office
+P003279,E003279,True,True,System Office
+P003282,E003282,False,True,System Office
+P003283,E003283,False,False,System Office
+P003284,E003284,False,True,System Office
+P003285,E003285,True,True,System Office
+P003286,E003286,True,True,System Office
+P003289,E003289,True,True,System Office
+P003291,E003291,True,True,System Office
+P003292,E003292,True,True,System Office
+P003293,E003293,True,True,System Office
+P003294,E003294,False,True,System Office
+P003295,E003295,True,True,System Office
+P003297,E003297,True,True,System Office
+P003299,E003299,False,False,System Office
+P003300,E003300,True,True,System Office
+P003302,E003302,True,True,System Office
+P003309,E003309,False,False,System Office
+P003310,E003310,True,True,System Office
+P003311,E003311,True,True,System Office
+P003312,E003312,False,False,System Office
+P003313,E003313,False,True,System Office
+P003314,E003314,True,True,System Office
+P003315,E003315,False,True,System Office
+P003316,E003316,False,True,System Office
+P003317,E003317,False,True,System Office
+P003318,E003318,True,True,System Office
+P003319,E003319,False,False,System Office
+P003321,E003321,True,True,System Office
+P003322,E003322,False,False,System Office
+P003323,E003323,False,True,System Office
+P003325,E003325,True,True,System Office
+P003326,E003326,True,True,System Office
+P003327,E003327,True,True,System Office
+P003328,E003328,True,True,System Office
+P003329,E003329,True,True,System Office
+P003330,E003330,True,True,System Office
+P003332,E003332,True,True,System Office
+P003335,E003335,True,True,System Office
+P003336,E003336,True,True,System Office
+P003342,E003342,True,True,System Office
+P003343,E003343,True,True,System Office
+P003344,E003344,True,True,System Office
+P003345,E003345,True,True,System Office
+P003346,E003346,False,False,System Office
+P003349,E003349,True,True,System Office
+P003350,E003350,True,True,System Office
+P003351,E003351,False,False,System Office
+P003352,E003352,True,True,System Office
+P003355,E003355,True,True,System Office
+P003356,E003356,True,True,System Office
+P003357,E003357,True,True,System Office
+P003358,E003358,True,True,System Office
+P003359,E003359,True,True,System Office
+P003360,E003360,True,True,System Office
+P003362,E003362,True,True,System Office
+P003363,E003363,False,True,System Office
+P003369,E003369,True,True,System Office
+P003370,E003370,True,True,System Office
+P003371,E003371,True,True,System Office
+P003372,E003372,True,True,System Office
+P003375,E003375,True,True,System Office
+P003376,E003376,False,True,System Office
+P003377,E003377,True,True,System Office
+P003378,E003378,True,True,System Office
+P003380,E003380,True,True,System Office
+P003381,E003381,True,True,System Office
+P003382,E003382,True,True,System Office
+P003385,E003385,False,False,System Office
+P003386,E003386,True,True,System Office
+P003387,E003387,True,True,System Office
+P003388,E003388,True,True,System Office
+P003389,E003389,False,False,System Office
+P003392,E003392,False,False,System Office
+P003393,E003393,True,True,System Office
+P003394,E003394,True,True,System Office
+P003395,E003395,False,False,System Office
+P003396,E003396,True,True,System Office
+P003400,E003400,False,True,System Office
+P003401,E003401,True,True,System Office
+P003402,E003402,True,True,System Office
+P003404,E003404,True,True,System Office
+P003406,E003406,False,False,System Office
+P003407,E003407,True,True,System Office
+P003408,E003408,True,True,System Office
+P003409,E003409,True,True,System Office
+P003413,E003413,True,True,System Office
+P003416,E003416,True,True,System Office
+P003418,E003418,True,True,System Office
+P003419,E003419,True,True,System Office
+P003420,E003420,False,False,System Office
+P003422,E003422,False,True,System Office
+P003423,E003423,False,False,System Office
+P003424,E003424,True,True,System Office
+P003426,E003426,True,True,Community North
+P003427,E003427,True,True,System Office
+P003428,E003428,True,True,System Office
+P003429,E003429,True,True,System Office
+P003430,E003430,False,False,System Office
+P003431,E003431,True,True,System Office
+P003432,E003432,True,True,System Office
+P003433,E003433,True,True,System Office
+P003434,E003434,True,True,System Office
+P003435,E003435,True,True,System Office
+P003436,E003436,True,True,System Office
+P003437,E003437,False,False,System Office
+P003438,E003438,True,True,System Office
+P003439,E003439,True,True,System Office
+P003441,E003441,True,True,System Office
+P003442,E003442,True,True,System Office
+P003443,E003443,True,True,System Office
+P003444,E003444,True,True,System Office
+P003447,E003447,True,True,System Office
+P003448,E003448,False,False,System Office
+P003449,E003449,False,False,System Office
+P003451,E003451,True,True,System Office
+P003452,E003452,True,True,System Office
+P003454,E003454,False,True,System Office
+P003457,E003457,True,True,System Office
+P003458,E003458,False,False,System Office
+P003459,E003459,True,True,System Office
+P003461,E003461,False,True,System Office
+P003462,E003462,True,True,System Office
+P003464,E003464,False,True,System Office
+P003465,E003465,True,True,System Office
+P003466,E003466,True,True,System Office
+P003467,E003467,True,True,System Office
+P003469,E003469,True,True,System Office
+P003471,E003471,False,False,System Office
+P003472,E003472,True,True,System Office
+P003473,E003473,True,True,System Office
+P003475,E003475,True,True,System Office
+P003476,E003476,False,True,System Office
+P003477,E003477,False,False,System Office
+P003479,E003479,False,False,System Office
+P003480,E003480,True,True,System Office
+P003481,E003481,True,True,System Office
+P003482,E003482,True,True,System Office
+P003483,E003483,True,True,System Office
+P003484,E003484,True,True,System Office
+P003485,E003485,True,True,System Office
+P003486,E003486,True,True,System Office
+P003488,E003488,False,False,System Office
+P003489,E003489,False,True,System Office
+P003490,E003490,True,True,System Office
+P003491,E003491,True,True,System Office
+P003493,E003493,True,True,System Office
+P003495,E003495,True,True,System Office
+P003496,E003496,True,True,System Office
+P003499,E003499,True,True,System Office
+P003502,E003502,True,True,System Office
+P003504,E003504,True,True,System Office
+P003505,E003505,True,True,System Office
+P003506,E003506,True,True,System Office
+P003508,E003508,True,True,System Office
+P003511,E003511,True,True,System Office
+P003513,E003513,True,True,System Office
+P003515,E003515,False,True,System Office
+P003517,E003517,False,False,System Office
+P003518,E003518,True,True,System Office
+P003520,E003520,True,True,System Office
+P003521,E003521,True,True,System Office
+P003523,E003523,True,True,System Office
+P003524,E003524,True,True,System Office
+P003525,E003525,False,False,System Office
+P003526,E003526,True,True,System Office
+P003527,E003527,True,True,System Office
+P003529,E003529,False,False,System Office
+P003530,E003530,False,False,System Office
+P003531,E003531,False,True,System Office
+P003532,E003532,True,True,System Office
+P003533,E003533,False,True,System Office
+P003534,E003534,False,False,System Office
+P003537,E003537,False,False,System Office
+P003538,E003538,False,True,System Office
+P003539,E003539,True,True,System Office
+P003541,E003541,False,False,System Office
+P003542,E003542,True,True,System Office
+P003543,E003543,False,False,System Office
+P003545,E003545,True,True,System Office
+P003549,E003549,True,True,System Office
+P003550,E003550,False,True,System Office
+P003551,E003551,True,True,System Office
+P003552,E003552,True,True,System Office
+P003553,E003553,True,True,System Office
+P003555,E003555,True,True,System Office
+P003557,E003557,False,False,System Office
+P003558,E003558,False,False,System Office
+P003560,E003560,False,False,System Office
+P003561,E003561,False,True,System Office
+P003562,E003562,True,True,System Office
+P003563,E003563,False,False,System Office
+P003565,E003565,True,True,System Office
+P003568,E003568,True,True,System Office
+P003569,E003569,True,True,System Office
+P003570,E003570,False,False,System Office
+P003571,E003571,True,True,System Office
+P003572,E003572,False,True,System Office
+P003573,E003573,False,False,System Office
+P003574,E003574,True,True,System Office
+P003575,E003575,True,True,System Office
+P003576,E003576,True,True,System Office
+P003578,E003578,True,True,System Office
+P003579,E003579,True,True,System Office
+P003581,E003581,False,False,System Office
+P003582,E003582,True,True,System Office
+P003583,E003583,True,True,System Office
+P003584,E003584,True,True,System Office
+P003585,E003585,False,False,System Office
+P003587,E003587,True,True,System Office
+P003588,E003588,True,True,System Office
+P003589,E003589,False,False,System Office
+P003591,E003591,True,True,System Office
+P003592,E003592,True,True,System Office
+P003593,E003593,True,True,System Office
+P003594,E003594,False,False,System Office
+P003595,E003595,True,True,System Office
+P003596,E003596,True,True,System Office
+P003597,E003597,True,True,System Office
+P003599,E003599,True,True,System Office
+P003602,E003602,False,False,System Office
+P003603,E003603,False,False,System Office
+P003606,E003606,False,False,System Office
+P003607,E003607,False,False,System Office
+P003609,E003609,False,False,System Office
+P003611,E003611,True,True,System Office
+P003612,E003612,True,True,System Office
+P003613,E003613,True,True,Clinics
+P003614,E003614,False,True,Clinics
+P003615,E003615,True,True,Clinics
+P003617,E003617,True,True,Clinics
+P003619,E003619,True,True,Clinics
+P003624,E003624,False,True,Clinics
+P003625,E003625,False,True,Clinics
+P003627,E003627,False,False,Clinics
+P003628,E003628,True,True,Clinics
+P003630,E003630,False,False,Clinics
+P003631,E003631,True,True,Clinics
+P003632,E003632,False,False,Clinics
+P003633,E003633,True,True,Clinics
+P003634,E003634,False,True,Clinics
+P003635,E003635,True,True,Clinics
+P003637,E003637,True,True,Clinics
+P003638,E003638,True,True,Clinics
+P003639,E003639,True,True,Clinics
+P003641,E003641,True,True,Clinics
+P003643,E003643,True,True,Clinics
+P003645,E003645,True,True,Clinics
+P003646,E003646,True,True,Clinics
+P003648,E003648,False,True,Clinics
+P003649,E003649,True,True,Clinics
+P003650,E003650,True,True,Clinics
+P003651,E003651,False,True,Clinics
+P003654,E003654,True,True,Clinics
+P003656,E003656,True,True,Clinics
+P003658,E003658,True,True,Clinics
+P003660,E003660,True,True,Clinics
+P003661,E003661,True,True,Clinics
+P003662,E003662,False,True,Clinics
+P003663,E003663,True,True,Clinics
+P003664,E003664,False,False,System Office
+P003665,E003665,True,True,Clinics
+P003666,E003666,False,False,Clinics
+P003670,E003670,True,True,Clinics
+P003671,E003671,False,True,Clinics
+P003673,E003673,False,False,Clinics
+P003674,E003674,True,True,Clinics
+P003677,E003677,False,False,Clinics
+P003679,E003679,True,True,Clinics
+P003680,E003680,True,True,Clinics
+P003682,E003682,False,False,Clinics
+P003684,E003684,True,True,Clinics
+P003685,E003685,True,True,Clinics
+P003686,E003686,False,False,Clinics
+P003687,E003687,True,True,Clinics
+P003689,E003689,False,False,Clinics
+P003690,E003690,True,True,Clinics
+P003691,E003691,False,False,Clinics
+P003693,E003693,False,False,Clinics
+P003695,E003695,False,False,Clinics
+P003696,E003696,True,True,Clinics
+P003699,E003699,False,True,Clinics
+P003700,E003700,True,True,Clinics
+P003701,E003701,True,True,Clinics
+P003703,E003703,True,True,Clinics
+P003705,E003705,True,True,Clinics
+P003707,E003707,False,False,Clinics
+P003709,E003709,True,True,Clinics
+P003710,E003710,True,True,Clinics
+P003713,E003713,True,True,Clinics
+P003715,E003715,True,True,Clinics
+P003719,E003719,True,True,Clinics
+P003722,E003722,False,False,Clinics
+P003724,E003724,True,True,Clinics
+P003725,E003725,False,False,Clinics
+P003727,E003727,True,True,Clinics
+P003729,E003729,True,True,Clinics
+P003730,E003730,True,True,Clinics
+P003731,E003731,True,True,Clinics
+P003734,E003734,False,False,Clinics
+P003736,E003736,False,False,Clinics
+P003737,E003737,True,True,Clinics
+P003740,E003740,False,False,Clinics
+P003741,E003741,True,True,Clinics
+P003742,E003742,True,True,Clinics
+P003743,E003743,True,True,Clinics
+P003747,E003747,True,True,Clinics
+P003748,E003748,True,True,Clinics
+P003749,E003749,False,False,Clinics
+P003750,E003750,False,False,Clinics
+P003752,E003752,False,False,Clinics
+P003753,E003753,True,True,Clinics
+P003754,E003754,True,True,Clinics
+P003755,E003755,False,False,Clinics
+P003756,E003756,False,False,Clinics
+P003757,E003757,True,True,Clinics
+P003759,E003759,True,True,Clinics
+P003761,E003761,False,True,Clinics
+P003762,E003762,True,True,Clinics
+P003763,E003763,False,True,Clinics
+P003765,E003765,True,True,Clinics
+P003767,E003767,True,True,Clinics
+P003768,E003768,False,False,Clinics
+P003769,E003769,False,False,Clinics
+P003770,E003770,True,True,Clinics
+P003772,E003772,True,True,Clinics
+P003773,E003773,False,False,Clinics
+P003774,E003774,True,True,Clinics
+P003775,E003775,True,True,Clinics
+P003776,E003776,False,False,Clinics
+P003778,E003778,True,True,Clinics
+P003780,E003780,True,True,Clinics
+P003782,E003782,True,True,Clinics
+P003783,E003783,True,True,Clinics
+P003785,E003785,True,True,Clinics
+P003786,E003786,False,False,Clinics
+P003787,E003787,True,True,Clinics
+P003788,E003788,True,True,Clinics
+P003789,E003789,True,True,Clinics
+P003790,E003790,False,True,Clinics
+P003793,E003793,False,False,Clinics
+P003794,E003794,True,True,Clinics
+P003796,E003796,False,False,Clinics
+P003797,E003797,True,True,Clinics
+P003798,E003798,True,True,Clinics
+P003799,E003799,True,True,Clinics
+P003800,E003800,True,True,Clinics
+P003802,E003802,True,True,Clinics
+P003806,E003806,True,True,Clinics
+P003807,E003807,True,True,Clinics
+P003808,E003808,False,False,Clinics
+P003811,E003811,True,True,Clinics
+P003812,E003812,True,True,Clinics
+P003813,E003813,True,True,Clinics
+P003814,E003814,True,True,Clinics
+P003815,E003815,True,True,Clinics
+P003816,E003816,True,True,Clinics
+P003817,E003817,True,True,Clinics
+P003818,E003818,True,True,Clinics
+P003819,E003819,False,True,Clinics
+P003820,E003820,True,True,Clinics
+P003822,E003822,True,True,Clinics
+P003823,E003823,True,True,Clinics
+P003824,E003824,False,False,Clinics
+P003826,E003826,True,True,Clinics
+P003827,E003827,True,True,Clinics
+P003831,E003831,False,False,Clinics
+P003833,E003833,True,True,Clinics
+P003834,E003834,False,False,Clinics
+P003835,E003835,True,True,Clinics
+P003836,E003836,True,True,Clinics
+P003837,E003837,False,False,Clinics
+P003838,E003838,True,True,Clinics
+P003839,E003839,False,False,Clinics
+P003842,E003842,True,True,Clinics
+P003844,E003844,True,True,Clinics
+P003845,E003845,False,True,Clinics
+P003846,E003846,False,True,Clinics
+P003850,E004288,True,True,Clinics
+P003851,E003851,False,True,Clinics
+P003853,E003853,True,True,Clinics
+P003854,E003854,False,True,Clinics
+P003855,E003855,True,True,Clinics
+P003856,E003856,False,False,Clinics
+P003859,E003859,True,True,Clinics
+P003860,E003860,True,True,Clinics
+P003861,E003861,True,True,Clinics
+P003862,E003862,True,True,Clinics
+P003863,E003863,True,True,Clinics
+P003864,E003864,True,True,Clinics
+P003865,E003865,True,True,Clinics
+P003866,E003866,True,True,Clinics
+P003867,E003867,True,True,Clinics
+P003868,E003868,True,True,Clinics
+P003869,E003869,True,True,Clinics
+P003870,E003870,True,True,Clinics
+P003871,E003871,False,False,Clinics
+P003872,E003872,False,False,Clinics
+P003873,E003873,False,False,Clinics
+P003874,E003874,True,True,Clinics
+P003879,E003879,True,True,Clinics
+P003880,E003880,False,False,Clinics
+P003881,E003881,True,True,Clinics
+P003882,E003882,True,True,Clinics
+P003883,E003883,True,True,Clinics
+P003886,E003886,True,True,Flagship Hospital
+P003887,E003887,True,True,Flagship Hospital
+P003888,E003888,True,True,System Office
+P003889,E003889,False,False,Community North
+P003890,E003890,True,True,System Office
+P003892,E003892,True,True,Flagship Hospital
+P003893,E003893,False,False,Community South
+P003895,E003895,False,False,System Office
+P003898,E003898,True,True,Flagship Hospital
+P003899,E003899,True,True,Flagship Hospital
+P003902,E003902,True,True,Clinics
+P003903,E003903,False,True,Flagship Hospital
+P003904,E003904,True,True,Flagship Hospital
+P003905,E003905,False,False,Community North
+P003911,E003911,True,True,Clinics
+P003913,E003913,True,True,Community North
+P003915,E003915,True,True,Flagship Hospital
+P003916,E003916,False,False,Community South
+P003917,E003917,True,True,Community South
+P003921,E003921,False,True,Flagship Hospital
+P003925,E003925,False,False,Flagship Hospital
+P003926,E003926,True,True,Clinics
+P003927,E003927,True,True,Home Health
+P003928,E003928,True,True,Flagship Hospital
+P003929,E003929,True,True,Flagship Hospital
+P003930,E003930,True,True,Flagship Hospital
+P003931,E003931,True,True,Community South
+P003932,E003932,True,True,Flagship Hospital
+P003935,E003935,False,False,Community South
+P003939,E003939,True,True,Community South
+P003941,E003941,False,False,Community South
+P003943,E003943,True,True,Flagship Hospital
+P003946,E003946,True,True,Community North
+P003947,E003947,True,True,Home Health
+P003953,E003953,True,True,System Office
+P003956,E003956,True,True,Flagship Hospital
+P003957,E003957,False,True,Flagship Hospital
+P003958,E003958,True,True,System Office
+P003959,E003959,True,True,System Office
+P003960,E003960,True,True,Community North
+P003963,E003963,True,True,Flagship Hospital
+P003964,E003964,False,False,Clinics
+P003965,E003965,False,True,Flagship Hospital
+P003966,E003966,True,True,Flagship Hospital
+P003967,E003967,True,True,Flagship Hospital
+P003969,E003969,True,True,Community South
+P003970,E003970,True,True,Clinics
+P003971,E003971,True,True,Clinics
+P003973,E003973,True,True,Flagship Hospital
+P003974,E003974,True,True,Flagship Hospital
+P003976,E003976,True,True,Community North
+P003978,E003978,True,True,Flagship Hospital
+P003983,E003983,True,True,Community North
+P003984,E003984,True,True,System Office
+P003985,E003985,True,True,System Office
+P003986,E003986,True,True,Flagship Hospital
+P003988,E003988,False,True,Flagship Hospital
+P003993,E003993,False,False,Flagship Hospital
+P003994,E003994,True,True,Home Health
+P003996,E003996,True,True,Community North
+P003997,E003997,True,True,Flagship Hospital
+P004001,E004001,True,True,Flagship Hospital
+P004003,E004003,True,True,System Office
+P004004,E004004,False,False,Flagship Hospital
+P004006,E004006,True,True,Clinics
+P004007,E004007,True,True,Flagship Hospital
+P004009,E004009,True,True,Community South
+P004014,E004014,True,True,Flagship Hospital
+P004016,E004016,True,True,Community North
+P004017,E004017,False,False,Flagship Hospital
+P004018,E004018,True,True,Community South
+P004019,E004019,True,True,Clinics
+P004020,E004020,True,True,Community South
+P004024,E004024,False,True,System Office
+P004026,E004026,True,True,Community South
+P004029,E004029,True,True,Clinics
+P004031,E004031,False,True,Flagship Hospital
+P004032,E004032,False,False,Flagship Hospital
+P004033,E004033,True,True,Community North
+P004034,E004034,False,True,Community South
+P004040,E004040,False,False,Community South
+P004041,E004041,False,False,Flagship Hospital
+P004042,E004042,False,False,Clinics
+P004043,E004043,True,True,Flagship Hospital
+P004044,E004044,False,False,Flagship Hospital
+P004045,E004045,True,True,Flagship Hospital
+P004047,E004047,True,True,Clinics
+P004048,E004048,True,True,System Office
+P004052,E004052,True,True,System Office
+P004053,E004053,True,True,Home Health
+P004054,E004054,True,True,Flagship Hospital
+P004057,E004057,True,True,Community South
+P004058,E004058,False,False,Flagship Hospital
+P004059,E004059,True,True,Flagship Hospital
+P004061,E004061,False,False,Community North
+P004062,E004062,True,True,Home Health
+P004064,E004064,True,True,System Office
+P004065,E004065,False,False,Flagship Hospital
+P004066,E004066,True,True,Home Health
+P004067,E004067,True,True,Clinics
+P004068,E004068,True,True,Flagship Hospital
+P004069,E004069,False,False,Flagship Hospital
+P004071,E004071,True,True,Community North
+P004077,E004077,True,True,Clinics
+P004078,E004078,True,True,Clinics
+P004081,E004081,True,True,Community South
+P004084,E004084,False,False,Community South
+P004085,E004085,False,False,Community South
+P004086,E004086,True,True,Clinics
+P004087,E004087,False,False,Flagship Hospital
+P004090,E004090,True,True,Home Health
+P004092,E004092,True,True,Flagship Hospital
+P004093,E004093,False,False,Clinics
+P004094,E004094,True,True,Community South
+P004095,E004095,False,False,Flagship Hospital
+P004097,E004097,True,True,Community South
+P004099,E004099,False,False,Clinics
+P004100,E004100,True,True,Clinics
+P004101,E004101,True,True,Community South
+P004102,E004102,False,True,Community North
+P004104,E004105,True,True,Community South
+P004105,E004106,False,False,Clinics
+P004106,E004107,False,False,Clinics
+P004108,E004109,True,True,Clinics
+P004109,E004110,True,True,Flagship Hospital
+P004110,E005202,True,True,Flagship Hospital
+P004111,E004112,True,True,Flagship Hospital
+P004112,E004113,True,True,Community North
+P004113,E004114,True,True,Community North
+P004114,E004115,True,True,Clinics
+P004115,E004116,True,True,System Office
+P004119,E004120,False,True,System Office
+P004120,E004121,False,True,Flagship Hospital
+P004121,E004122,True,True,Clinics
+P004122,E004123,True,True,Community North
+P004123,E004124,True,True,Community South
+P004124,E004125,True,True,Community North
+P004125,E004126,True,True,Community North
+P004126,E004127,False,False,Flagship Hospital
+P004127,E004128,False,False,Clinics
+P004128,E004129,False,False,Community North
+P004129,E004130,True,True,Community North
+P004130,E004131,False,False,Flagship Hospital
+P004131,E004132,True,True,Flagship Hospital
+P004132,E004133,True,True,Flagship Hospital
+P004133,E004134,False,True,System Office
+P004135,E004136,True,True,Flagship Hospital
+P004136,E004137,False,False,System Office
+P004143,E004145,True,True,Clinics
+P004144,E004146,True,True,Community South
+P004147,E004149,True,True,Flagship Hospital
+P004148,E004150,True,True,Flagship Hospital
+P004150,E004152,True,True,System Office
+P004152,E004154,True,True,System Office
+P004156,E004158,True,True,Flagship Hospital
+P004157,E004159,False,False,Community North
+P004158,E004160,False,True,Flagship Hospital
+P004161,E004163,True,True,Flagship Hospital
+P004163,E004165,False,False,Community North
+P004164,E004166,True,True,Clinics
+P004167,E004169,True,True,Home Health
+P004168,E004170,True,True,Community South
+P004169,E004171,True,True,Flagship Hospital
+P004170,E004172,True,True,Community North
+P004173,E004175,True,True,Clinics
+P004174,E004176,False,False,Flagship Hospital
+P004176,E004178,True,True,Home Health
+P004177,E004179,False,False,Flagship Hospital
+P004178,E004180,False,False,Flagship Hospital
+P004180,E004182,False,True,Flagship Hospital
+P004181,E004183,True,True,Flagship Hospital
+P004182,E004184,True,True,Clinics
+P004186,E004188,True,True,Community North
+P004187,E004189,False,False,System Office
+P004191,E004193,False,True,Flagship Hospital
+P004193,E004195,True,True,Community North
+P004194,E004196,False,False,System Office
+P004195,E004197,True,True,Community South
+P004196,E004198,True,True,Community North
+P004198,E004200,True,True,Home Health
+P004199,E004201,True,True,Flagship Hospital
+P004203,E004205,True,True,Community North
+P004205,E004207,True,True,System Office
+P004206,E004208,False,True,Community South
+P004209,E004211,True,True,System Office
+P004210,E004212,True,True,Community North
+P004211,E004213,True,True,Community North
+P004214,E004216,True,True,Clinics
+P004215,E004217,True,True,Community South
+P004216,E004218,True,True,Flagship Hospital
+P004217,E004219,True,True,Clinics
+P004218,E004220,True,True,Flagship Hospital
+P004221,E004223,False,False,Community South
+P004222,E004224,True,True,Clinics
+P004225,E004227,False,False,Clinics
+P004226,E004228,True,True,Home Health
+P004227,E004229,False,False,Community South
+P004229,E004231,False,False,System Office
+P004232,E004234,True,True,Clinics
+P004235,E004237,True,True,Flagship Hospital
+P004237,E004240,True,True,Clinics
+P004238,E004241,True,True,Clinics
+P004239,E004242,False,False,Flagship Hospital
+P004240,E004243,False,True,Flagship Hospital
+P004241,E004244,True,True,Clinics
+P004242,E004245,True,True,Flagship Hospital
+P004243,E004246,True,True,Home Health
+P004244,E004247,True,True,Flagship Hospital
+P004246,E004249,True,True,Clinics
+P004247,E004250,False,False,Flagship Hospital
+P004249,E004252,False,True,Home Health
+P004250,E004253,True,True,Flagship Hospital
+P004251,E004254,False,True,Flagship Hospital
+P004253,E004256,False,True,Flagship Hospital
+P004254,E004257,True,True,Community North
+P004257,E004260,True,True,Flagship Hospital
+P004258,E004261,False,False,System Office
+P004259,E004262,True,True,Flagship Hospital
+P004262,E004265,True,True,Clinics
+P004263,E004266,True,True,Community South
+P004265,E004268,True,True,Flagship Hospital
+P004266,E004269,True,True,Community South
+P004267,E004270,False,True,Flagship Hospital
+P004269,E004272,True,True,Home Health
+P004270,E004273,False,False,Community South
+P004271,E004274,False,True,Flagship Hospital
+P004272,E004275,True,True,Community North
+P004273,E004276,True,True,Clinics
+P004274,E004277,True,True,Flagship Hospital
+P004275,E004278,True,True,Flagship Hospital
+P004277,E004280,False,True,Clinics
+P004279,E004282,True,True,Flagship Hospital
+P004281,E004284,True,True,Community South
+P004282,E004285,True,True,Clinics
+P004283,E004286,True,True,Community South
+P004286,E004290,True,True,Flagship Hospital
+P004287,E004291,True,True,System Office
+P004288,E004292,True,True,Flagship Hospital
+P004289,E004293,False,True,Community North
+P004291,E004295,True,True,Flagship Hospital
+P004293,E004297,False,True,Flagship Hospital
+P004294,E004298,True,True,System Office
+P004295,E004299,True,True,Community South
+P004296,E004300,True,True,Clinics
+P004297,E004301,True,True,Clinics
+P004299,E004303,True,True,Home Health
+P004303,E004307,True,True,Community South
+P004304,E004308,True,True,Clinics
+P004305,E004309,False,False,Community North
+P004308,E004313,False,True,Community South
+P004309,E004314,False,False,System Office
+P004310,E004315,True,True,Flagship Hospital
+P004311,E004316,True,True,Clinics
+P004313,E004318,True,True,Clinics
+P004314,E004319,False,True,Home Health
+P004315,E004320,True,True,Flagship Hospital
+P004316,E004321,True,True,Community South
+P004317,E004322,False,False,Clinics
+P004318,E004323,False,False,Clinics
+P004323,E004328,False,False,Clinics
+P004324,E004329,True,True,System Office
+P004325,E004330,True,True,Community North
+P004327,E004332,True,True,System Office
+P004328,E004333,True,True,System Office
+P004329,E004334,True,True,Clinics
+P004330,E004335,False,False,Community North
+P004332,E004337,False,False,Flagship Hospital
+P004333,E004338,True,True,Flagship Hospital
+P004335,E004340,True,True,Community North
+P004336,E004341,False,False,Flagship Hospital
+P004337,E004342,True,True,Home Health
+P004338,E004343,True,True,Flagship Hospital
+P004339,E004344,True,True,Community South
+P004340,E004345,False,False,Clinics
+P004341,E004346,False,False,Community North
+P004344,E004349,False,True,Home Health
+P004345,E004350,True,True,Flagship Hospital
+P004346,E004351,False,False,Community North
+P004347,E004352,False,False,System Office
+P004353,E004358,True,True,Community North
+P004354,E004359,False,True,Community North
+P004356,E004361,True,True,Clinics
+P004357,E004841,True,True,Flagship Hospital
+P004360,E004365,True,True,Flagship Hospital
+P004361,E004366,True,True,System Office
+P004362,E004367,False,False,Community South
+P004363,E004368,True,True,Flagship Hospital
+P004364,E004369,True,True,Community South
+P004365,E004370,False,False,Home Health
+P004366,E004372,True,True,Flagship Hospital
+P004367,E004373,True,True,Clinics
+P004370,E004377,True,True,Community South
+P004371,E004378,True,True,Clinics
+P004372,E004379,True,True,Clinics
+P004373,E004380,True,True,Flagship Hospital
+P004374,E004381,True,True,Flagship Hospital
+P004375,E004382,False,False,Community North
+P004377,E004384,True,True,Flagship Hospital
+P004380,E004388,True,True,Flagship Hospital
+P004382,E004390,True,True,Community North
+P004384,E004392,True,True,Flagship Hospital
+P004385,E004393,True,True,System Office
+P004387,E004395,True,True,Flagship Hospital
+P004391,E004399,True,True,Flagship Hospital
+P004394,E004402,False,False,Community North
+P004395,E004403,True,True,Flagship Hospital
+P004398,E004406,False,True,Community North
+P004399,E004407,True,True,Community North
+P004401,E004409,True,True,Clinics
+P004404,E004412,False,True,System Office
+P004405,E004413,False,True,Flagship Hospital
+P004411,E004420,False,False,Clinics
+P004412,E004421,True,True,Flagship Hospital
+P004415,E004424,True,True,Flagship Hospital
+P004417,E004426,True,True,Clinics
+P004419,E004428,True,True,Clinics
+P004426,E004435,True,True,Flagship Hospital
+P004428,E004439,True,True,Flagship Hospital
+P004430,E004441,True,True,Clinics
+P004432,E004443,False,True,Community North
+P004433,E004444,False,True,Clinics
+P004434,E004445,True,True,Clinics
+P004437,E004448,True,True,Flagship Hospital
+P004438,E004449,False,True,Clinics
+P004439,E004450,True,True,Community North
+P004440,E004451,True,True,Flagship Hospital
+P004442,E004453,False,True,Flagship Hospital
+P004444,E004455,True,True,Flagship Hospital
+P004445,E004456,True,True,Community South
+P004446,E004457,False,True,Clinics
+P004447,E004458,False,False,Flagship Hospital
+P004448,E004459,False,False,Clinics
+P004453,E004465,True,True,Flagship Hospital
+P004456,E004468,True,True,Community South
+P004457,E004469,False,True,Home Health
+P004458,E004470,True,True,Flagship Hospital
+P004459,E004471,True,True,Flagship Hospital
+P004460,E004472,False,False,Flagship Hospital
+P004462,E004474,False,False,Flagship Hospital
+P004463,E004475,True,True,System Office
+P004464,E004476,True,True,Community North
+P004465,E004477,True,True,Flagship Hospital
+P004466,E004478,False,True,Flagship Hospital
+P004468,E004480,True,True,Community North
+P004469,E004481,False,True,System Office
+P004473,E004486,True,True,Home Health
+P004474,E004487,False,False,Community South
+P004475,E004488,False,False,Flagship Hospital
+P004476,E004489,False,False,Flagship Hospital
+P004477,E004490,True,True,Flagship Hospital
+P004478,E004491,False,False,System Office
+P004479,E004492,True,True,Clinics
+P004480,E004493,True,True,Flagship Hospital
+P004481,E004494,True,True,Clinics
+P004485,E004498,True,True,Clinics
+P004486,E004499,False,False,Flagship Hospital
+P004488,E004501,True,True,Community South
+P004489,E004502,True,True,Clinics
+P004490,E004503,True,True,Flagship Hospital
+P004492,E004505,True,True,Community South
+P004493,E004506,False,True,Flagship Hospital
+P004495,E004508,False,False,Community South
+P004496,E004509,False,False,Community South
+P004497,E004510,False,False,Community South
+P004498,E004511,True,True,Flagship Hospital
+P004499,E004512,True,True,Flagship Hospital
+P004501,E004514,False,False,Community North
+P004503,E004516,True,True,Flagship Hospital
+P004504,E004517,True,True,Community North
+P004505,E004518,True,True,Clinics
+P004506,E004519,True,True,Community North
+P004509,E004522,False,False,System Office
+P004511,E004524,False,False,Community South
+P004512,E004525,True,True,System Office
+P004513,E004526,False,True,Community South
+P004514,E004527,True,True,Community South
+P004515,E004528,True,True,Clinics
+P004516,E004529,True,True,Community North
+P004518,E004531,False,False,Flagship Hospital
+P004519,E004876,True,True,Clinics
+P004520,E004533,True,True,Community South
+P004523,E004536,True,True,Clinics
+P004524,E004538,True,True,Clinics
+P004525,E004539,True,True,Flagship Hospital
+P004526,E004540,True,True,Community North
+P004527,E004541,False,False,Community North
+P004529,E004543,True,True,Clinics
+P004530,E004544,False,False,Flagship Hospital
+P004531,E004545,True,True,Community South
+P004532,E004546,True,True,Community South
+P004533,E004547,True,True,Flagship Hospital
+P004534,E004548,False,True,Clinics
+P004535,E004549,True,True,Community North
+P004536,E004550,True,True,Community South
+P004537,E004552,False,True,System Office
+P004538,E004553,True,True,Clinics
+P004539,E004554,True,True,Community South
+P004543,E004558,False,False,Community South
+P004545,E004560,True,True,System Office
+P004546,E004561,True,True,Flagship Hospital
+P004549,E004564,True,True,Clinics
+P004550,E004565,True,True,Community South
+P004551,E004566,False,False,Clinics
+P004552,E004567,True,True,Flagship Hospital
+P004554,E004569,False,False,Flagship Hospital
+P004555,E004570,False,False,Flagship Hospital
+P004556,E004571,False,True,System Office
+P004558,E004574,True,True,Flagship Hospital
+P004559,E004575,False,True,Flagship Hospital
+P004560,E004576,True,True,Clinics
+P004562,E004578,True,True,Flagship Hospital
+P004565,E004581,False,True,System Office
+P004566,E004582,True,True,Flagship Hospital
+P004567,E004583,True,True,Flagship Hospital
+P004569,E004585,False,True,Clinics
+P004571,E004587,True,True,Clinics
+P004574,E004590,True,True,Community South
+P004575,E005548,True,True,Clinics
+P004577,E004593,False,False,Clinics
+P004578,E004594,True,True,Community South
+P004579,E004595,True,True,Clinics
+P004581,E004597,False,False,Flagship Hospital
+P004582,E004598,False,True,Home Health
+P004584,E004600,True,True,System Office
+P004585,E004601,True,True,Community South
+P004586,E004602,True,True,Community North
+P004587,E004603,False,True,Community North
+P004589,E004605,True,True,System Office
+P004590,E004606,False,True,Flagship Hospital
+P004595,E004611,False,True,Community North
+P004597,E004613,True,True,Flagship Hospital
+P004599,E004615,False,True,Community South
+P004600,E004616,True,True,Community South
+P004602,E004618,True,True,Flagship Hospital
+P004603,E004619,True,True,Community North
+P004604,E004620,True,True,Flagship Hospital
+P004605,E004621,False,False,Community North
+P004606,E004622,True,True,Clinics
+P004607,E004623,True,True,Community South
+P004608,E004624,True,True,Flagship Hospital
+P004609,E004625,True,True,Community South
+P004611,E004627,True,True,System Office
+P004612,E004628,False,False,Community North
+P004614,E004631,False,False,Flagship Hospital
+P004616,E004633,False,False,Flagship Hospital
+P004618,E004636,True,True,Community South
+P004619,E004637,True,True,System Office
+P004620,E004638,False,False,Clinics
+P004622,E004640,False,False,Clinics
+P004623,E004641,True,True,Flagship Hospital
+P004626,E004644,False,False,Community South
+P004627,E004645,True,True,System Office
+P004628,E004646,True,True,System Office
+P004629,E004647,True,True,System Office
+P004630,E004648,True,True,Flagship Hospital
+P004631,E004649,True,True,Clinics
+P004632,E004650,True,True,Flagship Hospital
+P004633,E004651,False,False,Flagship Hospital
+P004634,E004652,True,True,Flagship Hospital
+P004635,E004653,True,True,Community North
+P004636,E004654,True,True,Clinics
+P004637,E004655,False,False,System Office
+P004639,E004657,True,True,Flagship Hospital
+P004640,E004658,False,False,Flagship Hospital
+P004641,E004659,False,False,Clinics
+P004643,E004661,False,False,Flagship Hospital
+P004644,E004662,True,True,Community South
+P004645,E004664,True,True,Community North
+P004647,E004666,True,True,Clinics
+P004648,E004667,True,True,Flagship Hospital
+P004649,E004668,True,True,Home Health
+P004652,E004672,True,True,Home Health
+P004655,E004675,True,True,System Office
+P004657,E004677,True,True,Flagship Hospital
+P004658,E004678,True,True,Flagship Hospital
+P004660,E004680,True,True,Community South
+P004662,E004682,True,True,System Office
+P004663,E004683,True,True,Flagship Hospital
+P004666,E004687,True,True,Flagship Hospital
+P004668,E004689,True,True,Flagship Hospital
+P004669,E004690,False,False,Clinics
+P004670,E004691,False,True,Community North
+P004671,E004692,True,True,Flagship Hospital
+P004672,E004693,True,True,Flagship Hospital
+P004675,E004697,True,True,Community South
+P004676,E004698,False,False,Home Health
+P004677,E004699,False,False,Flagship Hospital
+P004678,E004700,False,False,Flagship Hospital
+P004679,E004701,False,False,Flagship Hospital
+P004680,E004702,True,True,Clinics
+P004681,E004703,False,False,Community North
+P004682,E004704,False,False,Community North
+P004683,E004705,False,False,Community South
+P004684,E004706,True,True,Flagship Hospital
+P004685,E004707,True,True,Community South
+P004686,E004708,True,True,System Office
+P004687,E004710,True,True,Flagship Hospital
+P004688,E004711,False,True,Flagship Hospital
+P004689,E004712,True,True,Flagship Hospital
+P004692,E004715,True,True,Flagship Hospital
+P004693,E004716,True,True,Community South
+P004695,E004718,True,True,System Office
+P004696,E004719,False,False,Flagship Hospital
+P004697,E004720,True,True,Flagship Hospital
+P004698,E004721,False,True,Home Health
+P004699,E004722,True,True,System Office
+P004700,E004723,False,False,Flagship Hospital
+P004702,E004725,False,False,Flagship Hospital
+P004703,E004726,True,True,System Office
+P004706,E004729,True,True,Flagship Hospital
+P004709,E004732,True,True,System Office
+P004710,E004733,True,True,Flagship Hospital
+P004711,E004734,False,False,Flagship Hospital
+P004713,E004736,False,False,System Office
+P004714,E004737,True,True,Clinics
+P004715,E004738,True,True,Flagship Hospital
+P004716,E004739,False,False,System Office
+P004717,E004740,False,False,Flagship Hospital
+P004718,E004742,True,True,Flagship Hospital
+P004719,E004743,True,True,Clinics
+P004725,E004749,True,True,Home Health
+P004726,E004750,True,True,Community North
+P004728,E004753,True,True,Flagship Hospital
+P004729,E004754,True,True,Flagship Hospital
+P004731,E004756,False,False,Clinics
+P004740,E004767,True,True,Community North
+P004742,E004769,True,True,Flagship Hospital
+P004746,E004773,False,True,System Office
+P004747,E004774,False,False,Community North
+P004748,E004775,True,True,Flagship Hospital
+P004749,E004776,False,False,Flagship Hospital
+P004750,E004777,True,True,Home Health
+P004751,E004778,True,True,Flagship Hospital
+P004752,E004779,True,True,Home Health
+P004754,E004781,True,True,Flagship Hospital
+P004755,E004782,True,True,Community South
+P004758,E004785,False,False,Flagship Hospital
+P004759,E004786,False,False,Flagship Hospital
+P004760,E004787,True,True,Community South
+P004761,E004788,False,False,Flagship Hospital
+P004764,E004791,True,True,Community South
+P004765,E004792,False,True,Community North
+P004770,E004797,False,False,Home Health
+P004771,E004798,True,True,Flagship Hospital
+P004773,E004800,True,True,Community South
+P004774,E004801,True,True,Clinics
+P004775,E004802,False,False,System Office
+P004776,E004803,True,True,Flagship Hospital
+P004777,E004804,False,False,Flagship Hospital
+P004778,E004805,True,True,Flagship Hospital
+P004779,E004806,True,True,Community North
+P004781,E004808,False,False,Flagship Hospital
+P004783,E004810,True,True,Clinics
+P004785,E004812,True,True,Community North
+P004791,E004818,True,True,Flagship Hospital
+P004793,E004820,True,True,System Office
+P004794,E004821,True,True,Community North
+P004797,E004824,False,True,Flagship Hospital
+P004798,E004825,True,True,System Office
+P004799,E004826,False,False,Clinics
+P004800,E004827,True,True,Clinics
+P004801,E004828,False,False,Community South
+P004802,E004829,False,False,Flagship Hospital
+P004803,E004830,False,False,Community South
+P004804,E004831,True,True,Flagship Hospital
+P004806,E004833,True,True,Clinics
+P004807,E004834,False,False,Clinics
+P004808,E004835,True,True,Flagship Hospital
+P004811,E004838,False,False,Flagship Hospital
+P004814,E004843,False,True,Flagship Hospital
+P004815,E004844,True,True,Community North
+P004818,E004847,True,True,Flagship Hospital
+P004819,E004848,True,True,Flagship Hospital
+P004820,E004849,False,False,Community North
+P004821,E004850,True,True,Flagship Hospital
+P004823,E004852,True,True,Flagship Hospital
+P004824,E004853,True,True,Flagship Hospital
+P004825,E004854,True,True,Flagship Hospital
+P004827,E005509,True,True,Flagship Hospital
+P004828,E004857,True,True,Clinics
+P004829,E004858,True,True,Clinics
+P004830,E004859,True,True,Community North
+P004831,E004860,False,False,Flagship Hospital
+P004833,E004863,True,True,Flagship Hospital
+P004834,E004864,False,False,Flagship Hospital
+P004835,E004865,False,True,Flagship Hospital
+P004837,E004867,False,False,Flagship Hospital
+P004838,E004868,False,True,Flagship Hospital
+P004839,E004869,True,True,Flagship Hospital
+P004840,E004870,False,False,Flagship Hospital
+P004841,E004871,False,False,Clinics
+P004843,E004873,True,True,Community South
+P004844,E004874,True,True,Flagship Hospital
+P004845,E004875,True,True,Flagship Hospital
+P004846,E004877,True,True,System Office
+P004848,E004879,True,True,Clinics
+P004850,E004881,True,True,Home Health
+P004851,E004882,True,True,Clinics
+P004852,E004883,False,True,Flagship Hospital
+P004853,E004884,False,True,Community North
+P004854,E004885,False,False,Clinics
+P004855,E004886,True,True,Flagship Hospital
+P004856,E004887,True,True,Flagship Hospital
+P004857,E004888,True,True,Home Health
+P004858,E004889,True,True,System Office
+P004859,E004890,True,True,Flagship Hospital
+P004860,E004891,True,True,Flagship Hospital
+P004861,E004892,False,False,Flagship Hospital
+P004862,E004893,False,False,Community North
+P004863,E004894,False,False,Community South
+P004864,E004895,False,False,Flagship Hospital
+P004865,E004896,True,True,Community North
+P004866,E004897,True,True,Clinics
+P004867,E004898,True,True,Flagship Hospital
+P004868,E004899,True,True,Flagship Hospital
+P004869,E004900,True,True,Clinics
+P004872,E004903,True,True,Flagship Hospital
+P004874,E004905,True,True,System Office
+P004875,E004906,True,True,Flagship Hospital
+P004876,E004907,True,True,Flagship Hospital
+P004877,E004908,False,True,Clinics
+P004878,E004909,True,True,Flagship Hospital
+P004879,E004910,True,True,Clinics
+P004880,E004911,True,True,Flagship Hospital
+P004881,E004912,True,True,Flagship Hospital
+P004882,E004913,False,False,Flagship Hospital
+P004883,E004914,False,False,Community North
+P004884,E004915,False,False,System Office
+P004885,E004916,False,True,Home Health
+P004887,E004918,True,True,System Office
+P004888,E004919,True,True,Flagship Hospital
+P004889,E004920,True,True,Community South
+P004890,E004921,False,False,Flagship Hospital
+P004891,E004922,True,True,Flagship Hospital
+P004892,E004923,True,True,Community North
+P004894,E004925,True,True,Community North
+P004895,E004926,True,True,Flagship Hospital
+P004897,E004928,True,True,Community South
+P004898,E004929,False,False,Community North
+P004899,E004930,True,True,Clinics
+P004902,E004934,True,True,Flagship Hospital
+P004903,E004935,True,True,Community South
+P004904,E004936,True,True,Community North
+P004905,E004937,False,False,Flagship Hospital
+P004906,E004938,False,False,Flagship Hospital
+P004907,E004939,True,True,Community South
+P004908,E004941,True,True,Clinics
+P004909,E004942,True,True,Clinics
+P004910,E004943,True,True,Flagship Hospital
+P004911,E004944,True,True,Flagship Hospital
+P004912,E004945,True,True,Community South
+P004914,E004947,True,True,Home Health
+P004915,E004948,True,True,Community North
+P004916,E004949,True,True,Flagship Hospital
+P004917,E004950,True,True,Flagship Hospital
+P004918,E004951,True,True,Clinics
+P004919,E004952,True,True,Flagship Hospital
+P004921,E004954,True,True,System Office
+P004922,E004955,True,True,Flagship Hospital
+P004923,E004956,True,True,Community North
+P004927,E004960,False,False,Community North
+P004928,E004961,False,True,Home Health
+P004929,E004962,True,True,Flagship Hospital
+P004930,E004963,False,False,System Office
+P004931,E004964,True,True,Community South
+P004932,E004965,True,True,System Office
+P004933,E004966,True,True,Flagship Hospital
+P004935,E004968,False,False,Community North
+P004936,E004969,True,True,Community North
+P004937,E004970,True,True,Community North
+P004940,E004973,True,True,Flagship Hospital
+P004941,E005487,False,False,Flagship Hospital
+P004942,E004975,False,True,Flagship Hospital
+P004943,E004976,True,True,Flagship Hospital
+P004946,E004979,True,True,Home Health
+P004948,E004981,True,True,System Office
+P004950,E004983,False,False,Community South
+P004951,E004985,True,True,Flagship Hospital
+P004953,E004987,True,True,Home Health
+P004955,E004989,True,True,Clinics
+P004956,E004990,False,False,Clinics
+P004958,E004992,True,True,Flagship Hospital
+P004959,E004993,True,True,Community South
+P004961,E004995,False,True,Clinics
+P004962,E004996,True,True,Community South
+P004963,E004997,True,True,Flagship Hospital
+P004964,E004998,True,True,Clinics
+P004965,E004999,False,False,System Office
+P004966,E005000,True,True,System Office
+P004970,E005004,True,True,Clinics
+P004971,E005005,True,True,Community North
+P004972,E005007,True,True,Home Health
+P004973,E005008,False,False,Clinics
+P004974,E005009,True,True,Home Health
+P004975,E005010,True,True,System Office
+P004977,E005012,False,True,Clinics
+P004979,E005014,True,True,System Office
+P004980,E005015,False,True,Flagship Hospital
+P004982,E005017,True,True,Community South
+P004983,E005018,True,True,Community South
+P004985,E005021,False,False,Clinics
+P004986,E005023,True,True,Flagship Hospital
+P004987,E005024,False,True,Flagship Hospital
+P004988,E005025,True,True,System Office
+P004989,E005026,False,False,Home Health
+P004990,E005028,True,True,Home Health
+P004992,E005030,True,True,System Office
+P004993,E005031,False,False,Clinics
+P004994,E005032,True,True,Community North
+P004996,E005034,False,False,Clinics
+P004998,E005038,True,True,Flagship Hospital
+P004999,E005039,True,True,Clinics
+P005001,E005041,False,False,Flagship Hospital
+P005002,E005042,True,True,Flagship Hospital
+P005005,E005045,True,True,Flagship Hospital
+P005006,E005046,True,True,Community North
+P005007,E005047,True,True,Home Health
+P005008,E005048,False,False,Flagship Hospital
+P005010,E005050,True,True,Community South
+P005011,E005051,True,True,Home Health
+P005012,E005052,False,False,Flagship Hospital
+P005014,E005054,False,False,Community South
+P005016,E005056,True,True,Community South
+P005018,E005058,True,True,Flagship Hospital
+P005019,E005059,True,True,Clinics
+P005020,E005060,True,True,Flagship Hospital
+P005022,E005062,True,True,Flagship Hospital
+P005023,E005063,True,True,Flagship Hospital
+P005024,E005064,True,True,Flagship Hospital
+P005025,E005065,False,True,Community North
+P005026,E005066,True,True,Flagship Hospital
+P005028,E005068,True,True,Flagship Hospital
+P005029,E005070,False,False,Flagship Hospital
+P005032,E005073,False,True,Flagship Hospital
+P005033,E005074,False,False,System Office
+P005034,E005075,False,False,Flagship Hospital
+P005035,E005076,True,True,Community North
+P005036,E005077,True,True,Community South
+P005037,E005078,False,False,System Office
+P005039,E005080,True,True,Flagship Hospital
+P005040,E005081,False,False,Clinics
+P005041,E005082,False,False,Flagship Hospital
+P005042,E005083,False,False,Flagship Hospital
+P005043,E005084,True,True,Clinics
+P005044,E005085,True,True,System Office
+P005047,E005088,True,True,Community South
+P005048,E005089,False,False,Flagship Hospital
+P005049,E005090,True,True,Flagship Hospital
+P005050,E005091,True,True,Community North
+P005051,E005092,True,True,Flagship Hospital
+P005052,E005093,False,False,Home Health
+P005053,E005094,True,True,Home Health
+P005055,E005097,False,False,Community South
+P005056,E005098,False,False,Flagship Hospital
+P005057,E005099,False,False,Flagship Hospital
+P005058,E005100,False,False,Home Health
+P005059,E005101,True,True,Community South
+P005060,E005102,True,True,Flagship Hospital
+P005062,E005104,True,True,System Office
+P005063,E005105,True,True,Clinics
+P005064,E005107,True,True,Flagship Hospital
+P005065,E005108,False,False,Clinics
+P005066,E005109,True,True,Flagship Hospital
+P005067,E005110,False,False,Community North
+P005069,E005112,True,True,Community South
+P005070,E005113,False,False,Community South
+P005071,E005114,False,True,System Office
+P005072,E005115,True,True,Flagship Hospital
+P005073,E005116,True,True,Community South
+P005074,E005118,True,True,Flagship Hospital
+P005075,E005119,True,True,Flagship Hospital
+P005076,E005120,True,True,Flagship Hospital
+P005079,E005123,True,True,Home Health
+P005080,E005124,True,True,Community North
+P005082,E005126,True,True,Clinics
+P005085,E005129,True,True,Clinics
+P005086,E005130,True,True,Flagship Hospital
+P005087,E005131,True,True,Community South
+P005088,E005132,True,True,Home Health
+P005089,E005133,True,True,Community South
+P005091,E005135,True,True,Community South
+P005092,E005136,True,True,Home Health
+P005093,E005137,False,True,Flagship Hospital
+P005095,E005139,False,True,Community North
+P005096,E005141,False,True,Flagship Hospital
+P005097,E005142,True,True,System Office
+P005100,E005145,True,True,Community South
+P005101,E005146,True,True,Community North
+P005102,E005147,True,True,Flagship Hospital
+P005104,E005149,True,True,System Office
+P005107,E005152,True,True,Flagship Hospital
+P005108,E005153,True,True,Home Health
+P005109,E005154,False,False,Flagship Hospital
+P005112,E005157,True,True,Community North
+P005113,E005158,False,True,Community North
+P005114,E005159,True,True,Clinics
+P005116,E005161,True,True,Flagship Hospital
+P005117,E005162,True,True,Clinics
+P005118,E005163,False,True,Flagship Hospital
+P005119,E005164,True,True,Clinics
+P005121,E005166,True,True,Home Health
+P005122,E005167,True,True,Flagship Hospital
+P005123,E005168,False,False,Clinics
+P005124,E005169,False,True,Flagship Hospital
+P005125,E005170,True,True,Flagship Hospital
+P005127,E005172,False,False,Flagship Hospital
+P005128,E005173,True,True,Flagship Hospital
+P005129,E005174,True,True,Flagship Hospital
+P005130,E005175,True,True,Community North
+P005131,E005176,True,True,Community South
+P005132,E005177,True,True,Flagship Hospital
+P005133,E005178,True,True,System Office
+P005134,E005179,True,True,Flagship Hospital
+P005135,E005180,True,True,Flagship Hospital
+P005136,E005181,False,False,Community North
+P005138,E005183,True,True,Clinics
+P005140,E005185,True,True,Clinics
+P005142,E005187,False,False,Community South
+P005143,E005188,False,False,System Office
+P005145,E005190,True,True,Clinics
+P005146,E005191,True,True,Community North
+P005147,E005192,False,False,Community North
+P005149,E005194,True,True,Flagship Hospital
+P005150,E005195,True,True,Community South
+P005151,E005196,True,True,Clinics
+P005152,E005197,False,False,Flagship Hospital
+P005153,E005198,False,False,Clinics
+P005154,E005199,False,False,Home Health
+P005155,E005200,False,False,System Office
+P005156,E005201,True,True,Flagship Hospital
+P005157,E005203,False,True,Flagship Hospital
+P005159,E005205,False,False,Clinics
+P005161,E005207,True,True,Flagship Hospital
+P005162,E005208,False,False,Flagship Hospital
+P005164,E005210,True,True,System Office
+P005165,E005212,False,False,Flagship Hospital
+P005166,E005213,True,True,System Office
+P005167,E005214,True,True,Clinics
+P005168,E005215,True,True,Flagship Hospital
+P005169,E005216,True,True,Clinics
+P005171,E005218,False,True,System Office
+P005172,E005219,True,True,Flagship Hospital
+P005173,E005220,True,True,Clinics
+P005174,E005221,True,True,Clinics
+P005176,E005223,True,True,Flagship Hospital
+P005178,E005225,True,True,System Office
+P005179,E005226,True,True,Clinics
+P005181,E005228,True,True,Community North
+P005182,E005229,False,False,System Office
+P005183,E005231,False,False,Community North
+P005184,E005232,False,False,Community South
+P005185,E005233,True,True,Community South
+P005186,E005234,True,True,Flagship Hospital
+P005188,E005236,True,True,Flagship Hospital
+P005189,E005237,True,True,Clinics
+P005190,E005238,True,True,Clinics
+P005191,E005239,False,True,Community North
+P005192,E005240,True,True,Flagship Hospital
+P005193,E005241,True,True,System Office
+P005194,E005242,False,False,Flagship Hospital
+P005195,E005243,False,False,Community North
+P005196,E005244,False,False,Flagship Hospital
+P005197,E005245,True,True,Home Health
+P005198,E005246,True,True,Flagship Hospital
+P005199,E005247,True,True,Clinics
+P005201,E005250,True,True,Home Health
+P005202,E005251,True,True,Flagship Hospital
+P005203,E005252,True,True,Community North
+P005204,E005253,True,True,Clinics
+P005206,E005255,True,True,Community South
+P005207,E005256,True,True,Flagship Hospital
+P005208,E005257,True,True,Flagship Hospital
+P005209,E005258,True,True,Flagship Hospital
+P005210,E005259,True,True,System Office
+P005211,E005260,True,True,System Office
+P005212,E005261,True,True,Flagship Hospital
+P005214,E005263,True,True,Flagship Hospital
+P005215,E005264,True,True,Clinics
+P005216,E005265,True,True,Community North
+P005217,E005266,True,True,Flagship Hospital
+P005218,E005267,False,False,Clinics
+P005219,E005268,False,True,Community South
+P005221,E005270,True,True,Flagship Hospital
+P005222,E005271,True,True,Community South
+P005223,E005272,False,False,Community North
+P005224,E005273,False,False,Clinics
+P005225,E005274,False,False,Flagship Hospital
+P005226,E005275,True,True,Clinics
+P005227,E005276,False,True,Home Health
+P005228,E005277,True,True,Community South
+P005229,E005278,True,True,Flagship Hospital
+P005230,E005279,False,False,Flagship Hospital
+P005232,E005281,True,True,System Office
+P005233,E005282,False,True,System Office
+P005234,E005283,True,True,Community North
+P005235,E005284,False,True,Clinics
+P005236,E005285,False,False,Home Health
+P005237,E005286,True,True,Clinics
+P005238,E005287,True,True,Clinics
+P005239,E005288,True,True,Flagship Hospital
+P005240,E005289,True,True,Flagship Hospital
+P005241,E005290,True,True,Flagship Hospital
+P005243,E005292,True,True,Flagship Hospital
+P005244,E005293,True,True,Community South
+P005246,E005295,True,True,Flagship Hospital
+P005247,E005296,False,False,System Office
+P005248,E005297,True,True,Flagship Hospital
+P005249,E005298,True,True,Flagship Hospital
+P005250,E005299,True,True,Community South
+P005251,E005300,True,True,Flagship Hospital
+P005252,E005301,True,True,Clinics
+P005253,E005302,True,True,System Office
+P005254,E005303,False,False,Flagship Hospital
+P005255,E005304,True,True,Flagship Hospital
+P005256,E005305,True,True,Community South
+P005257,E005306,False,False,Flagship Hospital
+P005258,E005307,True,True,Community South
+P005259,E005308,True,True,Community North
+P005260,E005309,False,True,System Office
+P005261,E005310,True,True,System Office
+P005262,E005311,True,True,System Office
+P005263,E005312,True,True,Flagship Hospital
+P005264,E005313,True,True,Home Health
+P005265,E005314,False,False,Flagship Hospital
+P005266,E005315,True,True,System Office
+P005267,E005316,True,True,Flagship Hospital
+P005268,E005317,True,True,Community North
+P005269,E005318,True,True,System Office
+P005270,E005319,False,False,Home Health
+P005271,E005320,False,False,Clinics
+P005272,E005321,False,False,Flagship Hospital
+P005273,E005322,False,False,Home Health
+P005275,E005324,True,True,Community South
+P005276,E005325,True,True,Community South
+P005277,E005326,True,True,Flagship Hospital
+P005278,E005327,False,True,Flagship Hospital
+P005279,E005328,True,True,Community South
+P005280,E005329,True,True,Clinics
+P005281,E005330,True,True,Community North
+P005282,E005331,False,False,Flagship Hospital
+P005283,E005332,True,True,Home Health
+P005284,E005333,True,True,Flagship Hospital
+P005285,E005334,False,False,Flagship Hospital
+P005286,E005335,False,False,System Office
+P005288,E005337,True,True,Flagship Hospital
+P005289,E005338,True,True,Community South
+P005290,E005339,False,False,Community South
+P005291,E005340,False,False,Flagship Hospital
+P005292,E005341,True,True,Clinics
+P005294,E005343,False,True,Flagship Hospital
+P005295,E005344,True,True,System Office
+P005296,E005345,True,True,Community South
+P005298,E005347,True,True,System Office
+P005299,E005348,True,True,Home Health
+P005300,E005349,False,False,Community North
+P005302,E005351,True,True,Clinics
+P005303,E005352,False,False,Flagship Hospital
+P005304,E005353,True,True,Community South
+P005305,E005354,True,True,Flagship Hospital
+P005306,E005355,True,True,System Office
+P005308,E005358,False,False,Flagship Hospital
+P005309,E005359,True,True,Flagship Hospital
+P005310,E005361,True,True,Flagship Hospital
+P005311,E005362,True,True,Community South
+P005312,E005363,True,True,System Office
+P005314,E005365,True,True,Clinics
+P005315,E005366,True,True,Community North
+P005317,E005368,False,False,Community North
+P005318,E005369,True,True,Clinics
+P005319,E005370,False,False,Flagship Hospital
+P005320,E005371,False,False,Community South
+P005321,E005372,True,True,Flagship Hospital
+P005322,E005373,True,True,System Office
+P005323,E005375,True,True,Flagship Hospital
+P005324,E005376,True,True,Community South
+P005325,E005377,False,False,Clinics
+P005326,E005378,False,False,Clinics
+P005327,E005379,False,True,Flagship Hospital
+P005328,E005380,True,True,Flagship Hospital
+P005329,E005381,True,True,Flagship Hospital
+P005330,E005382,False,True,Community North
+P005331,E005383,True,True,System Office
+P005332,E005384,False,False,Community South
+P005333,E005385,False,False,Community South
+P005334,E005386,False,True,Home Health
+P005337,E005389,False,False,Flagship Hospital
+P005338,E005390,True,True,Clinics
+P005339,E005391,False,True,Flagship Hospital
+P005341,E005394,False,False,Community North
+P005342,E005395,False,False,Flagship Hospital
+P005344,E005397,True,True,Community North
+P005345,E005398,True,True,Community South
+P005348,E005401,False,False,Flagship Hospital
+P005349,E005402,False,True,Flagship Hospital
+P005350,E005403,False,False,Flagship Hospital
+P005351,E005404,True,True,Flagship Hospital
+P005352,E005405,True,True,Community South
+P005353,E005406,False,False,Home Health
+P005356,E005409,True,True,Flagship Hospital
+P005358,E005411,True,True,Community North
+P005359,E005412,True,True,Community South
+P005360,E005414,False,False,System Office
+P005361,E005415,False,False,Flagship Hospital
+P005363,E005417,True,True,Community North
+P005364,E005418,True,True,System Office
+P005365,E005419,False,False,Clinics
+P005367,E005421,True,True,Flagship Hospital
+P005368,E005422,True,True,Community North
+P005369,E005423,True,True,Flagship Hospital
+P005370,E005424,False,False,Flagship Hospital
+P005371,E005425,False,False,Community North
+P005374,E005428,True,True,Community South
+P005375,E005429,True,True,Community North
+P005376,E005430,False,False,Flagship Hospital
+P005377,E005431,False,False,Flagship Hospital
+P005378,E005432,False,False,Clinics
+P005379,E005433,True,True,Home Health
+P005380,E005434,True,True,Community North
+P005381,E005435,True,True,Community South
+P005382,E005436,True,True,System Office
+P005383,E005437,False,True,Flagship Hospital
+P005384,E005438,True,True,Community North
+P005385,E005439,False,False,Flagship Hospital
+P005386,E005440,True,True,Flagship Hospital
+P005387,E005441,True,True,Flagship Hospital
+P005388,E005442,True,True,Community North
+P005389,E005443,True,True,Flagship Hospital
+P005390,E005444,True,True,Clinics
+P005391,E005445,False,False,System Office
+P005393,E005447,True,True,Flagship Hospital
+P005395,E005449,False,True,Community North
+P005396,E005450,False,False,Flagship Hospital
+P005397,E005451,True,True,Flagship Hospital
+P005398,E005452,True,True,Flagship Hospital
+P005399,E005453,True,True,Home Health
+P005400,E005454,True,True,Community South
+P005401,E005456,True,True,System Office
+P005402,E005457,True,True,Flagship Hospital
+P005404,E005460,True,True,Clinics
+P005405,E005461,True,True,Home Health
+P005406,E005462,True,True,Community South
+P005407,E005463,False,False,Flagship Hospital
+P005408,E005464,True,True,Clinics
+P005409,E005465,False,False,Flagship Hospital
+P005410,E005466,False,False,Flagship Hospital
+P005411,E005467,False,False,Community North
+P005412,E005468,True,True,Flagship Hospital
+P005413,E005470,False,False,Clinics
+P005414,E005471,True,True,Clinics
+P005415,E005472,True,True,Clinics
+P005416,E005473,False,False,Clinics
+P005417,E005474,False,False,Flagship Hospital
+P005418,E005475,False,True,Flagship Hospital
+P005420,E005478,True,True,Flagship Hospital
+P005422,E005480,True,True,Flagship Hospital
+P005423,E005481,True,True,Community South
+P005424,E005482,True,True,Community North
+P005425,E005483,True,True,System Office
+P005426,E005484,False,True,Flagship Hospital
+P005427,E005485,True,True,Flagship Hospital
+P005428,E005486,True,True,Flagship Hospital
+P005429,E005488,False,False,Community South
+P005430,E005489,False,False,Community North
+P005432,E005491,True,True,System Office
+P005433,E005492,False,False,Flagship Hospital
+P005434,E005493,True,True,Flagship Hospital
+P005435,E005494,True,True,System Office
+P005436,E005495,False,False,Community South
+P005438,E005497,True,True,Clinics
+P005439,E005498,True,True,Community South
+P005440,E005499,True,True,Community North
+P005441,E005500,True,True,System Office
+P005442,E005501,True,True,Flagship Hospital
+P005443,E005502,True,True,Flagship Hospital
+P005444,E005503,True,True,Community North
+P005445,E005504,True,True,Clinics
+P005446,E005505,True,True,Clinics
+P005447,E005507,True,True,Flagship Hospital
+P005448,E005508,True,True,Community North
+P005449,E005510,False,False,Clinics
+P005450,E005511,True,True,Community North
+P005453,E005514,False,True,System Office
+P005454,E005515,True,True,Community South
+P005455,E005516,True,True,Clinics
+P005456,E005517,False,False,Flagship Hospital
+P005457,E005518,True,True,Community North
+P005458,E005519,True,True,Clinics
+P005459,E005520,False,False,Flagship Hospital
+P005460,E005521,False,False,Clinics
+P005461,E005522,True,True,Flagship Hospital
+P005462,E005523,True,True,Clinics
+P005465,E005526,True,True,Flagship Hospital
+P005466,E005527,False,False,Flagship Hospital
+P005468,E005529,True,True,System Office
+P005469,E005530,False,False,Community South
+P005470,E005531,True,True,Flagship Hospital
+P005471,E005532,False,False,Flagship Hospital
+P005472,E005533,True,True,Clinics
+P005473,E005534,False,False,Home Health
+P005475,E005536,False,False,Flagship Hospital
+P005476,E005537,True,True,Flagship Hospital
+P005478,E005539,False,True,Flagship Hospital
+P005479,E005540,True,True,Flagship Hospital
+P005480,E005541,True,True,Clinics
+P005481,E005542,True,True,Home Health
+P005482,E005543,True,True,Community North
+P005483,E005544,False,True,Community South
+P005484,E005545,True,True,Clinics
+P005485,E005546,False,True,Community South
+P005486,E005547,False,False,Flagship Hospital
+P005487,E005549,True,True,Flagship Hospital
+P005488,E005550,True,True,Home Health
+P005489,E005551,True,True,Flagship Hospital
+P005490,E005552,True,True,Clinics
+P005492,E005554,True,True,Flagship Hospital
+P005493,E005555,False,False,Clinics
+P005495,E005558,False,False,Flagship Hospital
+P005496,E005559,True,True,Flagship Hospital
+P005497,E005560,True,True,Flagship Hospital
+P005498,E005561,False,True,System Office
+P005499,E005562,True,True,Community North
+P005500,E005563,True,True,System Office
+P005501,E005564,True,True,Flagship Hospital
+P005502,E005565,False,False,Flagship Hospital
+P005503,E005566,True,True,Flagship Hospital
+P005504,E005567,True,True,System Office
+P005506,E005569,True,True,Community South
+P005507,E005570,True,True,Clinics
+P005508,E005571,True,True,Community South
+P005510,E005573,True,True,Flagship Hospital
+P005511,E005575,False,False,Flagship Hospital
+P005512,E005576,True,True,Community North
+P005513,E005577,True,True,Flagship Hospital
+P005514,E005578,True,True,Clinics
+P005515,E005579,False,False,Flagship Hospital
+P005516,E005580,True,True,Community South
+P005517,E005581,True,True,Community North
+P005519,E005583,False,False,Home Health
+P005520,E005584,True,True,Flagship Hospital
+P005521,E005585,False,False,Home Health
+P005522,E005586,True,True,Community South
+P005523,E005587,True,True,Community South
+P005524,E005588,True,True,Clinics
+P005526,E005590,False,False,Flagship Hospital
+P005527,E005591,True,True,Clinics
+P005529,E005593,True,True,Home Health
+P005530,E005594,True,True,Community North
+P005531,E005595,True,True,Community South
+P005532,E005596,True,True,Clinics
+P005533,E005597,True,True,Flagship Hospital
+P005534,E005598,True,True,Community South
+P005535,E005599,False,False,Community North
+P005537,E005601,False,False,Flagship Hospital
+P005538,E005602,True,True,Community North
+P005540,E005604,True,True,Flagship Hospital
+P005541,E005605,False,False,Flagship Hospital
+P005542,E005606,True,True,Home Health
+P005543,E005607,False,False,Home Health
+P005545,E005609,True,True,Clinics
+P005546,E005610,True,True,Flagship Hospital
+P005547,E005611,True,True,Flagship Hospital
+P005548,E005612,True,True,Flagship Hospital
+P005549,E005613,True,True,Flagship Hospital
+P005551,E005615,True,True,Flagship Hospital
+P005553,E005617,True,True,Clinics
+P005554,E005618,True,True,Flagship Hospital
+P005555,E005619,True,True,Flagship Hospital
+P005556,E005620,True,True,Flagship Hospital
+P005558,E005622,True,True,Flagship Hospital
+P005560,E005624,True,True,Flagship Hospital
+P005561,E005626,True,True,Community North
+P005562,E005627,True,True,Flagship Hospital
+P005563,E005628,True,True,Community South
+P005564,E005629,True,True,Clinics
+P005565,E005630,True,True,Community South
+P005566,E005631,True,True,Flagship Hospital
+P005567,E005632,True,True,System Office
+P005568,E005633,True,True,Flagship Hospital
+P005569,E005634,True,True,Clinics
+P005570,E005635,True,True,System Office
+P005571,E005636,True,True,Clinics
+P005572,E005637,True,True,Community North
+P005573,E005638,True,True,Flagship Hospital
+P005574,E005639,True,True,Flagship Hospital
+P005575,E005640,True,True,Community North
+P005576,E005641,True,True,Clinics
+P005577,E005642,True,True,Flagship Hospital
+P005578,E005643,True,True,Flagship Hospital
+P005579,E005644,True,True,Flagship Hospital
+P005580,E005645,True,True,Community South
+P005581,E005646,True,True,Flagship Hospital
+P005582,E005647,True,True,System Office
+P005583,E005648,True,True,Clinics
+P005584,E005650,True,True,Community South

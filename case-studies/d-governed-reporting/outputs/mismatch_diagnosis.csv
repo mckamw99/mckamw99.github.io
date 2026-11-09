@@ -1,0 +1,8 @@
+report_month,facility_group,published,source,gap_pts,diagnosis
+2024-08,Clinics,3570/4095 (87.2%),3577/4100 (87.2%),0.0,Stale data: every facility that month matches source as of 4 days before month end
+2024-08,Community North,2258/2970 (76.0%),2263/2975 (76.1%),-0.1,Stale data: every facility that month matches source as of 4 days before month end
+2024-08,Community South,2189/2567 (85.3%),2191/2572 (85.2%),0.1,Stale data: every facility that month matches source as of 4 days before month end
+2024-08,Flagship Hospital,7328/8639 (84.8%),7336/8664 (84.7%),0.1,Stale data: every facility that month matches source as of 4 days before month end
+2024-08,Home Health,1288/1485 (86.7%),1288/1490 (86.4%),0.3,Stale data: every facility that month matches source as of 4 days before month end
+2025-03,Community North,1529/2350 (65.1%),1228/2350 (52.3%),12.8,Double load: numerator is over by exactly this month's 301 completions
+2025-10,Flagship Hospital,7924/9154 (86.6%),7758/8980 (86.4%),0.2,Wrong population: matches source only if agency accounts are included

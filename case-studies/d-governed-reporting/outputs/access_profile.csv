@@ -1,0 +1,8 @@
+bi_role,scope_type,person_level_detail,active_users
+BI-ANALYST,system,True,3
+BI-ANALYST-AGG,system,False,2
+BI-ANALYST-AGG,system,True,1
+BI-EXEC,system,False,6
+BI-FAC,facility,False,4
+BI-UNIT,system,True,1
+BI-UNIT,unit,True,121

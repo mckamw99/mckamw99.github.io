@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agency-to-staff conversion calculator (LIB-26) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a small web page for a nursing or finance leader to test, in a few minutes, whether converting one agency position to a staff position pays, using their own rates.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study C</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#worked-example-defaults">Worked example (defaults)</a></li><li><a href="#how-it-works">How it works</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_c-agency-vs-staff_calculator.pdf">Download PDF</a></nav>
+<article>
+<h1 id="agency-to-staff-conversion-calculator-lib-26">Agency-to-staff conversion calculator (LIB-26)</h1>
+<p><strong>Purpose:</strong> a small web page for a nursing or finance leader to test, in a few minutes, whether converting one agency position to a staff position pays, using their own rates.</p>
+<p><em>Defaults use 2025 national benchmarks and the assumptions from case study C at Tessaly Health, a fictional health system.</em></p>
+<hr />
+<p><strong>The artifact:</strong> <a href="calculator-app.html"><code>calculator.html</code></a>, a single page that runs in any browser with no external code.</p>
+<h2 id="worked-example-defaults">Worked example (defaults)</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Output</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Staff cost per worked hour</td>
+<td style="text-align: right;">$83.05</td>
+</tr>
+<tr>
+<td>Agency cost per productive hour (bill rate, fee, ramp)</td>
+<td style="text-align: right;">$98.63</td>
+</tr>
+<tr>
+<td>Savings per year once proficient</td>
+<td style="text-align: right;">$26,480</td>
+</tr>
+<tr>
+<td>Cost of each hire (hire, orientation, ramp)</td>
+<td style="text-align: right;">$34,969</td>
+</tr>
+<tr>
+<td>Expected hires over 3 years</td>
+<td style="text-align: right;">1.62</td>
+</tr>
+<tr>
+<td><strong>Expected net savings over 3 years</strong></td>
+<td style="text-align: right;"><strong>about $14,900</strong></td>
+</tr>
+<tr>
+<td>Break-even agency bill rate</td>
+<td style="text-align: right;">about $87.20 an hour</td>
+</tr>
+</tbody>
+</table></div>
+<p>Change the bill rate to the 2023 national level ($106.63) and the 3-year saving rises to about $84,000. Change days to proficiency to a new graduate&rsquo;s 168, and it turns into a loss.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>The page runs the same simulation as case study C: 2,000 runs of one position, day by day, with recruiting lag, orientation, a ramp to proficiency, exits and refills, and agency covering every gap. It uses a fixed random seed, so the same inputs always give the same answer. Unlike the case study, it assumes steady demand, so set &ldquo;share of hours needed&rdquo; below 100% for anything but a unit&rsquo;s steadiest base. <code>validate_c.py</code> checks that the page and the Python model agree for the same inputs.</p>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>The usual version of this calculator compares two hourly rates and stops, which is how conversion programs get approved and then disappoint. This one makes the costs that come with each hire visible: hiring, the weeks before a new nurse is fully productive, and the chance they leave and the cycle repeats. It also counts the agency nurse&rsquo;s own ramp-up, so the comparison is fair in both directions. I show the break-even bill rate because that&rsquo;s the number a leader can act on in a negotiation. Every default is labeled as a benchmark or an assumption, so a user knows which ones to replace with their own.</p>
+<p><em>Format: web page.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+unit_group,hires,on_time_pct,left_vol_pct
+clinic,166,75.3,16.3
+home_health,78,74.4,17.9
+inpatient high,347,59.9,22.2
+inpatient low,87,83.9,11.5
+inpatient medium,134,73.9,17.9
+non-nursing department,837,71.4,22.0
+nursing admin,7,100.0,0.0

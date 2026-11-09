@@ -1,0 +1,10 @@
+input,low_value,high_value,savings_at_low,savings_at_high,swing,base_case,unit
+Agency bill rate (2025 -15% to 2023 level),79.13499999999999,109.19,-46451,81733,128184,12750,"Step-Down (Flagship Hospital), position 1"
+Benefits load on wages (45% to 65%),0.45,0.65,40867,-7216,48083,12750,"Step-Down (Flagship Hospital), position 1"
+Days to proficiency (experienced fast to new-grad median),60.199999999999996,168.0,21789,-12539,34328,12750,"Step-Down (Flagship Hospital), position 1"
+Cost per staff hire ($6k to $20k),6000.0,20000.0,24104,1366,22739,12750,"Step-Down (Flagship Hospital), position 1"
+First-year exit (half to 1.5x),0.12650602409638553,0.37951807228915657,20527,4297,16229,12750,"Step-Down (Flagship Hospital), position 1"
+Later annual exit (half to 1.5x),0.09424083769633508,0.28272251308900526,18820,8195,10625,12750,"Step-Down (Flagship Hospital), position 1"
+Days to fill a vacancy (56 to 140),56.0,140.0,15879,11774,4105,12750,"Step-Down (Flagship Hospital), position 1"
+Productivity while ramping (30% to 70%),0.3,0.7,13065,14539,1474,12750,"Step-Down (Flagship Hospital), position 1"
+Value of unneeded hours floated elsewhere (0% to 50%),0.0,0.5,13149,13450,301,12750,"Step-Down (Flagship Hospital), position 1"

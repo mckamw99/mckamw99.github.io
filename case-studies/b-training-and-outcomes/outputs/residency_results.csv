@@ -1,0 +1,3 @@
+analysis,n,exposed,exposed_exits,exposed_rate_pct,unexposed,unexposed_exits,unexposed_rate_pct,rr,rr_ci,fisher_p
+Naive: completed residency vs. didn't,132,28,0,0.0,104,24,23.1,0.0,undefined (a zero cell),0.0022
+Landmark: 3+ of first 4 sessions vs. fewer,114,67,2,3.0,47,5,10.6,0.28,0.06-1.39,0.12

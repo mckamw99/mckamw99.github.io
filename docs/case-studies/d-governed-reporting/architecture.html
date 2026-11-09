@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning data architecture with governance points (LIB-46) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a one-picture view of how learning data moves from the HR system to an executive report, and where each control sits. It&#x27;s meant for a data governance lead or learning tec">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study D</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#control-points">Control points</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_d-governed-reporting_architecture.pdf">Download PDF</a></nav>
+<article>
+<h1 id="learning-data-architecture-with-governance-points-lib-46">Learning data architecture with governance points (LIB-46)</h1>
+<p><strong>Purpose:</strong> a one-picture view of how learning data moves from the HR system to an executive report, and where each control sits. It&rsquo;s meant for a data governance lead or learning technology owner explaining the path to leaders and auditors.</p>
+<p><em>Generic tool categories, no products. Shown for Tessaly Health, a fictional health system.</em></p>
+<hr />
+<p><img alt="Diagram of seven stages left to right: HR system, nightly HR feed, enterprise LMS, warehouse staging, compliance fact table, BI scorecard, readers by role. Under each hop is a control. Existing controls in grey: extract versus load row counts (HR system to feed) and source versus staging row counts (LMS to staging). Added controls in bold blue: a freshness gate on the feed, the 15 data-quality checks with the identity map before the fact table, full reconciliation and two targeted checks before the scorecard, and a quarterly access review before readers." src="outputs/lib46_architecture.png" /></p>
+<h2 id="control-points">Control points</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Hop</th>
+<th>Control</th>
+<th>Status</th>
+<th>What it catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HR system → feed</td>
+<td>Extract vs. load row counts</td>
+<td>Existing</td>
+<td>Dropped rows in transfer</td>
+</tr>
+<tr>
+<td>Feed → LMS</td>
+<td>Rejected rows reviewed next day</td>
+<td>Existing</td>
+<td>Records the LMS refused</td>
+</tr>
+<tr>
+<td>Feed → LMS</td>
+<td>Freshness gate: no failed run in the last 3 days of the period</td>
+<td><strong>Added</strong></td>
+<td>Stale data (the Aug 2024 problem)</td>
+</tr>
+<tr>
+<td>LMS → staging</td>
+<td>Source vs. staging row counts</td>
+<td>Existing</td>
+<td>Incomplete copies</td>
+</tr>
+<tr>
+<td>Staging → fact table</td>
+<td>15 data-quality checks; identity map; one row per requirement</td>
+<td><strong>Added</strong></td>
+<td>Duplicates, unlinked accounts, missing evidence</td>
+</tr>
+<tr>
+<td>Fact table → scorecard</td>
+<td>Full reconciliation to source; numerator vs. the month&rsquo;s completions; staff-only population</td>
+<td><strong>Added</strong></td>
+<td>Double loads, wrong population (Mar and Oct 2025)</td>
+</tr>
+<tr>
+<td>Scorecard → readers</td>
+<td>Quarterly access review against the role model; leaver revocation</td>
+<td><strong>Added</strong></td>
+<td>Access that outlived the job</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>The existing controls all checked that data <em>moved</em>: row counts in equal row counts out. None checked that the number was <em>right</em>, and the two steps that turn rows into a compliance rate had no control at all. Two of the three defects in case study D happened in those two steps. The third, stale data after a feed outage, passed the row-count checks because the rows that did arrive matched. So the added controls sit where meaning is created, not where bytes move. The diagram uses tool categories rather than products, because the control design doesn&rsquo;t depend on which LMS or BI tool is in place.</p>
+<p><em>Format: image (PNG and SVG in <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/case-studies/d-governed-reporting/outputs"><code>outputs/</code></a>).</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

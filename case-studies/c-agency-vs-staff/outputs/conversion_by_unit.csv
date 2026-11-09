@@ -1,0 +1,6 @@
+unit,tier,positions,mean_3yr,p10,p90
+Medical-Surgical (Community North),high,2,29041,-77763,139211
+Step-Down (Flagship Hospital),high,3,28480,-141315,195177
+Medical-Surgical 1 (Flagship Hospital),high,1,16221,-34252,66224
+Medical-Surgical (Community South),high,1,12953,-41443,63495
+Emergency Department (Community South),high,1,9108,-49251,59057

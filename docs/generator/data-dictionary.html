@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data dictionary · Matthew McKay, Ph.D.</title>
+<meta name="description" content="All tables are CSV in data/. Dates are ISO YYYY-MM-DD. Blank means null. Row counts are for seed 20261108 . Case-study letters show which analysis uses the table.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../index.html">Start here</a></li><li><a href="../case-studies/index.html">Case studies</a></li><li><a href="../library/index.html">Library</a></li><li><a href="../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">Start here</a> / <a href="index.html">Synthetic data generator</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#organization">Organization</a></li><li><a href="#people-and-employment-hr-side">People and employment (HR side)</a></li><li><a href="#residency-and-proficiency">Residency and proficiency</a></li><li><a href="#staffing-and-agency">Staffing and agency</a></li><li><a href="#learning-lms-side">Learning (LMS side)</a></li><li><a href="#reporting-and-access">Reporting and access</a></li><li><a href="#answer-key-ground_truth">Answer key (ground_truth/)</a></li></ol>
+<a class="pdf" href="../pdf/generator_data-dictionary.pdf">Download PDF</a></nav>
+<article>
+<h1 id="data-dictionary">Data dictionary</h1>
+<p>All tables are CSV in <a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/generator/data"><code>data/</code></a>. Dates are ISO <code>YYYY-MM-DD</code>. Blank means null. Row counts are for seed 20261108 (see <a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/generator/data/manifest.json"><code>data/manifest.json</code></a>). Case-study letters show which analysis uses the table.</p>
+<h2 id="organization">Organization</h2>
+<p><strong>facilities</strong> (25) · all
+<code>facility_id</code>, <code>facility_name</code>, <code>facility_type</code> (hospital_flagship, hospital_community, clinic, home_health, system_office), <code>facility_group</code> (the grouping used on the executive scorecard).</p>
+<p><strong>units</strong> (120) · all
+<code>unit_id</code>, <code>unit_name</code>, <code>facility_id</code>, <code>unit_kind</code> (inpatient, clinic, home_health, admin, department), <code>department_type</code> (nursing, non_nursing), <code>turnover_tier</code> (high, medium, low; nursing only), <code>specialty_cert_required</code>, <code>budgeted_rn</code>, <code>budgeted_lpn</code>, <code>budgeted_na</code>.</p>
+<p><strong>roles</strong> (16) · all
+<code>role_code</code>, <code>role_name</code>, <code>role_family</code> (nursing, clinical_support, administrative, facilities_evs), <code>licensed</code>.</p>
+<h2 id="people-and-employment-hr-side">People and employment (HR side)</h2>
+<p><strong>persons</strong> (6,284) · A, B
+One row per human. <code>person_id</code>, <code>first_name</code>, <code>last_name</code>. A rehired person keeps the same <code>person_id</code>.</p>
+<p><strong>employees</strong> (6,387) · A, B, C
+One row per employment spell. <code>employee_id</code>, <code>person_id</code>, <code>role_code</code>, <code>hire_unit_id</code>, <code>current_unit_id</code> (last unit), <code>fte</code>, <code>hire_date</code> (can be before the window), <code>termination_date</code>, <code>termination_type</code> (voluntary, involuntary), <code>rehire_flag</code>, <code>prior_employee_id</code>, <code>new_grad_flag</code>.</p>
+<p><strong>employee_unit_history</strong> (6,548) · A, B, C
+<code>employee_id</code>, <code>unit_id</code>, <code>change_reason</code> (hire, rehire, transfer), <code>start_date</code>, <code>end_date</code> (blank = still there).</p>
+<p><strong>hr_feed_runs</strong> (1,096) · D
+Nightly HR-to-LMS feed log. <code>run_date</code>, <code>status</code> (success, partial, failed), <code>rows_extracted</code>, <code>rows_loaded</code>, <code>rows_rejected</code>, <code>run_minutes</code>.</p>
+<h2 id="residency-and-proficiency">Residency and proficiency</h2>
+<p><strong>residency_cohort_members</strong> (197) · B
+<code>employee_id</code>, <code>cohort_id</code> (NR-YYYY-MM), <code>cohort_start_date</code>, <code>sessions_attended</code>, <code>residency_completed</code>, <code>completion_date</code>.</p>
+<p><strong>residency_attendance</strong> (1,584) · B
+One row per resident per session held while employed. <code>employee_id</code>, <code>cohort_id</code>, <code>session_no</code> (1–12), <code>session_date</code>, <code>attended</code>.</p>
+<p><strong>proficiency</strong> (1,081) · B, C
+Inpatient staff RN hires in the window and first agency contracts. <code>subject_type</code> (staff, agency), <code>subject_id</code> (employee_id or agency_worker_id), <code>unit_id</code>, <code>pathway</code> (new_grad, experienced_hire, agency), <code>start_date</code>, <code>proficient_date</code>, <code>days_to_proficiency</code>, <code>censored</code> (left or window ended first).</p>
+<h2 id="staffing-and-agency">Staffing and agency</h2>
+<p><strong>unit_staffing_daily</strong> (19,728) · C
+One row per inpatient unit per day. <code>required_rn_hours</code>, <code>staff_rn_hours</code> (straight time), <code>overtime_rn_hours</code>, <code>agency_rn_hours</code> (worked), <code>unfilled_rn_hours</code>, <code>agency_rn_hours_scheduled</code> (contracted capacity, can exceed worked), <code>staff_rn_fte_on_unit</code>. Staff + overtime + agency + unfilled = required.</p>
+<p><strong>agency_workers</strong> (497) · C, A
+<code>agency_worker_id</code>, <code>agency_name</code> (Agency A/B/C), <code>first_name</code>, <code>last_name</code>, <code>role_code</code>.</p>
+<p><strong>agency_contracts</strong> (634) · C
+One row per 13-week segment. <code>contract_id</code>, <code>agency_worker_id</code>, <code>unit_id</code>, <code>start_date</code>, <code>end_date</code>, <code>extension_no</code> (0 = original), <code>weekly_hours</code>.</p>
+<p><strong>cost_assumptions</strong> (11) · C
+<code>assumption</code>, <code>year</code>, <code>value</code>, <code>basis</code> (source of each figure; most are public benchmarks).</p>
+<h2 id="learning-lms-side">Learning (LMS side)</h2>
+<p><strong>lms_users</strong> (6,910) · A, D
+<code>lms_user_id</code>, <code>username</code>, <code>email</code> (example domains), <code>first_name</code>, <code>last_name</code>, <code>hr_employee_id</code> (current link; blank on manual, agency and test accounts), <code>external_id</code> (agency ID, sometimes missing), <code>user_source</code> (hr_feed, manual, agency_manual, test), <code>unit_id</code> (last known), <code>created_date</code>, <code>deactivated_date</code>, <code>status</code>.</p>
+<p><strong>courses</strong> (30) · A
+<code>course_id</code>, <code>course_family_id</code> (stable across yearly versions), <code>title</code>, <code>category</code> (annual_compliance, certification_renewal, onboarding, residency, elective), <code>catalog_priority</code> (Required, Required-Regulatory, Recommended, Optional), <code>delivery</code>, <code>version_year</code>, <code>recurrence_months</code>, <code>owner_role</code>, <code>last_reviewed</code>, <code>retired_date</code>.</p>
+<p><strong>enrollments</strong> (93,846) · A, B, D
+One row per assignment or self-enrollment, as the LMS stores it. <code>enrollment_id</code>, <code>lms_user_id</code>, <code>course_id</code>, <code>enrollment_type</code> (assigned, self), <code>assignment_rule</code> (annual_campaign, new_hire, role_certification, residency, agency_contract, manager_assigned, self_enrollment, manual_roster), <code>priority_label</code> (as stamped on the enrollment; can disagree with the course), <code>cycle_year</code>, <code>assigned_date</code>, <code>due_date</code>, <code>status</code> (not_started, in_progress, completed, cancelled), <code>status_date</code>, <code>completion_date</code>. Enrollments for people who left usually stay open.</p>
+<p><strong>attempts</strong> (91,782) · A
+<code>attempt_id</code>, <code>enrollment_id</code>, <code>lms_user_id</code>, <code>course_id</code>, <code>attempt_no</code>, <code>started_at</code>, <code>finished_at</code>, <code>result</code> (passed, failed, incomplete), <code>score</code> (blank for instructor-led and checklists).</p>
+<p><strong>exemptions</strong> (404) · A
+<code>exemption_id</code>, <code>lms_user_id</code>, <code>course_family_id</code> (AC-ALL covers every annual module), <code>cycle_year</code>, <code>reason</code> (leave_of_absence, equivalent_credit), <code>granted_date</code>, <code>expires_date</code>, <code>granted_by_role</code>.</p>
+<p><strong>certifications</strong> (19,247) · A
+<code>cert_record_id</code>, <code>employee_id</code>, <code>lms_user_id</code>, <code>cert_code</code>, <code>issued_date</code>, <code>expires_date</code>, <code>source</code> (prior_record, external_upload, lms_completion).</p>
+<h2 id="reporting-and-access">Reporting and access</h2>
+<p><strong>report_catalog</strong> (22) · D
+<code>report_id</code>, <code>report_name</code>, <code>owner_department</code>, <code>primary_audience</code>, <code>refresh_frequency</code>, <code>grain</code>, <code>catalog_status</code> (active, duplicate), <code>views_last_90_days</code>.</p>
+<p><strong>report_lineage</strong> (5) · D
+The executive scorecard&rsquo;s path from HR system to BI. <code>report_id</code>, <code>step</code>, <code>source</code>, <code>target</code>, <code>transformation</code>, <code>control_in_place</code>.</p>
+<p><strong>report_published_values</strong> (208) · D
+What the executive scorecard showed each month. <code>report_id</code>, <code>report_month</code>, <code>facility_group</code>, <code>numerator</code>, <code>denominator</code>, <code>completion_rate_pct</code>, <code>overdue_enrollments</code>, <code>published_date</code>.</p>
+<p><strong>bi_access_roles</strong> (5) · D
+<code>bi_role</code>, <code>description</code>, <code>allowed_scope</code>, <code>person_level_detail</code>.</p>
+<p><strong>bi_users</strong> (186) · D
+<code>bi_user_id</code>, <code>employee_id</code>, <code>bi_role</code>, <code>scope_type</code>, <code>scope_value</code>, <code>person_level_detail</code>, <code>granted_date</code>, <code>revoked_date</code>.</p>
+<h2 id="answer-key-ground_truth">Answer key (<a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/generator/ground_truth"><code>ground_truth/</code></a>)</h2>
+<p><strong>planted_effects.csv</strong>: <code>effect_id</code>, <code>description</code>, <code>true_value</code>, <code>note</code>.
+<strong>planted_issues.csv</strong>: <code>issue_id</code>, <code>table</code>, <code>description</code>, <code>rows_affected</code>.</p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

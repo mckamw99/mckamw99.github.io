@@ -1,0 +1,34 @@
+{
+  "seed": 20261108,
+  "window": [
+    "2023-01-01",
+    "2025-12-31"
+  ],
+  "rows": {
+    "facilities": 25,
+    "units": 120,
+    "roles": 16,
+    "persons": 6284,
+    "employees": 6387,
+    "employee_unit_history": 6548,
+    "residency_cohort_members": 197,
+    "residency_attendance": 1584,
+    "proficiency": 1081,
+    "unit_staffing_daily": 19728,
+    "agency_workers": 497,
+    "agency_contracts": 634,
+    "cost_assumptions": 11,
+    "hr_feed_runs": 1096,
+    "lms_users": 6910,
+    "courses": 30,
+    "enrollments": 93846,
+    "attempts": 91782,
+    "exemptions": 404,
+    "certifications": 19247,
+    "report_catalog": 22,
+    "report_lineage": 5,
+    "report_published_values": 208,
+    "bi_access_roles": 5,
+    "bi_users": 186
+  }
+}

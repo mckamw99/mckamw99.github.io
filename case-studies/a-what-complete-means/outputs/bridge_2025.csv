@@ -1,0 +1,9 @@
+step,numerator,denominator,rate_pct
+Published scorecard definition,16106,20780,77.5
+Remove people who had left,15693,19855,79.0
+Keep the campaign population only,15006,19005,79.0
+One requirement per person and module,14891,18810,79.2
+Merge duplicate accounts,14962,18810,79.5
+Require a passed attempt (evidence),14938,18810,79.4
+Remove valid exemptions,14923,18299,81.6
+Person level: all required modules,2469,3666,67.3

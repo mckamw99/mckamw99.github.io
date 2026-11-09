@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resolving a disputed KPI (LIB-50) · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Purpose: a one-page process for when two teams report different numbers for the same metric and leadership wants to know which one is right.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a> / <a href="index.html">Case study A</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#the-process">The process</a></li><li><a href="#worked-example-tessaly-health-april-2025-synthetic">Worked example: Tessaly Health, April 2025 (synthetic)</a></li><li><a href="#why-its-built-this-way">Why it&rsquo;s built this way</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_a-what-complete-means_disputed_kpi.pdf">Download PDF</a></nav>
+<article>
+<h1 id="resolving-a-disputed-kpi-lib-50">Resolving a disputed KPI (LIB-50)</h1>
+<p><strong>Purpose:</strong> a one-page process for when two teams report different numbers for the same metric and leadership wants to know which one is right.</p>
+<p><em>Worked example at Tessaly Health, a fictional health system, using synthetic data.</em></p>
+<hr />
+<h2 id="the-process">The process</h2>
+<p><strong>1. Freeze both numbers.</strong> Record each figure with its source, query or report, as-of date and who produced it. Nobody reruns anything until both are captured.</p>
+<p><strong>2. Write each definition out in full.</strong> Fill the same template for both: population, unit of measure, numerator, denominator, as-of date, evidence, exclusions. Most disputes end here, because the two teams were measuring different things.</p>
+<p><strong>3. Reconcile one rule at a time.</strong> Start from one number and change one rule at a time until you reach the other. Record the effect of each change. This is the bridge: it shows exactly where the gap comes from and how big each piece is.</p>
+<p><strong>4. Separate data defects from definition choices.</strong> A duplicate account is a defect: fix it at the source and both numbers move. &ldquo;Do exemptions count as complete?&rdquo; is a choice: someone with authority has to decide it.</p>
+<p><strong>5. Take choices to the definition owner.</strong> Present each open choice with its effect on the number and the risk of each option. The owner decides; the decision goes into the metric definition sheet with a version number.</p>
+<p><strong>6. Publish once, with a note.</strong> Publish the agreed number with its definition version. For one cycle, show the old number beside it and a one-line explanation of the difference.</p>
+<p><strong>7. Retire the other number.</strong> The losing report is changed to the agreed definition or retired. Two live versions of one KPI is how the dispute started.</p>
+<h2 id="worked-example-tessaly-health-april-2025-synthetic">Worked example: Tessaly Health, April 2025 (synthetic)</h2>
+<p>The executive scorecard showed <strong>77.5%</strong> annual compliance. The compliance office, counting people, believed it was much lower.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What happened</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Freeze</td>
+<td>Scorecard: 77.5% (enrollment rows, LMS status, month end). Compliance office: a people count from their own tracker.</td>
+</tr>
+<tr>
+<td>2. Definitions</td>
+<td>The scorecard counted enrollment rows, including leavers, duplicates and not-yet-due assignments, and trusted the LMS status. The compliance office counted people.</td>
+</tr>
+<tr>
+<td>3. Bridge</td>
+<td>Removing leavers +1.5 pts; campaign population +0.0; one requirement per person and module +0.2; merging duplicate accounts +0.3; requiring evidence −0.1; removing exemptions +2.2. That gives 81.6% of requirements. Moving to the people level: 67.3%.</td>
+</tr>
+<tr>
+<td>4. Defects vs. choices</td>
+<td>Defects: duplicate accounts, duplicate rows, statuses with no evidence, a 2024 reload that depressed that year&rsquo;s number. Choices: people or requirements as the unit; exemptions in or out.</td>
+</tr>
+<tr>
+<td>5. Decision</td>
+<td>Headline metric is people fully compliant (M1); the requirement-level rate (M2) is kept for operations. Exemptions leave the denominator and are reported beside the rate.</td>
+</tr>
+<tr>
+<td>6. Publish</td>
+<td>67.3% (definition v1.0), with the old 77.5% shown once and explained.</td>
+</tr>
+<tr>
+<td>7. Retire</td>
+<td>The old scorecard query is replaced; the legacy duplicate scorecard is retired.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="why-its-built-this-way">Why it&rsquo;s built this way</h2>
+<p>Most KPI disputes are definition disputes wearing a data costume, so the process forces both definitions onto paper before anyone touches a query. The rule-by-rule bridge matters more than the final answer: it turns &ldquo;your number is wrong&rdquo; into &ldquo;these four rules explain the gap,&rdquo; which people can agree on. Separating defects from choices keeps analysts from quietly making policy decisions in SQL. Retiring the losing number is the step teams skip, and it&rsquo;s the one that keeps the dispute from coming back next quarter.</p>
+<p><em>Format: PDF one-pager, generated from this page.</em></p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

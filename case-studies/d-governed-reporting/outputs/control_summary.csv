@@ -1,0 +1,6 @@
+control,months_flagged,caught,false_alarms,missed
+K1_freshness,1,2024-08,0,"2025-03, 2025-10"
+K2_full_reconciliation,3,"2024-08, 2025-03, 2025-10",0,none
+K3_numerator_vs_source,3,"2025-03, 2025-10",1,2024-08
+K4_population,1,2025-10,0,"2024-08, 2025-03"
+K5_trend_alarm,1,none,1,"2024-08, 2025-03, 2025-10"

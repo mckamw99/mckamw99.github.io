@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agency nurses vs. staff nurses · Matthew McKay, Ph.D.</title>
+<meta name="description" content="Case study C · A workforce cost model: where converting agency hours to staff positions would pay, with sensitivity ranges">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600&amp;display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="band" aria-hidden="true"></div>
+<header class="site-header"><div class="wrap">
+<a class="name" href="../../index.html">Matthew McKay, Ph.D.</a>
+<nav aria-label="Main"><ul><li><a href="../../index.html">Start here</a></li><li><a href="../index.html" aria-current="page">Case studies</a></li><li><a href="../../library/index.html">Library</a></li><li><a href="../../about.html">About</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../index.html">Start here</a> / <a href="../index.html">Case studies</a></p>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p class="label muted">On this page</p><ol><li><a href="#1-the-question">1. The question</a></li><li><a href="#2-the-data">2. The data</a></li><li><a href="#3-approach">3. Approach</a></li><li><a href="#4-validation">4. Validation</a></li><li><a href="#5-findings-synthetic-data-national-benchmark-rates">5. Findings (synthetic data, national benchmark rates)</a></li><li><a href="#6-what-id-do-in-practice">6. What I&rsquo;d do in practice</a></li><li><a href="#7-files">7. Files</a></li></ol>
+<a class="pdf" href="../../pdf/case-studies_c-agency-vs-staff.pdf">Download PDF</a></nav>
+<article>
+<h1 id="agency-nurses-vs-staff-nurses">Agency nurses vs. staff nurses</h1>
+<p><strong>Case study C · A workforce cost model: where converting agency hours to staff positions would pay, with sensitivity ranges</strong></p>
+<p><em>Tessaly Health is a fictional nonprofit health system. Staffing data is synthetic. Cost inputs are national public benchmarks or labeled assumptions. Results show a method, not real findings.</em></p>
+<hr />
+<h2 id="1-the-question">1. The question</h2>
+<p>Tessaly Health spent about $6.8 million on agency nurses in 2025. Leadership asked the obvious question: would hiring staff nurses for those hours be cheaper, and where? The answer needed to say how sure it was, because a conversion program means hiring people.</p>
+<h2 id="2-the-data">2. The data</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>What</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Synthetic generator (LIB-23, seed 20261108)</td>
+<td>Required, staff, overtime, agency and unfilled RN hours by inpatient unit and day</td>
+<td>18 units × 1,096 days</td>
+</tr>
+<tr>
+<td>Same</td>
+<td>Agency contracts; RN hires, exits and time to proficiency</td>
+<td>634 contract segments; 6,387 employment records</td>
+</tr>
+<tr>
+<td>BLS Employer Costs for Employee Compensation, Dec 2024</td>
+<td>Staff RN wage per hour worked ($51.09) and benefits ($28.43) in private hospitals</td>
+<td>National</td>
+</tr>
+<tr>
+<td>SIA/NATHO Travel Nurse Benchmarking Survey</td>
+<td>Agency bill rates: $106.63 (2023), $90.13 (2024), $90.54 (2025)</td>
+<td>National</td>
+</tr>
+<tr>
+<td>NSI National Health Care Retention &amp; RN Staffing Report 2026</td>
+<td>Time to recruit an experienced RN (78 days, range 56–102)</td>
+<td>National</td>
+</tr>
+<tr>
+<td>My assumptions</td>
+<td>Cost per hire ($12,000), productivity while ramping (50%), worked hours per FTE (1,700), overtime payroll load (7.65%)</td>
+<td>Each varied in the sensitivity analysis</td>
+</tr>
+</tbody>
+</table></div>
+<p>Turnover, exit rates and time to proficiency come from the synthetic data, which is tuned to national surveys.</p>
+<p><strong>Limits.</strong> The model prices cost only. Continuity of care, team knowledge and overtime fatigue are real and left out; section 6 says how I&rsquo;d handle them. Benchmarks are national averages, and a real system would use its own rates.</p>
+<h2 id="3-approach">3. Approach</h2>
+<ol>
+<li><strong>Compare like with like.</strong> Cost per <em>worked</em> hour for staff (wage plus benefits), overtime, and agency (bill rate plus orientation fee). Agency nurses also ramp up when they start on a unit. With assignments averaging 116 days and 13 days to proficiency, that adds about 6% to the effective agency rate. Leaving it out would tilt the comparison toward conversion.</li>
+<li><strong>Find the base, not the average.</strong> A staff nurse is paid every scheduled shift, whether the hours are needed or not. So I split each unit&rsquo;s daily agency hours into slices of one full-time position and measured from the 2025 data how often each slice was actually needed. The first slice on a busy unit is needed every day; the fifth may be needed only 80% of the time.</li>
+<li><strong>Simulate each position for 3 years.</strong> Run day by day: recruiting lag, 14 days of orientation, a ramp to proficiency, exits at the unit&rsquo;s observed rates, refills, and agency covering every gap. That&rsquo;s 400 runs per position, with uncertain inputs drawn from ranges.</li>
+<li><strong>Classify each position.</strong> <em>Convert</em> if at least 80% of runs save money; <em>pilot</em> if 60–80% save money and the average is positive; otherwise <em>keep on agency</em>.</li>
+<li><strong>Test sensitivity.</strong> Move each input across its range for one representative position.</li>
+</ol>
+<p><strong>Alternatives I considered.</strong> A simple hourly comparison ($93 vs. $83, &ldquo;save $10 an hour&rdquo;) is what usually gets presented, and it overstates the case by ignoring hiring, ramp, turnover and idle hours. A full staffing-optimization model would be more precise, but it needs inputs (patient volume, skill mix) that a cost question shouldn&rsquo;t wait for.</p>
+<h2 id="4-validation">4. Validation</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>With no exits and full use, the simulation matches a hand calculation</td>
+<td>$37,879 vs. $37,903. Pass</td>
+</tr>
+<tr>
+<td>Loaded staff rate read back against the BLS benchmark it came from</td>
+<td>$79.70 vs. $79.53 for 2024 (rounding the benefits load). Pass</td>
+</tr>
+<tr>
+<td>Converted positions never cover more hours than the unit bought from agency</td>
+<td>41 positions on 13 units. Pass</td>
+</tr>
+<tr>
+<td>Results stable with a different random seed</td>
+<td>39 of 41 classifications identical; the 2 that changed sit at the 60% line. Pass</td>
+</tr>
+<tr>
+<td>The LIB-26 calculator (JavaScript) reproduces the Python model</td>
+<td>$13,979 vs. $13,322 for the same inputs (within simulation noise). Pass</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-findings-synthetic-data-national-benchmark-rates">5. Findings (synthetic data, national benchmark rates)</h2>
+<p><strong>The hourly gap is smaller than people think.</strong> In 2025 a fully loaded staff hour cost $83.05 and an agency hour $93.10: a 12% premium, or about 19% once agency ramp-up is counted. In 2023, at $106.63 an hour, the premium was 43%. The case for conversion was strong two years ago and is thin now.</p>
+<p><img alt="Step chart of Step-Down unit's daily agency hours in 2025, sorted from highest to lowest day, with horizontal bands for six possible staff positions. Positions 1 to 3 are needed 98 to 100% of the time and marked pilot. Positions 4 to 6 are needed 90%, 83% and 62% of the time and marked keep on agency." src="outputs/chart1_agency_base_load.png" /></p>
+<p><strong>Only the steady base can pay.</strong> Of 41 possible positions on 13 units, none clears the &ldquo;convert&rdquo; bar and 8 qualify for a pilot, on five high-turnover units. Each pilot position has an expected 3-year saving of $7,000 to $16,000 and a 60–67% chance of saving anything. Any position needed less than about 90% of the time loses money, because the hospital pays for hours it doesn&rsquo;t use.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Unit</th>
+<th style="text-align: right;">Pilot positions</th>
+<th style="text-align: right;">Expected 3-year saving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Medical-Surgical, Community North</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">$29,000</td>
+</tr>
+<tr>
+<td>Step-Down, Flagship Hospital</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">$28,500</td>
+</tr>
+<tr>
+<td>Medical-Surgical 1, Flagship Hospital</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">$16,200</td>
+</tr>
+<tr>
+<td>Medical-Surgical, Community South</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">$13,000</td>
+</tr>
+<tr>
+<td>Emergency Department, Community South</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">$9,100</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td style="text-align: right;"><strong>about $96,000 (about $32,000 a year)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>That&rsquo;s under 0.5% of annual agency spend. It&rsquo;s real, but it isn&rsquo;t a program.</p>
+<p><img alt="Tornado chart for the first Step-Down position. Base case: $13,000 saved over 3 years. Agency bill rate swings the result from minus $46,000 to plus $82,000. Benefits load swings it from minus $7,000 to plus $41,000. Days to proficiency swings it from minus $13,000 to plus $22,000. Cost per hire, exit rates, fill time and ramp productivity move it less." src="outputs/chart2_tornado.png" /></p>
+<p><strong>The agency rate decides it.</strong> The break-even agency bill rate is about <strong>$87.40 an hour</strong>, just $3 below the 2025 benchmark. At the 2023 rate, the same position saves $84,000 over 3 years. Benefits cost and time to proficiency come next. A new graduate&rsquo;s 168-day ramp, against 74 days for an experienced hire (case study B), turns a small saving into a loss.</p>
+<p><strong>Rate negotiation is worth more than conversion.</strong> A $1-an-hour reduction on Tessaly&rsquo;s 73,500 agency hours saves about $73,500 a year, more than twice what all eight pilot positions are expected to save.</p>
+<p><strong>Retention helps, a little.</strong> If on-time onboarding cut first-year exits as case study B suggests (risk ratio 0.77), the first Step-Down position&rsquo;s expected saving rises from $12,800 to $15,700. Worth having, not decisive.</p>
+<h2 id="6-what-id-do-in-practice">6. What I&rsquo;d do in practice</h2>
+<ul>
+<li><strong>Don&rsquo;t announce a conversion program.</strong> Pilot the 3–4 steadiest positions (Step-Down at Flagship and Medical-Surgical at Community North), filled with <strong>experienced</strong> nurses, and track them against similar units for a year.</li>
+<li><strong>Negotiate the rate first.</strong> It&rsquo;s the largest lever in the model and needs no hiring.</li>
+<li><strong>Set a trigger to revisit.</strong> Rerun the model when the agency bill rate passes about $95 an hour, or when benefits costs or turnover change materially. The calculator makes that a five-minute check.</li>
+<li><strong>Decide the non-cost factors in the open.</strong> If nursing leadership values continuity enough to convert positions that are cost-neutral, that&rsquo;s a legitimate choice. It should be recorded as a choice, not hidden in an assumption.</li>
+<li><strong>Work on retention anyway.</strong> Every point of first-year turnover avoided makes every staff position cheaper, whether or not it replaced agency.</li>
+</ul>
+<p>The calculator (<a href="calculator-app.html"><code>calculator.html</code></a>, LIB-26) lets anyone change the inputs and see the result.</p>
+<h2 id="7-files">7. Files</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="calculator-app.html"><code>calculator.html</code></a></td>
+<td>LIB-26 conversion calculator (single web page, no external code)</td>
+</tr>
+<tr>
+<td><a href="calculator.html">Agency-to-staff conversion calculator (LIB-26)</a></td>
+<td>LIB-26 page: purpose, worked example, design notes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/c-agency-vs-staff/analysis/convert.py"><code>analysis/convert.py</code></a></td>
+<td>Rates, spend, slices, simulation, classification, tornado, scenarios</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/c-agency-vs-staff/analysis/visuals_c.py"><code>analysis/visuals_c.py</code></a></td>
+<td>Charts</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/blob/main/case-studies/c-agency-vs-staff/analysis/validate_c.py"><code>analysis/validate_c.py</code></a></td>
+<td>Hand-calculation check, benchmark read-back, coverage check, seed stability, calculator cross-check</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mckamw99/mckamw99.github.io/tree/main/case-studies/c-agency-vs-staff/outputs"><code>outputs/</code></a></td>
+<td>Result tables, inputs taken from the data, figures, validation report</td>
+</tr>
+</tbody>
+</table></div>
+<p>To reproduce:</p>
+<pre><code>cd case-studies/c-agency-vs-staff/analysis
+python convert.py &amp;&amp; python visuals_c.py &amp;&amp; python validate_c.py
+</code></pre>
+<p><em>All code is AI-assisted (Claude). I designed the cost comparison, the base-load method, the simulation and the checks; Claude wrote the code to that design; the validation above is how I checked it.</em></p>
+<p><strong>Sources:</strong> BLS, <a href="https://www.bls.gov/opub/ted/2025/charting-compensation-costs-during-national-nurses-month.htm">Charting compensation costs during National Nurses Month</a> (2025); SIA/NATHO Travel Nurse Benchmarking Survey, selected findings <a href="https://staffingindustry.com/research/research-reports/americas/sia-natho-travel-nurse-benchmarking-survey-selected-findings-2025">2025</a> and <a href="https://www.staffingindustry.com/research/research-reports/healthcare/sia-natho-travel-nurse-benchmarking-survey-selected-findings-2026">2026</a>; NSI Nursing Solutions, <em>2026 National Health Care Retention &amp; RN Staffing Report</em>, as summarized by <a href="https://www.beckershospitalreview.com/workforce/the-cost-of-nurse-turnover-in-10-points-2026/">Becker&rsquo;s</a>.</p>
+</article>
+</div></div>
+</main>
+<footer class="site-footer" id="contact">
+<div class="band" aria-hidden="true"></div>
+<div class="inner"><div class="wrap">
+<div><p class="fname">Matthew McKay, Ph.D.</p><p>Personal project. All data is synthetic or public, and the company is fictional. Views are my own and not affiliated with or endorsed by any current or former employer.</p></div>
+<ul>
+<li><a href="mailto:mckamw99@aequitasnetwork.com">mckamw99@aequitasnetwork.com</a></li>
+<li><a href="https://www.linkedin.com/in/matthewmckayphd">LinkedIn</a></li>
+<li><a href="#contact">Contact form</a></li>
+<li><a href="https://github.com/mckamw99/mckamw99.github.io">Code and data on GitHub</a></li>
+</ul>
+</div></div>
+</footer>
+</body>
+</html>

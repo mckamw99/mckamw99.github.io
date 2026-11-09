@@ -1,0 +1,5 @@
+effect_id,description,true_value,note
+E-01,"Year-1 voluntary turnover hazard ratio, role onboarding finished within 30 days",0.7,Confounded: on-time rate is lower on high-turnover units
+E-02,"Year-1 voluntary turnover hazard ratio, new-grad RN with attendance propensity >= 0.80",0.65,"Completion requires surviving 12 months, so comparing completers to non-completers is biased (immortal time)"
+E-03,First-year voluntary hazard multiplier (all staff),2.0,Applies before E-01 and E-02
+E-04,"Mean days to proficiency, new grad high vs. low attender",140 vs 170,"Times 1.2 on ICU, ED, Step-Down"

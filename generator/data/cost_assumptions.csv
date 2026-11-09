@@ -1,0 +1,12 @@
+assumption,year,value,basis
+staff_rn_wage_per_hour_worked,2023.0,49.1,BLS ECEC Dec 2024 (2024); scaled about 4%/yr for 2023 and 2025
+staff_rn_wage_per_hour_worked,2024.0,51.09,BLS ECEC Dec 2024 (2024); scaled about 4%/yr for 2023 and 2025
+staff_rn_wage_per_hour_worked,2025.0,53.24,BLS ECEC Dec 2024 (2024); scaled about 4%/yr for 2023 and 2025
+benefits_load_on_wages_pct,,0.56,"BLS ECEC Dec 2024, RNs in private hospitals"
+overtime_multiplier,,1.5,FLSA minimum overtime premium
+agency_rn_bill_rate,2023.0,106.63,"SIA/NATHO Travel Nurse Benchmarking Survey, national aggregate"
+agency_rn_bill_rate,2024.0,90.13,"SIA/NATHO Travel Nurse Benchmarking Survey, national aggregate"
+agency_rn_bill_rate,2025.0,90.54,"SIA/NATHO Travel Nurse Benchmarking Survey, national aggregate"
+cost_per_rn_turnover,2024.0,61110.0,"NSI National Health Care Retention & RN Staffing Report (2025, 2026)"
+cost_per_rn_turnover,2025.0,60090.0,"NSI National Health Care Retention & RN Staffing Report (2025, 2026)"
+agency_orientation_cost_per_contract,,1200.0,Invented for illustration

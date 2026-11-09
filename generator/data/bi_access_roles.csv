@@ -1,0 +1,6 @@
+bi_role,description,allowed_scope,person_level_detail
+BI-EXEC,Executive viewer,system,False
+BI-FAC,Facility leader,facility,False
+BI-UNIT,Unit or department manager,unit,True
+BI-ANALYST,Learning analyst,system,True
+BI-ANALYST-AGG,Reporting analyst (aggregate only),system,False

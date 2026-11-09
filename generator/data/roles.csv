@@ -1,0 +1,17 @@
+role_code,role_name,role_family,licensed
+RN,Registered Nurse,nursing,True
+LPN,Licensed Practical Nurse,nursing,True
+NA,Nursing Assistant,nursing,False
+NMGR,Nurse Manager,nursing,True
+IMG,Imaging Technologist,clinical_support,True
+LAB,Laboratory Technologist,clinical_support,True
+PHA,Pharmacy Staff,clinical_support,True
+THR,Therapist,clinical_support,True
+RSP,Respiratory Therapist,clinical_support,True
+SPD,Sterile Processing Technician,clinical_support,False
+CSA,Clinical Support Associate,clinical_support,False
+ADM,Administrative Staff,administrative,False
+EVS,Environmental Services Associate,facilities_evs,False
+FAC,Facilities Technician,facilities_evs,False
+FNS,Food and Nutrition Associate,facilities_evs,False
+DMGR,Department Manager,administrative,False

@@ -1,0 +1,6 @@
+report_id,step,source,target,transformation,control_in_place
+RPT-001,1,HR system,hr_feed_runs (nightly extract),Nightly extract of active and recently terminated staff,Row count extracted vs. loaded
+RPT-001,2,hr_feed_runs,lms_users,"Create, update, and deactivate LMS accounts from the feed",Rejected rows reviewed next business day
+RPT-001,3,LMS,warehouse.stg_enrollments,Nightly copy of enrollments and attempts,Source vs. staging row counts
+RPT-001,4,warehouse.stg_enrollments,warehouse.fct_compliance_month,Filter annual compliance courses for the cycle year; join user to facility; month-end snapshot,None (gap)
+RPT-001,5,warehouse.fct_compliance_month,BI: Executive Compliance Scorecard,Numerator = status completed by month end; denominator = all enrollments assigned by month end,None (gap)

@@ -1,0 +1,5 @@
+rule,finding,bi_user_id,employee_id,bi_role,scope,fix
+R1,Access still active after the person left,BIU0002,E000092,BI-UNIT,unit:U002,Revoke now; add the BI tool to the HR leaver workflow
+R1,Access still active after the person left,BIU0003,E000165,BI-UNIT,unit:U003,Revoke now; add the BI tool to the HR leaver workflow
+R2,Scope wider than the role allows,BIU0009,E000677,BI-UNIT,system:ALL,Reset scope to the role's allowed scope
+R3,Person-level detail on a role that's aggregate only,BIU0184,E002272,BI-ANALYST-AGG,system:ALL,"Remove person-level detail, or move the user to a role that has it, with approval"

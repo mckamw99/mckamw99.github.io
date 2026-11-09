@@ -1,0 +1,31 @@
+course_id,course_family_id,title,category,catalog_priority,delivery,version_year,recurrence_months,owner_role,last_reviewed,retired_date
+AC-01-2023,AC-01,Code of Conduct 2023,annual_compliance,Required,elearning,2023.0,12.0,Compliance Office,2022-11-15,2024-01-31
+AC-01-2024,AC-01,Code of Conduct 2024,annual_compliance,Required,elearning,2024.0,12.0,Compliance Office,2023-11-15,2025-01-31
+AC-01-2025,AC-01,Code of Conduct 2025,annual_compliance,Required,elearning,2025.0,12.0,Compliance Office,2024-11-15,
+AC-02-2023,AC-02,Information Security Awareness 2023,annual_compliance,Required,elearning,2023.0,12.0,Compliance Office,2022-11-15,2024-01-31
+AC-02-2024,AC-02,Information Security Awareness 2024,annual_compliance,Required,elearning,2024.0,12.0,Compliance Office,2023-11-15,2025-01-31
+AC-02-2025,AC-02,Information Security Awareness 2025,annual_compliance,Required,elearning,2025.0,12.0,Compliance Office,2024-11-15,
+AC-03-2023,AC-03,Workplace Safety 2023,annual_compliance,Required,elearning,2023.0,12.0,Compliance Office,2022-11-15,2024-01-31
+AC-03-2024,AC-03,Workplace Safety 2024,annual_compliance,Required,elearning,2024.0,12.0,Compliance Office,2023-11-15,2025-01-31
+AC-03-2025,AC-03,Workplace Safety 2025,annual_compliance,Required,elearning,2025.0,12.0,Compliance Office,2024-11-15,
+AC-04-2023,AC-04,Fire and Emergency Preparedness 2023,annual_compliance,Required,elearning,2023.0,12.0,Compliance Office,2022-11-15,2024-01-31
+AC-04-2024,AC-04,Fire and Emergency Preparedness 2024,annual_compliance,Required,elearning,2024.0,12.0,Compliance Office,2023-11-15,2025-01-31
+AC-04-2025,AC-04,Fire and Emergency Preparedness 2025,annual_compliance,Required,elearning,2025.0,12.0,Compliance Office,2024-11-15,
+AC-05-2023,AC-05,Respectful Workplace 2023,annual_compliance,Required,elearning,2023.0,12.0,Compliance Office,2022-11-15,2024-01-31
+AC-05-2024,AC-05,Respectful Workplace 2024,annual_compliance,Required,elearning,2024.0,12.0,Compliance Office,2023-11-15,2025-01-31
+AC-05-2025,AC-05,Respectful Workplace 2025,annual_compliance,Required,elearning,2025.0,12.0,Compliance Office,2024-11-15,
+CERT-LS,CERT-LS,Role Certification: Life Support Renewal,certification_renewal,Required-Regulatory,blended,,24.0,Clinical Education,2024-06-01,
+CERT-EQ,CERT-EQ,Role Certification: Equipment Competency,certification_renewal,Required-Regulatory,blended,,12.0,Clinical Education,2024-06-01,
+CERT-SU,CERT-SU,Role Certification: Specialty Unit Competency,certification_renewal,Required-Regulatory,blended,,24.0,Clinical Education,2024-06-01,
+CERT-HZ,CERT-HZ,Role Certification: Hazardous Materials Handling,certification_renewal,Required-Regulatory,blended,,12.0,Clinical Education,2024-06-01,
+ON-01,ON-01,New Employee Orientation,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+ON-02-NUR,ON-02,Role Onboarding: Nursing,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+ON-02-CLS,ON-02,Role Onboarding: Clinical Support,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+ON-02-ADM,ON-02,Role Onboarding: Administrative,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+ON-02-FAC,ON-02,Role Onboarding: Facilities and EVS,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+ON-03,ON-03,Unit Orientation Checklist,onboarding,Required,checklist,,,,2022-09-01,
+AG-01,AG-01,Agency Clinician Orientation,onboarding,Required,elearning,,,Learning Operations,2022-09-01,
+NR-01,NR-01,First-Year Nurse Residency,residency,Required,ilt_series,,,Clinical Education,2024-01-10,
+OP-01,OP-01,Leading Through Change,elective,Recommended,elearning,,,Learning Operations,2023-02-01,
+OP-02,OP-02,Spreadsheet Basics,elective,Optional,elearning,,,,2019-05-01,
+OP-03,OP-03,Preceptor Skills,elective,Recommended,elearning,,,Clinical Education,2021-03-15,
