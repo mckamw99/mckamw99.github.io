@@ -9,6 +9,7 @@ import markdown
 ROOT = os.path.abspath(sys.argv[1])
 OUT = os.path.join(ROOT, "docs")
 GH = "https://github.com/mckamw99/mckamw99.github.io"
+SITE_URL = "https://mckamw99.github.io/"
 SITE_NAME = "Matthew McKay, Ph.D."
 EMAIL = "mckamw99@aequitasnetwork.com"
 LINKEDIN = "https://www.linkedin.com/in/matthewmckayphd"
@@ -196,6 +197,15 @@ def shell(out_path, title, body, section, description):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(full_title)}</title>
 <meta name="description" content="{html.escape(description)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{SITE_NAME}">
+<meta property="og:title" content="{html.escape(full_title)}">
+<meta property="og:description" content="{html.escape(description)}">
+<meta property="og:url" content="{SITE_URL}{'' if out_path == 'index.html' else out_path}">
+<meta property="og:image" content="{SITE_URL}assets/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Turning learning and workforce data into decisions leaders trust. Matthew McKay, Ph.D.">
+<meta name="twitter:card" content="summary_large_image">
 {FONTS}
 <link rel="stylesheet" href="{rel(out_path, 'assets/site.css')}">
 </head>
@@ -576,6 +586,7 @@ def main():
     open(os.path.join(OUT, "assets/site.css"), "w").write(CSS)
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     shutil.copy(os.path.join(os.path.dirname(__file__), "headshot.jpg"), os.path.join(OUT, "assets/headshot.jpg"))
+    shutil.copy(os.path.join(os.path.dirname(__file__), "og-image.png"), os.path.join(OUT, "assets/og-image.png"))
     for fn in (home, cases_index, library_index, about, contact):
         write(*fn())
     for src in PAGES:

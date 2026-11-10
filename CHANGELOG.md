@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.9.1 (2026-11-10)
+- Social preview: Open Graph and Twitter card tags on every page, plus a 1200×627 preview image (`assets/og-image.png`) so LinkedIn and other sites show a card for the link.
+
 ## 0.9.0 (2026-11-09)
 - Contact page (`contact.html`): site-styled form that posts to the linked Google Form; client-side required-field and email checks, honeypot spam filter, thank-you state, email and LinkedIn fallback. Nav and footer "Contact" links now point to it. One end-to-end test response sent and confirmed in the form.
 - Removed committed `__pycache__` and added `.gitignore`.
